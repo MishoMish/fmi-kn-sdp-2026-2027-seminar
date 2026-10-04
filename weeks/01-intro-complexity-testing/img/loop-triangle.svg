@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" width="820" height="520" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Вложен цикъл j &lt; i: оцветените клетки са n(n−1)/2</title>
+<rect width="820" height="520" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">for i in [0, n): for j in [0, i)</text>
+<text x="96.0" y="155.0" font-size="14" fill="#52514e" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="111.0" y="131.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="151.0" y="131.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="191.0" y="131.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="231.0" y="131.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="271.0" y="131.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="311.0" y="131.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="351.0" y="131.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="391.0" y="131.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="96.0" y="195.0" font-size="14" fill="#52514e" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="111.0" y="171.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="151.0" y="171.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="191.0" y="171.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="231.0" y="171.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="271.0" y="171.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="311.0" y="171.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="351.0" y="171.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="391.0" y="171.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="96.0" y="235.0" font-size="14" fill="#52514e" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="111.0" y="211.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="151.0" y="211.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="191.0" y="211.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="231.0" y="211.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="271.0" y="211.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="311.0" y="211.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="351.0" y="211.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="391.0" y="211.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="96.0" y="275.0" font-size="14" fill="#52514e" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<rect x="111.0" y="251.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="151.0" y="251.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="191.0" y="251.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="231.0" y="251.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="271.0" y="251.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="311.0" y="251.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="351.0" y="251.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="391.0" y="251.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="96.0" y="315.0" font-size="14" fill="#52514e" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<rect x="111.0" y="291.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="151.0" y="291.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="191.0" y="291.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="231.0" y="291.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="271.0" y="291.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="311.0" y="291.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="351.0" y="291.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="391.0" y="291.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="96.0" y="355.0" font-size="14" fill="#52514e" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="111.0" y="331.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="151.0" y="331.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="191.0" y="331.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="231.0" y="331.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="271.0" y="331.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="311.0" y="331.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="351.0" y="331.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="391.0" y="331.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="96.0" y="395.0" font-size="14" fill="#52514e" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<rect x="111.0" y="371.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="151.0" y="371.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="191.0" y="371.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="231.0" y="371.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="271.0" y="371.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="311.0" y="371.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="351.0" y="371.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<rect x="391.0" y="371.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="96.0" y="435.0" font-size="14" fill="#52514e" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<rect x="111.0" y="411.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="151.0" y="411.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="191.0" y="411.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="231.0" y="411.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="271.0" y="411.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="311.0" y="411.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="351.0" y="411.0" width="38.0" height="38.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<rect x="391.0" y="411.0" width="38.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="130.0" y="120.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="170.0" y="120.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="210.0" y="120.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<text x="250.0" y="120.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="290.0" y="120.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="330.0" y="120.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<text x="370.0" y="120.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="410.0" y="120.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="70.0" y="290.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-style="italic">i</text>
+<text x="270.0" y="96.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-style="italic">j</text>
+<text x="480.0" y="140.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="400">Ред i има точно i клетки.</text>
+<text x="480.0" y="180.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0 + 1 + 2 + … + (n−1)</text>
+<text x="480.0" y="212.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">= n(n−1)/2</text>
+<text x="480.0" y="252.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="400">n = 8: 28 от 64 клетки</text>
+<text x="480.0" y="300.0" font-size="17" fill="#52514e" text-anchor="start" font-weight="400">≈ половината квадрат ⇒</text>
+<text x="480.0" y="326.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="700">пак Θ(n²).</text>
+<text x="480.0" y="372.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400" font-style="italic">Константата ½ изчезва</text>
+<text x="480.0" y="394.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400" font-style="italic">в асимптотичния запис.</text>
+</svg>

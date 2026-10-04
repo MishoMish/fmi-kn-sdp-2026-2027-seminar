@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 330" width="1100" height="330" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Плътност на числата с плаваща запетая върху реалната права</title>
+<rect width="1100" height="330" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Числата с плаваща запетая не са равномерно разпределени</text>
+<text x="40.0" y="70.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Играчка-формат с 3 бита мантиса: 8 числа във всеки интервал [2ᵏ, 2ᵏ⁺¹). При double са 2⁵² във всеки интервал.</text>
+<line x1="60.0" y1="170.0" x2="1000.0" y2="170.0" stroke="#8a8984" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="60.0" y1="156.0" x2="60.0" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="63.5" y1="156.0" x2="63.5" y2="184.0" stroke="#e87ba4" stroke-width="2" stroke-linecap="round"/>
+<line x1="67.0" y1="156.0" x2="67.0" y2="184.0" stroke="#e87ba4" stroke-width="2" stroke-linecap="round"/>
+<line x1="70.5" y1="156.0" x2="70.5" y2="184.0" stroke="#e87ba4" stroke-width="2" stroke-linecap="round"/>
+<line x1="74.1" y1="156.0" x2="74.1" y2="184.0" stroke="#e87ba4" stroke-width="2" stroke-linecap="round"/>
+<line x1="77.6" y1="156.0" x2="77.6" y2="184.0" stroke="#e87ba4" stroke-width="2" stroke-linecap="round"/>
+<line x1="81.1" y1="156.0" x2="81.1" y2="184.0" stroke="#e87ba4" stroke-width="2" stroke-linecap="round"/>
+<line x1="84.6" y1="156.0" x2="84.6" y2="184.0" stroke="#e87ba4" stroke-width="2" stroke-linecap="round"/>
+<line x1="88.1" y1="156.0" x2="88.1" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="91.6" y1="156.0" x2="91.6" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="95.2" y1="156.0" x2="95.2" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="98.7" y1="156.0" x2="98.7" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="102.2" y1="156.0" x2="102.2" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="105.7" y1="156.0" x2="105.7" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="109.2" y1="156.0" x2="109.2" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="112.7" y1="156.0" x2="112.7" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="116.2" y1="156.0" x2="116.2" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="123.3" y1="156.0" x2="123.3" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="130.3" y1="156.0" x2="130.3" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="137.3" y1="156.0" x2="137.3" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="144.4" y1="156.0" x2="144.4" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="151.4" y1="156.0" x2="151.4" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="158.4" y1="156.0" x2="158.4" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="165.5" y1="156.0" x2="165.5" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="172.5" y1="156.0" x2="172.5" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="186.6" y1="156.0" x2="186.6" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="200.6" y1="156.0" x2="200.6" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="214.7" y1="156.0" x2="214.7" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="228.8" y1="156.0" x2="228.8" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="242.8" y1="156.0" x2="242.8" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="256.9" y1="156.0" x2="256.9" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="270.9" y1="156.0" x2="270.9" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="285.0" y1="156.0" x2="285.0" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="313.1" y1="156.0" x2="313.1" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="341.2" y1="156.0" x2="341.2" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="369.4" y1="156.0" x2="369.4" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="397.5" y1="156.0" x2="397.5" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="425.6" y1="156.0" x2="425.6" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="453.8" y1="156.0" x2="453.8" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="481.9" y1="156.0" x2="481.9" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="510.0" y1="156.0" x2="510.0" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="566.2" y1="156.0" x2="566.2" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="622.5" y1="156.0" x2="622.5" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="678.8" y1="156.0" x2="678.8" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="735.0" y1="156.0" x2="735.0" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="791.2" y1="156.0" x2="791.2" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="847.5" y1="156.0" x2="847.5" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<line x1="903.8" y1="156.0" x2="903.8" y2="184.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<text x="116.2" y="210.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0.5</text>
+<text x="172.5" y="210.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="285.0" y="210.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<text x="510.0" y="210.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="960.0" y="210.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8</text>
+<text x="60.0" y="210.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="1010.0" y="176.0" font-size="20" fill="#0b0b0b" text-anchor="start" font-weight="700">+∞</text>
+<path d="M 172.5,140 L 172.5,132 L 285.0,132 L 285.0,140" fill="none" stroke="#8a8984" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="228.8" y="122.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="600">8 числа, стъпка 0.125</text>
+<path d="M 510.0,140 L 510.0,132 L 960.0,132 L 960.0,140" fill="none" stroke="#8a8984" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="735.0" y="122.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="600">8 числа, стъпка 0.5</text>
+<line x1="60.0" y1="262.0" x2="60.0" y2="244.0" stroke="#2a78d6" stroke-width="2" stroke-linecap="round"/>
+<text x="72.0" y="259.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">нормални числа</text>
+<line x1="230.0" y1="262.0" x2="230.0" y2="244.0" stroke="#e87ba4" stroke-width="2" stroke-linecap="round"/>
+<text x="242.0" y="259.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">субнормални (запълват дупката около 0)</text>
+<rect x="640.0" y="236.0" width="400.0" height="60.0" rx="8" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="660.0" y="260.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">NaN не е точка от правата:</text>
+<text x="660.0" y="282.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">не е &lt;, &gt;, нито == на нищо, дори на себе си.</text>
+<text x="40.0" y="312.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Отрицателните числа са огледален образ; −0 и +0 са различни битове, но −0 == +0.</text>
+</svg>
