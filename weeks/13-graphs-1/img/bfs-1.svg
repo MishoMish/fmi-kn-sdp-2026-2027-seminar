@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 440" width="1100" height="440" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>BFS от 0: разстояние 0 — началото; в опашката: съседите му</title>
+<rect width="1100" height="440" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">BFS от 0: разстояние 0 — началото; в опашката: съседите му</text>
+<line x1="126.1" y1="218.2" x2="243.9" y2="131.8" stroke="#eb6834" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="130.0" y1="230.0" x2="240.0" y2="230.0" stroke="#eb6834" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="126.1" y1="241.8" x2="243.9" y2="328.2" stroke="#eb6834" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="280.0" y1="120.0" x2="390.0" y2="120.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="276.1" y1="218.2" x2="393.9" y2="131.8" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="280.0" y1="230.0" x2="390.0" y2="230.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="280.0" y1="340.0" x2="390.0" y2="340.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="428.8" y1="126.9" x2="541.2" y2="168.1" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="428.8" y1="223.1" x2="541.2" y2="181.9" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="429.3" y1="334.8" x2="540.7" y2="305.2" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="560.0" y1="195.0" x2="560.0" y2="280.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="260.0" y1="140.0" x2="260.0" y2="210.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="110.0" cy="230.0" r="20" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.8"/>
+<text x="110.0" y="235.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<circle cx="260.0" cy="120.0" r="20" fill="#fff4d6" stroke="#eda100" stroke-width="1.8"/>
+<text x="260.0" y="125.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="260.0" cy="230.0" r="20" fill="#fff4d6" stroke="#eda100" stroke-width="1.8"/>
+<text x="260.0" y="235.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="260.0" cy="340.0" r="20" fill="#fff4d6" stroke="#eda100" stroke-width="1.8"/>
+<text x="260.0" y="345.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<circle cx="410.0" cy="120.0" r="20" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.8"/>
+<text x="410.0" y="125.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<circle cx="410.0" cy="230.0" r="20" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.8"/>
+<text x="410.0" y="235.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<circle cx="410.0" cy="340.0" r="20" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.8"/>
+<text x="410.0" y="345.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<circle cx="560.0" cy="175.0" r="20" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.8"/>
+<text x="560.0" y="180.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<circle cx="560.0" cy="300.0" r="20" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.8"/>
+<text x="560.0" y="305.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8</text>
+<text x="134.0" y="214.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">d=0</text>
+<text x="284.0" y="104.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">d=1</text>
+<text x="284.0" y="214.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">d=1</text>
+<text x="284.0" y="324.0" font-size="12" fill="#52514e" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">d=1</text>
+<text x="680.0" y="120.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">опашка (отпред →):</text>
+<rect x="680.0" y="136.0" width="38.0" height="34.0" rx="4" fill="#fff4d6" stroke="#eda100" stroke-width="1.5"/>
+<text x="699.0" y="159.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="724.0" y="136.0" width="38.0" height="34.0" rx="4" fill="#fff4d6" stroke="#eda100" stroke-width="1.5"/>
+<text x="743.0" y="159.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="768.0" y="136.0" width="38.0" height="34.0" rx="4" fill="#fff4d6" stroke="#eda100" stroke-width="1.5"/>
+<text x="787.0" y="159.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<rect x="680.0" y="220.0" width="16.0" height="16.0" rx="3" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="704.0" y="233.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="400">обработен</text>
+<rect x="680.0" y="246.0" width="16.0" height="16.0" rx="3" fill="#fff4d6" stroke="#eda100" stroke-width="1.5"/>
+<text x="704.0" y="259.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="400">открит — в опашката</text>
+<rect x="680.0" y="272.0" width="16.0" height="16.0" rx="3" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="704.0" y="285.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="400">неоткрит</text>
+<text x="680.0" y="330.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">Маркираме връх, когато го слагаме</text>
+<text x="680.0" y="350.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">в опашката — не когато го вадим.</text>
+<text x="680.0" y="384.0" font-size="13" fill="#8a8984" text-anchor="start" font-weight="400">стъпка 1 от 4</text>
+</svg>
