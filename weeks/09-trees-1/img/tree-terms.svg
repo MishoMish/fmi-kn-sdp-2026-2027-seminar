@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" width="1100" height="470" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Дърво: основни понятия</title>
+<rect width="1100" height="470" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Дърво: корен, деца, листа, дълбочина, височина</text>
+<rect x="444.0" y="168.0" width="192.0" height="154.0" rx="14" fill="none" stroke="#eda100" stroke-width="1.6" stroke-dasharray="6 5"/>
+<text x="540.0" y="346.0" font-size="14" fill="#eda100" text-anchor="middle" font-weight="600">поддърво с корен D</text>
+<line x1="391.7" y1="121.3" x2="293.0" y2="188.7" stroke="#eb6834" stroke-width="3" stroke-linecap="round"/>
+<line x1="410.0" y1="129.9" x2="414.3" y2="180.1" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="424.8" y1="121.3" x2="523.5" y2="188.7" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="267.3" y1="217.8" x2="239.2" y2="272.2" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="285.7" y1="217.8" x2="313.8" y2="272.2" stroke="#eb6834" stroke-width="3" stroke-linecap="round"/>
+<line x1="416.0" y1="220.0" x2="416.0" y2="270.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="528.7" y1="216.5" x2="489.3" y2="273.5" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="540.0" y1="220.0" x2="540.0" y2="270.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="551.3" y1="216.5" x2="590.7" y2="273.5" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="316.5" y1="308.9" x2="298.5" y2="361.1" stroke="#eb6834" stroke-width="3" stroke-linecap="round"/>
+<line x1="329.5" y1="308.9" x2="347.5" y2="361.1" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="230.0" cy="290.0" r="20" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="230.0" y="295.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">E</text>
+<circle cx="292.0" cy="380.0" r="20" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="292.0" y="385.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">K</text>
+<circle cx="354.0" cy="380.0" r="20" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="354.0" y="385.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">L</text>
+<circle cx="323.0" cy="290.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="323.0" y="295.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">F</text>
+<circle cx="276.5" cy="200.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="276.5" y="205.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">B</text>
+<circle cx="416.0" cy="290.0" r="20" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="416.0" y="295.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">G</text>
+<circle cx="416.0" cy="200.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="416.0" y="205.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">C</text>
+<circle cx="478.0" cy="290.0" r="20" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="478.0" y="295.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">H</text>
+<circle cx="540.0" cy="290.0" r="20" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="540.0" y="295.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">I</text>
+<circle cx="602.0" cy="290.0" r="20" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="602.0" y="295.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">J</text>
+<circle cx="540.0" cy="200.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="540.0" y="205.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">D</text>
+<circle cx="408.2" cy="110.0" r="20" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="408.2" y="115.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">A</text>
+<text x="60.0" y="115.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="400">дълбочина 0</text>
+<text x="60.0" y="205.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="400">дълбочина 1</text>
+<text x="60.0" y="295.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="400">дълбочина 2</text>
+<text x="60.0" y="385.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="400">дълбочина 3</text>
+<text x="438.2" y="92.0" font-size="14" fill="#eb6834" text-anchor="start" font-weight="600">корен (root)</text>
+<text x="282.0" y="424.0" font-size="14" fill="#1baf7a" text-anchor="start" font-weight="600">листа (leaves) — зелени</text>
+<text x="780.0" y="112.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="600">родител на F:</text>
+<text x="900.0" y="112.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">B</text>
+<text x="780.0" y="152.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="600">деца на B:</text>
+<text x="900.0" y="152.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">E, F (братя — siblings)</text>
+<text x="780.0" y="192.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="600">предци на K:</text>
+<text x="900.0" y="192.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">F, B, A</text>
+<text x="780.0" y="232.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="600">степен на D:</text>
+<text x="900.0" y="232.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">3 деца</text>
+<text x="780.0" y="272.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="600">път A → K:</text>
+<text x="900.0" y="272.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">3 ребра = дълбочина на K</text>
+<text x="780.0" y="312.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="600">височина:</text>
+<text x="900.0" y="312.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">3 = най-голямата дълбочина</text>
+<text x="780.0" y="352.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="600">n възела:</text>
+<text x="900.0" y="352.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">n − 1 ребра (тук 12 и 11)</text>
+</svg>

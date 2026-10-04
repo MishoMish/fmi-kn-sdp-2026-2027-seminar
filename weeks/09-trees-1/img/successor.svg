@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 450" width="1100" height="450" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Следващият по големина: двата случая</title>
+<rect width="1100" height="450" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">++it: следващият по големина (in-order successor)</text>
+<line x1="120.1" y1="210.1" x2="81.9" y2="261.9" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="244.1" y1="294.1" x2="205.9" y2="345.9" stroke="#2a78d6" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="267.9" y1="294.1" x2="306.1" y2="345.9" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="148.6" y1="205.2" x2="239.4" y2="266.8" stroke="#2a78d6" stroke-width="3.5" stroke-linecap="round"/>
+<line x1="361.1" y1="116.4" x2="150.9" y2="187.6" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="492.1" y1="210.1" x2="453.9" y2="261.9" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="577.9" y1="294.1" x2="616.1" y2="345.9" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="515.9" y1="210.1" x2="554.1" y2="261.9" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="396.6" y1="121.2" x2="487.4" y2="182.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="70.0" cy="278.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="70.0" y="283.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">20</text>
+<circle cx="132.0" cy="194.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="132.0" y="199.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">30</text>
+<circle cx="194.0" cy="362.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="194.0" y="367.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">35</text>
+<circle cx="256.0" cy="278.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="256.0" y="283.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">40</text>
+<circle cx="318.0" cy="362.0" r="20" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="318.0" y="367.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">45</text>
+<circle cx="380.0" cy="110.0" r="20" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="380.0" y="115.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">50</text>
+<circle cx="442.0" cy="278.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="442.0" y="283.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">60</text>
+<circle cx="504.0" cy="194.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="504.0" y="199.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">70</text>
+<circle cx="566.0" cy="278.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="566.0" y="283.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">80</text>
+<circle cx="628.0" cy="362.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="628.0" y="367.8" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">90</text>
+<line x1="314.2" y1="335.0" x2="281.9" y2="291.2" stroke="#eb6834" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="6 4"/>
+<line x1="243.4" y1="253.8" x2="160.8" y2="197.8" stroke="#eb6834" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="6 4"/>
+<line x1="150.6" y1="174.0" x2="351.2" y2="106.0" stroke="#eb6834" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="6 4"/>
+<text x="720.0" y="110.0" font-size="16" fill="#2a78d6" text-anchor="start" font-weight="700">① има дясно поддърво:</text>
+<text x="720.0" y="136.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400">най-левият възел в него</text>
+<text x="720.0" y="162.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">30 → 40 → 35</text>
+<text x="720.0" y="222.0" font-size="16" fill="#eb6834" text-anchor="start" font-weight="700">② няма дясно поддърво:</text>
+<text x="720.0" y="248.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400">качвай се, докато идваш отдясно;</text>
+<text x="720.0" y="272.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400">първият родител, до когото</text>
+<text x="720.0" y="296.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400">стигнеш отляво, е следващият</text>
+<text x="720.0" y="322.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">45 → 40 → 30 → 50</text>
+<text x="720.0" y="372.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Едно ++ е O(h), но цялото обхождане</text>
+<text x="720.0" y="394.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">минава всяко ребро 2 пъти: Θ(n)</text>
+<text x="720.0" y="416.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="600">→ амортизирано Θ(1) на ++</text>
+</svg>

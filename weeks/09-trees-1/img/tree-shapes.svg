@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" width="1100" height="400" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Видове двоични дървета</title>
+<rect width="1100" height="400" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Видове двоични дървета</text>
+<text x="155.0" y="96.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700">перфектно (perfect)</text>
+<line x1="87.9" y1="209.2" x2="72.1" y2="238.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="102.1" y1="209.2" x2="117.9" y2="238.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="144.0" y1="150.2" x2="106.0" y2="185.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="207.9" y1="209.2" x2="192.1" y2="238.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="222.1" y1="209.2" x2="237.9" y2="238.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="166.0" y1="150.2" x2="204.0" y2="185.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="65.0" cy="252.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="65.0" y="256.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="95.0" cy="196.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="95.0" y="200.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="125.0" cy="252.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="125.0" y="256.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<circle cx="155.0" cy="140.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="155.0" y="144.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<circle cx="185.0" cy="252.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="185.0" y="256.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<circle cx="215.0" cy="196.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="215.0" y="200.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<circle cx="245.0" cy="252.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="245.0" y="256.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="155.0" y="352.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">всички нива са пълни</text>
+<text x="155.0" y="374.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">n = 2^(h+1) − 1</text>
+<text x="420.0" y="96.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700">почти пълно (complete)</text>
+<line x1="367.9" y1="209.2" x2="352.1" y2="238.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="382.1" y1="209.2" x2="397.9" y2="238.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="424.0" y1="150.2" x2="386.0" y2="185.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="487.9" y1="209.2" x2="472.1" y2="238.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="446.0" y1="150.2" x2="484.0" y2="185.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="345.0" cy="252.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="345.0" y="256.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="375.0" cy="196.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="375.0" y="200.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="405.0" cy="252.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="405.0" y="256.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<circle cx="435.0" cy="140.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="435.0" y="144.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<circle cx="465.0" cy="252.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="465.0" y="256.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<circle cx="495.0" cy="196.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="495.0" y="200.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="420.0" y="352.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">пълно без последното ниво,</text>
+<text x="420.0" y="374.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">то — отляво надясно</text>
+<text x="685.0" y="96.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700">строго двоично (full)</text>
+<line x1="647.9" y1="153.2" x2="632.1" y2="182.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="707.9" y1="209.2" x2="692.1" y2="238.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="722.1" y1="209.2" x2="737.9" y2="238.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="666.0" y1="150.2" x2="704.0" y2="185.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="625.0" cy="196.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="625.0" y="200.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="655.0" cy="140.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="655.0" y="144.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="685.0" cy="252.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="685.0" y="256.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<circle cx="715.0" cy="196.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="715.0" y="200.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<circle cx="745.0" cy="252.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="745.0" y="256.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="685.0" y="352.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">всеки възел има 0 или 2 деца</text>
+<text x="685.0" y="374.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">листа = вътрешни + 1</text>
+<text x="950.0" y="96.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700">изродено (degenerate)</text>
+<line x1="978.7" y1="264.2" x2="1001.3" y2="295.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="938.7" y1="208.2" x2="961.3" y2="239.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="898.7" y1="152.2" x2="921.3" y2="183.8" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="890.0" cy="140.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="890.0" y="144.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="930.0" cy="196.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="930.0" y="200.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="970.0" cy="252.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="970.0" y="256.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<circle cx="1010.0" cy="308.0" r="15" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="1010.0" y="312.7" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="950.0" y="352.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">по едно дете навсякъде</text>
+<text x="950.0" y="374.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">h = n − 1: това е списък</text>
+</svg>
