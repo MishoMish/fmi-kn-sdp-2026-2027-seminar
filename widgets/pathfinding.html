@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Търсене на път</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    #canvas svg { touch-action: none; cursor: crosshair; }
+    .free { fill: var(--surface); stroke: var(--grid); }
+    .wall { fill: var(--wall); stroke: var(--wall); }
+    .mud { fill: var(--yellow-tint); stroke: var(--yellow); }
+    .seen { fill: var(--accent-tint); stroke: var(--accent); }
+    .open { fill: var(--pink-tint); stroke: var(--pink); }
+    .route { fill: var(--orange); stroke: var(--orange); }
+    .ends { fill: var(--green); stroke: var(--green); }
+  </style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="./">← Всички визуализации</a>
+    <div class="kicker">СДП 2026/27 · седмици 13–14 · <a href="https://github.com/MishoMish/fmi-kn-sdp-2026-2027-seminar/blob/main/weeks/13-graphs-1/notes.md">BFS, DFS</a> · <a href="https://github.com/MishoMish/fmi-kn-sdp-2026-2027-seminar/blob/main/weeks/14-graphs-2/notes.md">Дейкстра</a></div>
+    <h1>Търсене на път в лабиринт</h1>
+    <p class="lead">Лабиринтът е неявен граф. BFS се разлива на вълни; DFS се забива в един коридор; Дейкстра заобикаля калта; A* върви към целта. Рисувайте стени и кал с мишката (или с пръст).</p>
+  </header>
+
+  <section class="controls">
+    <label class="field"><span>алгоритъм</span>
+      <select id="algo"><option value="bfs">BFS (опашка)</option><option value="dfs">DFS (стек)</option>
+        <option value="dijkstra">Дейкстра (пирамида)</option><option value="astar">A* (разстояние до целта)</option></select></label>
+    <label class="field"><span>рисуване</span>
+      <select id="tool"><option value="1">стена</option><option value="2">кал (цена 5)</option><option value="0">гума</option>
+        <option value="start">старт</option><option value="target">цел</option></select></label>
+    <button id="run" class="primary" type="button">Търси</button>
+    <button id="maze" type="button">нов лабиринт</button>
+    <button id="mudmaze" type="button">лабиринт с кал</button>
+    <button id="clear" type="button">празно поле</button>
+  </section>
+
+  <div class="stage">
+    <div class="canvas" id="canvas"></div>
+    <aside class="side">
+      <div class="card"><h3>Резултат</h3><dl class="stats" id="stats"></dl></div>
+      <div class="card"><div class="legend">
+        <span><i style="background:var(--accent-tint);border-color:var(--accent)"></i>обработена</span>
+        <span><i style="background:var(--pink-tint);border-color:var(--pink)"></i>в опашката / стека / пирамидата</span>
+        <span><i style="background:var(--yellow-tint);border-color:var(--yellow)"></i>кал</span>
+        <span><i style="background:var(--orange);border-color:var(--orange)"></i>намереният път</span></div>
+        <p class="note">BFS и DFS не виждат калта — броят стъпки, не цена. Дейкстра и A* дават най-евтиния път; A* обработва по-малко клетки.</p></div>
+    </aside>
+  </div>
+  <div class="player" id="player"></div>
+</main>
+<script type="module">
+import { createPlayer, svgRoot, svg, setStats, rng } from "./js/common.js";
+import { search, makeMaze } from "./js/path-core.js";
+
+const $ = (id) => document.getElementById(id);
+const canvas = $("canvas");
+const ROWS = 17, COLS = 31, CELL = 28;
+let grid, start = [1, 1], target = [ROWS - 2, COLS - 2];
+let result = null;
+let seed = 7;
+
+function newMaze(withMud) {
+  grid = makeMaze(ROWS, COLS, rng(seed++));
+  if (withMud) {
+    const rand = rng(seed * 31);
+    for (let r = 1; r < ROWS - 1; r++) for (let c = 1; c < COLS - 1; c++)
+      if (grid[r][c] === 0 && rand() < 0.22) grid[r][c] = 2;
+  }
+  grid[start[0]][start[1]] = 0;
+  grid[target[0]][target[1]] = 0;
+}
+
+function draw(f) {
+  const root = svgRoot(canvas, COLS * CELL, ROWS * CELL, "лабиринт");
+  const seen = new Set(f ? result.order.slice(0, f.k) : []);
+  const open = new Set(f && f.k > 0 ? result.frontier[Math.min(f.k, result.frontier.length) - 1] : []);
+  const route = new Set(f && f.path ? result.path.slice(0, f.path) : []);
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {
+      const id = r * COLS + c;
+      let cls = grid[r][c] === 1 ? "wall" : grid[r][c] === 2 ? "mud" : "free";
+      if (grid[r][c] !== 1) {
+        if (route.has(id)) cls = "route";
+        else if (seen.has(id)) cls = "seen";
+        else if (open.has(id)) cls = "open";
+      }
+      if ((r === start[0] && c === start[1]) || (r === target[0] && c === target[1])) cls = "ends";
+      svg("rect", { x: c * CELL + 1, y: r * CELL + 1, width: CELL - 2, height: CELL - 2, rx: 3, class: cls, "data-r": r, "data-c": c }, root);
+    }
+  }
+  svg("text", { x: start[1] * CELL + CELL / 2, y: start[0] * CELL + CELL / 2 + 5, "text-anchor": "middle", class: "label", fill: "var(--surface)" }, root, "S");
+  svg("text", { x: target[1] * CELL + CELL / 2, y: target[0] * CELL + CELL / 2 + 5, "text-anchor": "middle", class: "label", fill: "var(--surface)" }, root, "T");
+  if (f) {
+    const finished = f.k >= result.order.length;
+    setStats($("stats"), [["обработени клетки", Math.min(f.k, result.order.length)],
+      ["най-голяма граница", result.maxFrontier],
+      ["стъпки по пътя", finished && result.path ? result.path.length - 1 : finished ? "няма път" : "…"],
+      ["цена на пътя", finished && result.path ? result.cost : "…"]]);
+  } else setStats($("stats"), [["", "натиснете „Търси“"]]);
+  attachPainting(root);
+}
+
+const player = createPlayer($("player"), draw);
+function run() {
+  result = search(grid, start, target, $("algo").value);
+  const frames = [];
+  const n = result.order.length;
+  const stride = Math.max(1, Math.ceil(n / 250));
+  for (let k = 0; k <= n; k += stride) frames.push({ k });
+  if (frames[frames.length - 1].k !== n) frames.push({ k: n });
+  if (result.path) for (let p = 1; p <= result.path.length; p += Math.max(1, Math.ceil(result.path.length / 40)))
+    frames.push({ k: n, path: p });
+  if (result.path) frames.push({ k: n, path: result.path.length });
+  player.load(frames);
+}
+function idle() { player.stop(); result = null; draw(null); }
+
+// ---- painting
+let painting = false;
+function cellAt(root, e) {
+  const pt = root.createSVGPoint();
+  pt.x = e.clientX;
+  pt.y = e.clientY;
+  const p = pt.matrixTransform(root.getScreenCTM().inverse());
+  const r = Math.floor(p.y / CELL), c = Math.floor(p.x / CELL);
+  return r >= 0 && r < ROWS && c >= 0 && c < COLS ? [r, c] : null;
+}
+function paint(root, e) {
+  const at = cellAt(root, e);
+  if (!at) return;
+  const [r, c] = at;
+  const tool = $("tool").value;
+  if (tool === "start" || tool === "target") {
+    if (grid[r][c] === 1) return;
+    if (tool === "start") start = [r, c]; else target = [r, c];
+  } else {
+    if ((r === start[0] && c === start[1]) || (r === target[0] && c === target[1])) return;
+    if (grid[r][c] === Number(tool) && !painting) return;
+    grid[r][c] = Number(tool);
+  }
+  idle();
+}
+function attachPainting(root) {
+  root.addEventListener("pointerdown", (e) => { painting = false; paint(root, e); painting = true; });
+}
+canvas.addEventListener("pointermove", (e) => {
+  if (!painting || e.buttons === 0) return;
+  const root = canvas.querySelector("svg");
+  const tool = $("tool").value;
+  if (tool === "start" || tool === "target") return;
+  paint(root, e);
+});
+window.addEventListener("pointerup", () => { painting = false; });
+
+$("run").addEventListener("click", run);
+$("algo").addEventListener("change", run);
+$("maze").addEventListener("click", () => { newMaze(false); run(); });
+$("mudmaze").addEventListener("click", () => { newMaze(true); run(); });
+$("clear").addEventListener("click", () => { grid = Array.from({ length: ROWS }, () => new Array(COLS).fill(0)); run(); });
+newMaze(false);
+run();
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Динамичен масив</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="./">← Всички визуализации</a>
+    <div class="kicker">СДП 2026/27 · седмица 04 · <a href="https://github.com/MishoMish/fmi-kn-sdp-2026-2027-seminar/blob/main/weeks/04-dynamic-array/notes.md">записки</a></div>
+    <h1>Динамичен масив: защо капацитетът се удвоява</h1>
+    <p class="lead">Всяко <code>push_back</code> е запис; когато няма място — нов буфер и копиране на всичко. Сравнете ×2, ×1.5 и „+k“: общата работа е линейна само при умножение.</p>
+  </header>
+
+  <section class="controls">
+    <label class="field"><span>растеж на капацитета</span>
+      <select id="policy">
+        <option value="mul:2" selected>× 2 (libstdc++, libc++)</option>
+        <option value="mul:1.5">× 1.5 (MSVC)</option>
+        <option value="add:1">+ 1</option>
+        <option value="add:4">+ 4</option>
+      </select>
+    </label>
+    <label class="field"><span>брой push_back</span><input id="n" type="number" min="1" max="40" value="17"></label>
+    <button id="run" class="primary" type="button">Покажи</button>
+  </section>
+
+  <div class="stage">
+    <div class="canvas" id="canvas"></div>
+    <aside class="side">
+      <div class="card"><h3>Какво се случва</h3><div class="explain" id="explain"></div></div>
+      <div class="card"><h3>Броячи</h3><dl class="stats" id="stats"></dl></div>
+      <div class="card"><h3>Обща работа до 1000 push_back</h3><div id="chart"></div>
+        <p class="note">Записи = n + всички копирания. При ×2 са под 3n; при „+k“ растат като n²/(2k).</p></div>
+    </aside>
+  </div>
+  <div class="player" id="player"></div>
+</main>
+<script type="module">
+import { createPlayer, svgRoot, svg, setExplain, setStats } from "./js/common.js";
+import { vectorFrames, totalWork } from "./js/vector-core.js";
+
+const $ = (id) => document.getElementById(id);
+const canvas = $("canvas");
+
+function policyFrom(value) {
+  const [kind, x] = value.split(":");
+  return kind === "mul" ? { kind: "mul", factor: Number(x) } : { kind: "add", step: Number(x) };
+}
+
+function drawRow(root, y, cells, hl, label, cls, cellW) {
+  svg("text", { x: 12, y: y - 8, class: "label small sans" }, root, label);
+  cells.forEach((v, i) => {
+    const x = 12 + i * cellW;
+    const c = v === null ? "cell" : hl.includes(i) ? "cell hl" : `cell ${cls}`;
+    svg("rect", { x, y, width: cellW - 4, height: 40, rx: 5, class: c }, root);
+    if (v !== null) svg("text", { x: x + (cellW - 4) / 2, y: y + 26, "text-anchor": "middle", class: "label" }, root, v);
+  });
+}
+
+function render(f) {
+  const maxCells = Math.max(f.buf.length, f.old ? f.old.length : 0, 8);
+  const cellW = Math.max(18, Math.min(52, Math.floor(880 / maxCells)));
+  const w = Math.max(900, 24 + maxCells * cellW);
+  const root = svgRoot(canvas, w, 260, "буферите на вектора");
+  if (f.old) drawRow(root, 40, f.old, [], `стар буфер (capacity ${f.old.length})`, "on", cellW);
+  const label = f.old ? `нов буфер (capacity ${f.buf.length})` : `буфер: size = ${f.size}, capacity = ${f.buf.length}`;
+  drawRow(root, f.old ? 150 : 80, f.buf, f.hl, label, "on", cellW);
+  if (f.old && f.hl.length) {
+    for (const i of f.hl) {
+      const x = 12 + i * cellW + (cellW - 4) / 2;
+      svg("line", { x1: x, y1: 82, x2: x, y2: 146, class: "edge hl", "marker-end": "url(#arrow)" }, root);
+    }
+  }
+  setExplain($("explain"), f.explain);
+  setStats($("stats"), [["size", f.size], ["capacity", f.cap], ["записи общо", f.writes], ["от тях копирания", f.copies],
+    ["преоразмерявания", f.reallocs], ["записи на push_back", f.size ? (f.writes / f.size).toFixed(2) : "—"]]);
+}
+
+function drawChart(selected) {
+  const chart = $("chart");
+  const W = 290, H = 236, N = 1000;
+  const root = svgRoot(chart, W, H, "обща работа");
+  const policies = [["mul:2", "× 2", "var(--accent)"], ["mul:1.5", "× 1.5", "var(--green)"], ["add:4", "+ 4", "var(--orange)"],
+    ["add:1", "+ 1", "var(--red)"]];
+  const yMax = 12;  // writes per element
+  const fx = (n) => 30 + (n / N) * (W - 40);
+  const fy = (r) => H - 86 - (Math.min(r, yMax) / yMax) * (H - 96);
+  for (const t of [0, 3, 6, 9, 12]) {
+    svg("line", { x1: 30, y1: fy(t), x2: W - 10, y2: fy(t), stroke: "var(--grid)" }, root);
+    svg("text", { x: 24, y: fy(t) + 4, "text-anchor": "end", class: "label small" }, root, t);
+  }
+  svg("text", { x: W - 10, y: H - 72, "text-anchor": "end", class: "label small" }, root, "n → 1000");
+  svg("text", { x: 34, y: 12, class: "label small" }, root, "записи / n");
+  policies.forEach(([value, name, colour], k) => {
+    const p = policyFrom(value);
+    let d = "";
+    for (let n = 10; n <= N; n += 10) {
+      const r = totalWork(n, p).writes / n;
+      d += `${n === 10 ? "M" : "L"}${fx(n).toFixed(1)},${fy(r).toFixed(1)} `;
+      if (r > yMax) break;  // off the chart: stop at the top edge
+    }
+    svg("path", { d, fill: "none", stroke: colour, "stroke-width": value === selected ? 3.5 : 1.6 }, root);
+    const end = totalWork(N, p).writes / N;
+    const lx = 30, ly = H - 52 + k * 15;
+    svg("line", { x1: lx, y1: ly - 4, x2: lx + 14, y2: ly - 4, stroke: colour, "stroke-width": 3 }, root);
+    svg("text", { x: lx + 18, y: ly, class: "label small" }, root, `${name}: ${end.toFixed(1)} на елемент`);
+  });
+}
+
+const player = createPlayer($("player"), render);
+function run() {
+  const n = Math.max(1, Math.min(40, Number($("n").value) || 1));
+  $("n").value = n;
+  player.load(vectorFrames(n, policyFrom($("policy").value)));
+  drawChart($("policy").value);
+}
+$("run").addEventListener("click", run);
+$("policy").addEventListener("change", run);
+run();
+</script>
+</body>
+</html>

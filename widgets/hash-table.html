@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Хеш таблица</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="./">← Всички визуализации</a>
+    <div class="kicker">СДП 2026/27 · седмица 08 · <a href="https://github.com/MishoMish/fmi-kn-sdp-2026-2027-seminar/blob/main/weeks/08-shunting-yard-hashing/notes.md">записки</a></div>
+    <h1>Хеш таблица: вериги или линейно пробване</h1>
+    <p class="lead">Ключ → хеш → клетка. Сменете хеш функцията и вижте колизиите; при пробване изтрийте ключ и потърсете следващия — затова съществуват надгробните камъни.</p>
+  </header>
+
+  <section class="controls">
+    <label class="field grow"><span>операции (по подразбиране insert; „find x“, „erase x“)</span>
+      <input id="ops" class="wide" type="text" autocomplete="off" spellcheck="false"
+        value="tree heap graph list queue stack array map, erase heap, find graph, find stack"></label>
+    <label class="field"><span>клетки m</span><input id="m" type="number" min="2" max="32" value="11"></label>
+    <label class="field"><span>хеш функция</span>
+      <select id="hash"><option value="sum">сума на байтовете</option><option value="poly" selected>полиномиален, база 31</option>
+        <option value="fnv">FNV-1a</option></select></label>
+    <label class="field"><span>колизии</span>
+      <select id="strategy"><option value="chaining">отделни вериги</option><option value="probing">линейно пробване</option></select></label>
+    <button id="run" class="primary" type="button">Покажи</button>
+  </section>
+
+  <div class="stage">
+    <div class="canvas" id="canvas"></div>
+    <aside class="side">
+      <div class="card"><h3>Какво се случва</h3><div class="explain" id="explain"></div></div>
+      <div class="card"><h3>Таблица</h3><dl class="stats" id="stats"></dl></div>
+      <div class="card"><div class="legend">
+        <span><i style="background:var(--orange-tint);border-color:var(--orange)"></i>текуща клетка</span>
+        <span><i style="background:var(--yellow-tint);border-color:var(--yellow)"></i>пробвана</span>
+        <span><i style="background:var(--red-tint);border-color:var(--red)"></i>надгробен камък</span></div>
+        <p class="note">Опитайте: „сума на байтовете“ с <code>listen silent enlist tinsel</code> — анаграмите колидират винаги.</p></div>
+    </aside>
+  </div>
+  <div class="player" id="player"></div>
+</main>
+<script type="module">
+import { createPlayer, svgRoot, svg, setExplain, setStats } from "./js/common.js";
+import { hashFrames, parseOps } from "./js/hash-core.js";
+
+const $ = (id) => document.getElementById(id);
+const canvas = $("canvas");
+
+function render(f) {
+  const rowH = 32;
+  const H = Math.max(360, 30 + f.m * rowH + 20);
+  const W = 900;
+  const root = svgRoot(canvas, W, H, "хеш таблица");
+  for (let i = 0; i < f.m; i++) {
+    const y = 20 + i * rowH;
+    const isHl = f.hl === i;
+    const probed = f.probe.includes(i);
+    svg("rect", { x: 20, y, width: 44, height: rowH - 6, rx: 4, class: isHl ? "cell hl" : probed ? "cell warn" : "cell" }, root);
+    svg("text", { x: 42, y: y + 19, "text-anchor": "middle", class: "label small" }, root, i);
+    if (f.strategy === "chaining") {
+      let x = 90;
+      f.chains[i].forEach((key, j) => {
+        const w = Math.max(56, 14 + 9 * key.length);
+        svg("line", { x1: x - 20, y1: y + 13, x2: x - 4, y2: y + 13, class: "edge", "marker-end": "url(#arrow)" }, root);
+        const cls = isHl && f.chainHl === j ? (f.ok ? "cell ok" : "cell hl") : "cell on";
+        svg("rect", { x, y, width: w, height: rowH - 6, rx: 4, class: cls }, root);
+        svg("text", { x: x + w / 2, y: y + 19, "text-anchor": "middle", class: "label" }, root, key);
+        x += w + 26;
+      });
+    } else {
+      const s = f.slots[i];
+      const cls = s.state === "full" ? (isHl && f.ok ? "cell ok" : isHl ? "cell hl" : "cell on")
+        : s.state === "deleted" ? "cell bad" : isHl ? "cell hl" : "cell";
+      svg("rect", { x: 80, y, width: 200, height: rowH - 6, rx: 4, class: cls }, root);
+      if (s.state === "full") svg("text", { x: 180, y: y + 19, "text-anchor": "middle", class: "label" }, root, s.key);
+      if (s.state === "deleted") svg("text", { x: 180, y: y + 19, "text-anchor": "middle", class: "label small" }, root, `† (беше „${s.key}“)`);
+    }
+  }
+  if (f.current) {
+    svg("text", { x: W - 20, y: 40, "text-anchor": "end", class: "label" }, root, `${f.current.op}("${f.current.key}")`);
+    if (f.ok) svg("text", { x: W - 20, y: 64, "text-anchor": "end", class: "label small", fill: "var(--green)" }, root, "✓");
+    if (f.miss) svg("text", { x: W - 20, y: 64, "text-anchor": "end", class: "label small", fill: "var(--red)" }, root, "✗");
+  }
+  setExplain($("explain"), f.explain);
+  let longest = 0;
+  if (f.strategy === "chaining") longest = Math.max(...f.chains.map((c) => c.length));
+  setStats($("stats"), [["ключове n", f.size], ["клетки m", f.m], ["запълване α = n/m", (f.size / f.m).toFixed(2)],
+    f.strategy === "chaining" ? ["най-дълга верига", longest] : ["надгробни камъни", f.tombstones],
+    ["сравнения на ключове", f.comparisons]]);
+}
+
+const player = createPlayer($("player"), render);
+function run() {
+  const m = Math.max(2, Math.min(32, Number($("m").value) || 11));
+  $("m").value = m;
+  const { frames } = hashFrames(parseOps($("ops").value), m, $("hash").value, $("strategy").value);
+  player.load(frames);
+}
+for (const id of ["hash", "strategy", "m"]) $(id).addEventListener("change", run);
+$("run").addEventListener("click", run);
+$("ops").addEventListener("keydown", (e) => { if (e.key === "Enter") run(); });
+run();
+</script>
+</body>
+</html>

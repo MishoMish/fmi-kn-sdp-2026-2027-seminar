@@ -1,6 +1,6 @@
 # Седмица 04 — Динамичен масив
 
-> Семинар 4 · четвъртък, 29 октомври 2026 · [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=04-dynamic-array) · [задачи](exercises.md) · [starter код](starter/) · [тестове](tests/)
+> Семинар 4 · четвъртък, 29 октомври 2026 · [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=04-dynamic-array) · [задачи](exercises.md) · [starter код](starter/) · [тестове](tests/) · [визуализация](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/vector.html)
 
 Миналата седмица `FixedArray` хвърляше изключение, когато се напълни. Тази седмица масивът расте сам — така работи `std::vector`. Идеята е проста (нов по-голям буфер, преместване, освобождаване на стария), но в нея има три неочевидни неща: **колко** да расте, за да е бързо; защо `pushBack` е $\Theta(1)$, въпреки че понякога струва $\Theta(n)$; и как да **преместваме** вместо да копираме.
 

@@ -1,6 +1,6 @@
 # Седмица 14 — Графи II: най-къси пътища с тегла, минимално покриващо дърво
 
-> Семинар 14 · четвъртък, 21 януари 2027 · [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=14-graphs-2) · [задачи](exercises.md) · [starter код](starter/) · [тестове](tests/)
+> Семинар 14 · четвъртък, 21 януари 2027 · [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=14-graphs-2) · [задачи](exercises.md) · [starter код](starter/) · [тестове](tests/) · [визуализация](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/pathfinding.html)
 >
 > Последният семинар е общ за две седмици: тази (графи II) и [седмица 15 — побитови операции и ретроспекция](../15-bitwise-retrospective/notes.md).
 

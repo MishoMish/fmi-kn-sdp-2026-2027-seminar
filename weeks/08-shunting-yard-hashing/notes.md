@@ -1,6 +1,6 @@
 # Седмица 08 — Приложения на стека: Shunting-yard. Хеширане и хеш таблици
 
-> Семинар 8 · четвъртък, 26 ноември 2026 · [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=08-shunting-yard-hashing) · [задачи](exercises.md) · [starter код](starter/) · [тестове](tests/)
+> Семинар 8 · четвъртък, 26 ноември 2026 · [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=08-shunting-yard-hashing) · [задачи](exercises.md) · [starter код](starter/) · [тестове](tests/) · [визуализация: Shunting-yard](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/shunting-yard.html) · [хеш таблица](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/hash-table.html)
 
 Две теми. Първата затваря блока за стек и опашка: как компютърът пресмята `3 + 4 * (2 - 1)` — с **два стека** и алгоритъма Shunting-yard на Дейкстра. Втората отваря нов: **хеширането** — как да намираме ключ за $\Theta(1)$ **средно**, без да сравняваме с всички, и без дори да сортираме.
 

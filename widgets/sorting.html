@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Състезание на сортировки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="./">← Всички визуализации</a>
+    <div class="kicker">СДП 2026/27 · седмици 11–12 · <a href="https://github.com/MishoMish/fmi-kn-sdp-2026-2027-seminar/blob/main/weeks/11-heap-sorting-1/notes.md">сортиране I</a> · <a href="https://github.com/MishoMish/fmi-kn-sdp-2026-2027-seminar/blob/main/weeks/12-sorting-2/notes.md">сортиране II</a></div>
+    <h1>Състезание на сортировки</h1>
+    <p class="lead">Два алгоритъма, един и същ вход, един и същ часовник: всеки кадър е едно сравнение или един запис. Опитайте insertion срещу selection на почти сортиран вход и quicksort с първия елемент за pivot на сортиран.</p>
+  </header>
+
+  <section class="controls">
+    <label class="field"><span>алгоритъм A</span><select id="algoA"></select></label>
+    <label class="field"><span>алгоритъм B</span><select id="algoB"></select></label>
+    <label class="field"><span>вход</span>
+      <select id="input"><option value="random" selected>случаен</option><option value="sorted">сортиран</option>
+        <option value="reversed">обратен</option><option value="nearly">почти сортиран</option><option value="few">4 различни стойности</option></select></label>
+    <label class="field"><span>n</span><input id="n" type="number" min="4" max="80" value="32"></label>
+    <label class="field"><span>кадри</span>
+      <select id="stride"><option value="auto" selected>автоматично</option><option value="1">всяка стъпка</option></select></label>
+    <button id="run" class="primary" type="button">Старт</button>
+    <button id="shuffle" type="button">нов вход</button>
+  </section>
+
+  <div class="stage">
+    <div class="canvas" id="canvas"></div>
+    <aside class="side">
+      <div class="card"><h3>A</h3><dl class="stats" id="statsA"></dl></div>
+      <div class="card"><h3>B</h3><dl class="stats" id="statsB"></dl></div>
+      <div class="card"><div class="legend">
+        <span><i style="background:var(--orange-tint);border-color:var(--orange)"></i>сравнение</span>
+        <span><i style="background:var(--red-tint);border-color:var(--red)"></i>запис</span>
+        <span><i style="background:var(--green-tint);border-color:var(--green)"></i>готово</span></div>
+        <p class="note">Броячите са точни, независимо от „кадрите“: при „автоматично“ дългите сортировки прескачат по няколко стъпки на кадър.</p></div>
+    </aside>
+  </div>
+  <div class="player" id="player"></div>
+</main>
+<script type="module">
+import { createPlayer, svgRoot, svg, setStats, rng } from "./js/common.js";
+import { ALGORITHMS, makeInput, sortFrames } from "./js/sort-core.js";
+
+const $ = (id) => document.getElementById(id);
+const canvas = $("canvas");
+for (const sel of ["algoA", "algoB"]) {
+  for (const [k, name] of Object.entries(ALGORITHMS)) {
+    const o = document.createElement("option");
+    o.value = k;
+    o.textContent = name;
+    $(sel).appendChild(o);
+  }
+}
+$("algoA").value = "insertion";
+$("algoB").value = "merge";
+let seed = 2026;
+
+function panel(root, y0, h, f, name, W) {
+  const n = f.a.length;
+  const max = Math.max(...f.a);
+  const bw = (W - 40) / n;
+  svg("text", { x: 20, y: y0 + 16, class: "label sans" }, root, name + (f.done ? "  ✓" : ""));
+  for (let i = 0; i < n; i++) {
+    const bh = ((h - 34) * f.a[i]) / max;
+    let cls = "cell on";
+    if (f.done) cls = "cell ok";
+    else if (f.hot.includes(i)) cls = "cell bad";
+    else if (f.cmp && f.cmp.includes(i)) cls = "cell hl";
+    svg("rect", { x: 20 + i * bw, y: y0 + h - bh, width: Math.max(1, bw - 2), height: bh, rx: 2, class: cls }, root);
+  }
+}
+
+let framesA = [], framesB = [];
+function render(f) {
+  const W = 900, H = 460;
+  const root = svgRoot(canvas, W, H, "сортиране");
+  const a = framesA[Math.min(f.i, framesA.length - 1)];
+  const b = framesB[Math.min(f.i, framesB.length - 1)];
+  panel(root, 0, 220, a, "A: " + ALGORITHMS[$("algoA").value], W);
+  panel(root, 235, 220, b, "B: " + ALGORITHMS[$("algoB").value], W);
+  const stats = (fr, all) => [["сравнения", fr.comparisons], ["записи", fr.writes],
+    ["стъпки", `${Math.min(f.step, all.length - 1)} / ${all.length - 1}`]];
+  setStats($("statsA"), stats(a, framesA));
+  setStats($("statsB"), stats(b, framesB));
+}
+
+const player = createPlayer($("player"), render);
+function run() {
+  const n = Math.max(4, Math.min(80, Number($("n").value) || 32));
+  $("n").value = n;
+  const input = makeInput($("input").value, n, rng(seed));
+  framesA = sortFrames(input, $("algoA").value, rng(seed + 1));
+  framesB = sortFrames(input, $("algoB").value, rng(seed + 1));
+  const steps = Math.max(framesA.length, framesB.length);
+  const stride = $("stride").value === "1" ? 1 : Math.max(1, Math.ceil(steps / 400));
+  const frames = [];
+  for (let s = 0; s < steps; s += stride) frames.push({ i: s, step: s });
+  if (frames[frames.length - 1].i !== steps - 1) frames.push({ i: steps - 1, step: steps - 1 });
+  player.load(frames);
+}
+for (const id of ["algoA", "algoB", "input", "stride"]) $(id).addEventListener("change", run);
+$("run").addEventListener("click", run);
+$("shuffle").addEventListener("click", () => { seed += 1; run(); });
+run();
+</script>
+</body>
+</html>

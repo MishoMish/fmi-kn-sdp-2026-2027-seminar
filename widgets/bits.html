@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Побитови операции</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .rows { display: grid; gap: 6px; overflow-x: auto; padding: 12px; }
+    .row { display: grid; grid-template-columns: 200px auto 1fr; gap: 10px; align-items: center; min-width: max-content; }
+    .row .name { font: 700 15px var(--mono); text-align: right; }
+    .bits { display: flex; gap: 2px; }
+    .bits button {
+      font: 700 14px var(--mono); width: 26px; height: 32px; padding: 0; border-radius: 4px;
+      background: var(--panel); color: var(--muted); border: 1px solid var(--grid);
+    }
+    .bits button.on { background: var(--accent-tint); color: var(--ink); border-color: var(--accent); }
+    .bits button.res.on { background: var(--orange-tint); border-color: var(--orange); }
+    .bits button:nth-child(8n) { margin-right: 6px; }
+    .bits button.res { cursor: default; }
+    .vals { font: 13px var(--mono); color: var(--ink-2); white-space: nowrap; }
+    .vals b { color: var(--ink); }
+    .sep { border-top: 1px solid var(--grid); margin: 6px 0; }
+    .idx { display: flex; gap: 2px; font: 10px var(--mono); color: var(--muted); }
+    .idx span { width: 26px; text-align: center; }
+    .idx span:nth-child(8n) { margin-right: 6px; }
+    @media (max-width: 640px) {
+      .rows { padding: 8px 4px; }
+      .row { grid-template-columns: 96px auto; gap: 6px; min-width: 0; }
+      .row .name { font-size: 12px; }
+      .vals { grid-column: 2; white-space: normal; font-size: 12px; }
+      .bits button { width: 22px; height: 28px; font-size: 12px; }
+      .idx span { width: 22px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="./">← Всички визуализации</a>
+    <div class="kicker">СДП 2026/27 · седмица 15 · <a href="https://github.com/MishoMish/fmi-kn-sdp-2026-2027-seminar/blob/main/weeks/15-bitwise-retrospective/notes.md">записки</a></div>
+    <h1>Побитови операции: щракнете битовете</h1>
+    <p class="lead">Щракнете бит, за да го обърнете, или напишете число (десетично, <code>0x…</code>, <code>0b…</code>). Всички операции се преизчисляват веднага — като беззнакови, знакови (допълнителен код) и шестнайсетично.</p>
+  </header>
+
+  <section class="controls">
+    <label class="field"><span>ширина</span>
+      <select id="width"><option value="8" selected>8 бита</option><option value="16">16 бита</option><option value="32">32 бита</option></select></label>
+    <label class="field"><span>x</span><input id="x" type="text" value="88" autocomplete="off" spellcheck="false"></label>
+    <label class="field"><span>y</span><input id="y" type="text" value="0b10101100" autocomplete="off" spellcheck="false"></label>
+    <label class="field"><span>изместване k</span><input id="k" type="number" min="0" max="31" value="2"></label>
+    <span class="note" id="error"></span>
+  </section>
+
+  <div class="card"><div class="rows" id="rows"></div></div>
+</main>
+<script type="module">
+import { el } from "./js/common.js";
+import { operations, parseValue, popcount, toSigned, wrap } from "./js/bits-core.js";
+
+const $ = (id) => document.getElementById(id);
+let x = 88, y = 0b10101100;
+
+const hex = (v, w) => "0x" + v.toString(16).toUpperCase().padStart(Math.ceil(w / 4), "0");
+function valueText(v, w) {
+  return `<b>${v}</b> · знаково ${toSigned(v, w)} · ${hex(v, w)} · единици ${popcount(v)}`;
+}
+
+function bitsRow(container, name, v, w, editable, note, onFlip) {
+  const row = el("div", { class: "row" }, container);
+  el("div", { class: "name" }, row, name);
+  const bits = el("div", { class: "bits" }, row);
+  for (let i = w - 1; i >= 0; i--) {
+    const on = (v >>> i) & 1;
+    const b = el("button", { type: "button", class: (editable ? "" : "res ") + (on ? "on" : ""), title: `бит ${i}` }, bits, on ? "1" : "0");
+    if (editable) b.addEventListener("click", () => onFlip(i));
+    else b.tabIndex = -1;
+  }
+  const vals = el("div", { class: "vals" }, row);
+  vals.innerHTML = valueText(v, w) + (note ? ` · <span>${note}</span>` : "");
+}
+
+function render() {
+  const w = Number($("width").value);
+  x = wrap(x, w);
+  y = wrap(y, w);
+  const rows = $("rows");
+  rows.textContent = "";
+  const head = el("div", { class: "row" }, rows);
+  el("div", {}, head, "");
+  const idx = el("div", { class: "idx" }, head);
+  for (let i = w - 1; i >= 0; i--) el("span", {}, idx, String(i));
+  bitsRow(rows, "x", x, w, true, "", (i) => { x = wrap(x ^ (2 ** i), w); $("x").value = String(x); render(); });
+  bitsRow(rows, "y", y, w, true, "", (i) => { y = wrap(y ^ (2 ** i), w); $("y").value = String(y); render(); });
+  el("div", { class: "sep" }, rows);
+  for (const op of operations(x, y, Number($("k").value) || 0, w)) bitsRow(rows, op.name, op.value, w, false, op.note);
+}
+
+function readInputs() {
+  const w = Number($("width").value);
+  const px = parseValue($("x").value, w), py = parseValue($("y").value, w);
+  $("error").textContent = px === null || py === null ? "Не разпознах числото — пример: 88, 0x58, 0b1011000" : "";
+  $("error").classList.toggle("error", px === null || py === null);
+  if (px !== null) x = px;
+  if (py !== null) y = py;
+  render();
+}
+for (const id of ["x", "y", "k"]) $(id).addEventListener("input", readInputs);
+$("width").addEventListener("change", readInputs);
+readInputs();
+</script>
+</body>
+</html>

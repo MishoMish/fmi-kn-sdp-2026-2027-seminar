@@ -1,6 +1,6 @@
 # Седмица 12 — Сортиране II
 
-> Семинар 12 · четвъртък, 7 януари 2027 · [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=12-sorting-2) · [задачи](exercises.md) · [starter код](starter/) · [тестове](tests/)
+> Семинар 12 · четвъртък, 7 януари 2027 · [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=12-sorting-2) · [задачи](exercises.md) · [starter код](starter/) · [тестове](tests/) · [визуализация](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/sorting.html)
 
 Миналия път: простите сортировки ($\Theta(n^2)$), Shell sort и heapsort. Днес: двата големи алгоритъма „разделяй и владей“ — **merge sort** и **quicksort**; **долната граница** $\Omega(n \log n)$ за всяко сортиране със сравнения; и как да я **заобиколим**, когато ключовете са малки цели числа — сортиране чрез броене, поразрядно и с кофи. Накрая: какво всъщност има в `std::sort`, Python и Java.
 

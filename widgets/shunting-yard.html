@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shunting-yard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="./">← Всички визуализации</a>
+    <div class="kicker">СДП 2026/27 · седмица 08 · <a href="https://github.com/MishoMish/fmi-kn-sdp-2026-2027-seminar/blob/main/weeks/08-shunting-yard-hashing/notes.md">записки</a></div>
+    <h1>Shunting-yard и пресмятане на RPN</h1>
+    <p class="lead">Два стека за всеки израз: първо операторите чакат в стек, докато инфиксният запис стане постфиксен; после стек от числа го пресмята.</p>
+  </header>
+
+  <section class="controls">
+    <label class="field grow"><span>израз (цели числа, + − * / ^ и скоби)</span>
+      <input id="expr" class="wide" type="text" value="3 + 4 * (2 - 1)" autocomplete="off" spellcheck="false"></label>
+    <button id="run" class="primary" type="button">Покажи</button>
+    <label class="field"><span>примери</span>
+      <select id="examples">
+        <option value="">—</option>
+        <option>3 + 4 * (2 - 1)</option>
+        <option>8 - 3 - 2</option>
+        <option>2 ^ 3 ^ 2</option>
+        <option>(1 + 2) * (3 + 4) / 7</option>
+        <option>1 + 2 * 3 - 4</option>
+        <option>(1 + 2</option>
+        <option>7 / (3 - 3)</option>
+      </select>
+    </label>
+  </section>
+
+  <div class="stage">
+    <div class="canvas" id="canvas"></div>
+    <aside class="side">
+      <div class="card"><h3>Какво се случва</h3><div class="explain" id="explain"></div></div>
+      <div class="card"><h3>Приоритет</h3>
+        <dl class="stats"><dt><code>^</code></dt><dd>3, дясна</dd><dt><code>* /</code></dt><dd>2, лява</dd><dt><code>+ −</code></dt><dd>1, лява</dd></dl>
+        <p class="note">При оператор <code>o</code> изкарай от стека всички по-силни — и равните, ако <code>o</code> е ляво-асоциативен.</p></div>
+    </aside>
+  </div>
+  <div class="player" id="player"></div>
+</main>
+<script type="module">
+import { createPlayer, svgRoot, svg, setExplain } from "./js/common.js";
+import { shuntingFrames } from "./js/shunting-core.js";
+
+const $ = (id) => document.getElementById(id);
+const canvas = $("canvas");
+
+function render(f) {
+  const W = 900, H = 400;
+  const root = svgRoot(canvas, W, H, "Shunting-yard");
+  // input tokens
+  svg("text", { x: 20, y: 30, class: "label small sans" }, root, "вход");
+  let x = 20;
+  f.tokens.forEach((t, i) => {
+    const w = Math.max(30, 14 + 10 * t.text.length);
+    const cls = f.phase === "convert" && i === f.pos ? "cell hl" : (f.phase === "eval" || i < f.pos) ? "cell" : "cell on";
+    svg("rect", { x, y: 40, width: w, height: 36, rx: 5, class: cls }, root);
+    svg("text", { x: x + w / 2, y: 64, "text-anchor": "middle", class: i < f.pos || f.phase === "eval" ? "label muted" : "label" },
+      root, t.text === "-" ? "−" : t.text);
+    x += w + 6;
+  });
+  // output (RPN)
+  svg("text", { x: 20, y: 118, class: "label small sans" }, root, f.phase === "eval" ? "постфиксен запис (RPN) — пресмятаме" : "изход (постфиксен запис)");
+  x = 20;
+  f.output.forEach((t, i) => {
+    const w = Math.max(30, 14 + 10 * t.length);
+    let cls = "cell ok";
+    if (f.phase === "eval") cls = i === f.rpnPos ? "cell hl" : i < f.rpnPos ? "cell" : "cell on";
+    else if (i === f.output.length - 1 && f.pos >= 0) cls = "cell ok";
+    svg("rect", { x, y: 128, width: w, height: 36, rx: 5, class: cls }, root);
+    svg("text", { x: x + w / 2, y: 152, "text-anchor": "middle", class: "label" }, root, t === "-" ? "−" : t);
+    x += w + 6;
+  });
+  // stacks: operators (convert) or values (eval)
+  const items = f.phase === "eval" ? f.values.map(String) : f.stack;
+  const title = f.phase === "eval" ? "стек от числа" : "стек на операторите";
+  svg("text", { x: 20, y: 206, class: "label small sans" }, root, title + (items.length ? " (върхът — горе)" : " — празен"));
+  items.slice().reverse().forEach((t, k) => {
+    const y = 216 + k * 38;
+    if (y > H - 40) return;
+    svg("rect", { x: 20, y, width: 120, height: 32, rx: 5, class: k === 0 ? "cell warn" : "cell on" }, root);
+    svg("text", { x: 80, y: y + 22, "text-anchor": "middle", class: "label" }, root, t === "-" ? "−" : t);
+  });
+  if (f.done) svg("text", { x: 200, y: 260, class: "label" }, root, `= ${f.values[0]}`);
+  if (f.error) svg("text", { x: 200, y: 260, class: "label", fill: "var(--red)" }, root, "грешка");
+  const ex = $("explain");
+  setExplain(ex, f.explain);
+  ex.classList.toggle("error", !!f.error);
+}
+
+const player = createPlayer($("player"), render);
+function run() { player.load(shuntingFrames($("expr").value).frames); }
+$("run").addEventListener("click", run);
+$("expr").addEventListener("keydown", (e) => { if (e.key === "Enter") run(); });
+$("examples").addEventListener("change", (e) => { if (e.target.value) { $("expr").value = e.target.value; run(); } });
+run();
+</script>
+</body>
+</html>

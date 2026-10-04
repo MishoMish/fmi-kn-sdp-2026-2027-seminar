@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Визуализации СДП</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    main { max-width: 1040px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; margin-top: 22px; }
+    .tile {
+      display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: var(--ink);
+      border: 1px solid var(--grid); border-radius: 12px; padding: 16px; background: var(--surface);
+    }
+    .tile:hover { border-color: var(--accent); }
+    .tile .week { font: 600 12px var(--mono); color: var(--accent); }
+    .tile h2 { font-size: 18px; margin: 0; }
+    .tile p { margin: 0; color: var(--ink-2); font-size: 14px; }
+    .tile .try { margin-top: auto; font-size: 13px; color: var(--muted); }
+    footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="back" href="../">← Семинарни упражнения</a>
+    <div class="kicker">СДП 2026/27 · визуализации</div>
+    <h1>Визуализации</h1>
+    <p class="lead">Осем интерактивни страници към семинарите: всяка показва алгоритъма стъпка по стъпка — с бутони напред/назад, интервал за пускане и стрелките за стъпка. Работят в браузъра, без инсталиране; на проектор, лаптоп и телефон.</p>
+  </header>
+  <div class="grid">
+    <a class="tile" href="vector.html"><span class="week">седмица 04</span><h2>Динамичен масив</h2>
+      <p>push_back, капацитет, копиране при растеж; ×2 срещу ×1.5 срещу „+k“.</p><span class="try">Опитайте: „+1“ и 40 елемента.</span></a>
+    <a class="tile" href="shunting-yard.html"><span class="week">седмица 08</span><h2>Shunting-yard и RPN</h2>
+      <p>Инфиксен → постфиксен запис със стек от оператори, после пресмятане със стек от числа.</p><span class="try">Опитайте: <code>2 ^ 3 ^ 2</code> и <code>8 - 3 - 2</code>.</span></a>
+    <a class="tile" href="hash-table.html"><span class="week">седмица 08</span><h2>Хеш таблица</h2>
+      <p>Три хеш функции; отделни вериги или линейно пробване с надгробни камъни.</p><span class="try">Опитайте: „сума на байтовете“ с анаграми.</span></a>
+    <a class="tile" href="bst.html"><span class="week">седмици 09–10</span><h2>BST и AVL</h2>
+      <p>Вмъкване, изтриване, търсене, обхождания; ротациите на AVL една по една.</p><span class="try">Опитайте: 1…15 по ред, BST срещу AVL.</span></a>
+    <a class="tile" href="heap.html"><span class="week">седмица 11</span><h2>Двоична пирамида</h2>
+      <p>Дървото и масивът едновременно: push, pop, makeHeap на Floyd, heapsort.</p><span class="try">Опитайте: makeHeap и брояча на сравненията.</span></a>
+    <a class="tile" href="sorting.html"><span class="week">седмици 11–12</span><h2>Състезание на сортировки</h2>
+      <p>Два алгоритъма, един вход, един часовник; броячи на сравнения и записи.</p><span class="try">Опитайте: quicksort с първия pivot на сортиран вход.</span></a>
+    <a class="tile" href="pathfinding.html"><span class="week">седмици 13–14</span><h2>Търсене на път</h2>
+      <p>Лабиринт като неявен граф: BFS, DFS, Дейкстра и A*; стени и кал се рисуват.</p><span class="try">Опитайте: „лабиринт с кал“ — BFS срещу Дейкстра.</span></a>
+    <a class="tile" href="bits.html"><span class="week">седмица 15</span><h2>Побитови операции</h2>
+      <p>Щракнете битове; & | ^ ~ &lt;&lt; &gt;&gt;, допълнителен код и триковете с най-младшата единица.</p><span class="try">Опитайте: x = 0 и „x & −x“.</span></a>
+  </div>
+  <footer>Кодът на визуализациите е в <a href="https://github.com/MishoMish/fmi-kn-sdp-2026-2027-seminar/tree/main/widgets">widgets/</a> (MIT). Алгоритмите са тествани с <code>node --test widgets/test/core.test.mjs</code>.</footer>
+</main>
+</body>
+</html>

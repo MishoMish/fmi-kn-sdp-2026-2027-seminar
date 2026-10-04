@@ -58,6 +58,22 @@ weeks/NN-тема/
 
 **Искате мнение за решението си?** Направете fork на repo-то, качете решението и ми пишете с линк.
 
+## Визуализации
+
+Осем интерактивни страници — алгоритъмът стъпка по стъпка, напред и назад: **[mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/)**
+
+| Седмица | Визуализация |
+|---|---|
+| 04 | [динамичен масив](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/vector.html) — растеж на капацитета, ×2 срещу „+k“ |
+| 08 | [Shunting-yard и RPN](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/shunting-yard.html) · [хеш таблица](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/hash-table.html) — вериги и пробване |
+| 09–10 | [BST и AVL](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/bst.html) — ротациите една по една |
+| 11 | [двоична пирамида](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/heap.html) — дърво и масив едновременно |
+| 11–12 | [състезание на сортировки](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/sorting.html) — два алгоритъма, един вход |
+| 13–14 | [търсене на път](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/pathfinding.html) — BFS, DFS, Дейкстра, A* |
+| 15 | [побитови операции](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/bits.html) — щракнете битовете |
+
+Кодът е в [`widgets/`](widgets/): обикновен JavaScript, без инсталиране; алгоритмите са тествани с `node --test widgets/test/core.test.mjs`.
+
 ## Лиценз
 
 - Записки, слайдове, задачи и фигури: [CC BY-NC-SA 4.0](LICENSE) — може да ги ползвате и преработвате с посочване на автора, некомерсиално и под същия лиценз.

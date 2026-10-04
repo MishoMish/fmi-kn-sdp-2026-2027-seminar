@@ -1,6 +1,6 @@
 # Седмица 11 — Двоична пирамида. Сортиране I
 
-> Семинар 11 · четвъртък, 17 декември 2026 · [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=11-heap-sorting-1) · [задачи](exercises.md) · [starter код](starter/) · [тестове](tests/)
+> Семинар 11 · четвъртък, 17 декември 2026 · [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=11-heap-sorting-1) · [задачи](exercises.md) · [starter код](starter/) · [тестове](tests/) · [визуализация: пирамида](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/heap.html) · [сортировки](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/widgets/sorting.html)
 
 Две теми, свързани с една структура. **Двоичната пирамида** (binary heap) отговаря на изходния въпрос от миналия път: когато ви трябва само **най-големият** (или най-малкият) елемент — постоянно, докато добавяте нови, — не е нужно цяло балансирано дърво. Стига масив и едно по-слабо правило. После — **сортиране**: първо прости алгоритми ($\Theta(n^2)$), Shell sort между тях и бързите, и **heapsort**, който е просто пирамидата, приложена докрай. Втората част (merge sort, quicksort, сортиране без сравнения) е следващия път.
 
