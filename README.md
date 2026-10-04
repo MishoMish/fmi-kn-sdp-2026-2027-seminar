@@ -11,7 +11,7 @@
 | № | Дата | Тема | Материали |
 |---|---|---|---|
 | 1 | 8 окт | Увод: сложност, тестване и `double` | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=01-intro-complexity-testing) · [записки](weeks/01-intro-complexity-testing/notes.md) · [задачи](weeks/01-intro-complexity-testing/exercises.md) |
-| 2 | 15 окт | Компилаторът, локалност, контейнери | предстои |
+| 2 | 15 окт | Компилаторът, локалност, контейнери | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=02-compiler-locality-containers) · [записки](weeks/02-compiler-locality-containers/notes.md) · [задачи](weeks/02-compiler-locality-containers/exercises.md) |
 | 3 | 22 окт | Масив и двоично търсене | предстои |
 | 4 | 29 окт | Динамичен масив | предстои |
 | 5 | 5 ное | Едносвързан списък | предстои |

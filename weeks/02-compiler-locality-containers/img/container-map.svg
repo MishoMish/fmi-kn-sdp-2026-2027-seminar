@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" width="1100" height="470" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Карта на контейнерите в стандартната библиотека</title>
+<rect width="1100" height="470" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Контейнерите в STL (std::) и кога ги реализираме</text>
+<rect x="40.0" y="90.0" width="245.0" height="340.0" rx="8" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="56.0" y="122.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="700">Последователни</text>
+<text x="56.0" y="144.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">ред = редът на вмъкване</text>
+<rect x="54.0" y="166.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="66.0" y="191.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">array</text>
+<text x="260.0" y="191.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 02–03</text>
+<rect x="54.0" y="216.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="66.0" y="241.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">vector</text>
+<text x="260.0" y="241.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 04</text>
+<rect x="54.0" y="266.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="66.0" y="291.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">deque</text>
+<text x="260.0" y="291.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 07</text>
+<rect x="54.0" y="316.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="66.0" y="341.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">list</text>
+<text x="260.0" y="341.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 06</text>
+<rect x="54.0" y="366.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="66.0" y="391.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">forward_list</text>
+<text x="260.0" y="391.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 05</text>
+<rect x="300.0" y="90.0" width="245.0" height="340.0" rx="8" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="316.0" y="122.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="700">Асоциативни, наредени</text>
+<text x="316.0" y="144.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">балансирано дърво, Θ(log n)</text>
+<rect x="314.0" y="166.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="326.0" y="191.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">set</text>
+<text x="520.0" y="191.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 09–10</text>
+<rect x="314.0" y="216.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="326.0" y="241.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">map</text>
+<text x="520.0" y="241.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 09–10</text>
+<rect x="314.0" y="266.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="326.0" y="291.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">multiset</text>
+<rect x="314.0" y="316.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="326.0" y="341.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">multimap</text>
+<rect x="560.0" y="90.0" width="245.0" height="340.0" rx="8" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="576.0" y="122.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="700">Асоциативни, хеширани</text>
+<text x="576.0" y="144.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">хеш таблица, Θ(1) средно</text>
+<rect x="574.0" y="166.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="586.0" y="191.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">unordered_set</text>
+<text x="780.0" y="191.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 08</text>
+<rect x="574.0" y="216.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="586.0" y="241.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">unordered_map</text>
+<text x="780.0" y="241.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 08</text>
+<rect x="820.0" y="90.0" width="245.0" height="340.0" rx="8" fill="#fbe7ef" stroke="#e87ba4" stroke-width="1.5"/>
+<text x="836.0" y="122.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="700">Адаптери</text>
+<text x="836.0" y="144.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">интерфейс над друг контейнер</text>
+<rect x="834.0" y="166.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="846.0" y="191.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">stack</text>
+<text x="1040.0" y="191.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 07</text>
+<rect x="834.0" y="216.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="846.0" y="241.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">queue</text>
+<text x="1040.0" y="241.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 07</text>
+<rect x="834.0" y="266.0" width="217.0" height="38.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="846.0" y="291.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">priority_queue</text>
+<text x="1040.0" y="291.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400">седм. 11</text>
+<text x="40.0" y="458.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">„седм.“ = седмицата от курса, в която реализираме подобна структура сами.</text>
+</svg>

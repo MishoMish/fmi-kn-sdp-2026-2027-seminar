@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" width="1100" height="400" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Масив срещу свързани възли в паметта</title>
+<rect width="1100" height="400" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Масив срещу свързани възли</text>
+<text x="40.0" y="72.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">И двете обхождания са Θ(n). Разликата е къде в паметта е следващият елемент.</text>
+<text x="40.0" y="120.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">std::vector — елементите са един до друг</text>
+<rect x="40.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="69.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="102.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="131.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">10</text>
+<rect x="164.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="193.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">20</text>
+<rect x="226.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="255.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">30</text>
+<rect x="288.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="317.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">40</text>
+<rect x="350.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="379.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">50</text>
+<rect x="412.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="441.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">60</text>
+<rect x="474.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="503.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">70</text>
+<rect x="536.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="565.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">80</text>
+<rect x="598.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="627.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">90</text>
+<rect x="660.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="689.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">100</text>
+<rect x="722.0" y="134.0" width="58.0" height="40.0" rx="5" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="751.0" y="159.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">110</text>
+<text x="800.0" y="159.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">следващият е в същата кеш линия</text>
+<text x="40.0" y="230.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">свързани възли в случаен ред — всеки сочи някъде другаде</text>
+<rect x="474.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="514.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="494.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="164.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="204.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="184.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">10</text>
+<rect x="660.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="700.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="680.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">20</text>
+<rect x="288.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="328.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="308.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">30</text>
+<rect x="40.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="80.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="60.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">40</text>
+<rect x="598.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="638.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="618.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">50</text>
+<rect x="350.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="390.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="370.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">60</text>
+<rect x="722.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="762.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="742.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">70</text>
+<rect x="102.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="142.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="122.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">80</text>
+<rect x="536.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="576.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="556.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">90</text>
+<rect x="226.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="266.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="246.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">100</text>
+<rect x="412.0" y="250.0" width="40.0" height="40.0" rx="5" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<rect x="452.0" y="250.0" width="16.0" height="40.0" rx="3" fill="#fde8df" stroke="#eb6834" stroke-width="1"/>
+<text x="432.0" y="275.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">110</text>
+<path d="M 522,294 Q 353,361 184,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 212,294 Q 446,376 680,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 708,294 Q 508,368 308,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 336,294 Q 198,353 60,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 88,294 Q 353,384 618,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 646,294 Q 508,353 370,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 398,294 Q 570,361 742,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 770,294 Q 446,398 122,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 150,294 Q 353,369 556,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 584,294 Q 415,361 246,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 274,294 Q 353,339 432,294" fill="none" stroke="#52514e" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="800.0" y="275.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">всяка стъпка: нов промах в кеша</text>
+<text x="40.0" y="390.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Процесорът не може да зареди предварително следващия възел — адресът му е известен едва след като прочете текущия.</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Йерархия на паметта: размер и време за достъп</title>
+<rect width="1100" height="520" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Йерархия на паметта</text>
+<text x="40.0" y="72.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Приблизителни стойности за съвременен настолен процесор. Оста на времето е логаритмична.</text>
+<text x="40.0" y="112.0" font-size="13" fill="#8a8984" text-anchor="start" font-weight="600">НИВО</text>
+<text x="170.0" y="112.0" font-size="13" fill="#8a8984" text-anchor="start" font-weight="600">РАЗМЕР</text>
+<text x="330.0" y="112.0" font-size="13" fill="#8a8984" text-anchor="start" font-weight="600">ВРЕМЕ ЗА ДОСТЪП</text>
+<text x="1060.0" y="112.0" font-size="13" fill="#8a8984" text-anchor="end" font-weight="600">АКО L1 = 1 s</text>
+<line x1="412.5" y1="124.0" x2="412.5" y2="470.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="412.5" y="490.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">1 ns</text>
+<line x1="495.1" y1="124.0" x2="495.1" y2="470.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="495.1" y="490.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10 ns</text>
+<line x1="577.6" y1="124.0" x2="577.6" y2="470.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="577.6" y="490.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">100 ns</text>
+<line x1="660.1" y1="124.0" x2="660.1" y2="470.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="660.1" y="490.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">1 µs</text>
+<line x1="742.6" y1="124.0" x2="742.6" y2="470.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="742.6" y="490.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10 µs</text>
+<line x1="825.2" y1="124.0" x2="825.2" y2="470.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="825.2" y="490.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">100 µs</text>
+<text x="40.0" y="162.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="600">регистри</text>
+<text x="170.0" y="162.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">&lt; 1 KB</text>
+<rect x="330.0" y="146.0" width="39.4" height="24.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="379.4" y="163.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">0.3 ns</text>
+<text x="1060.0" y="162.0" font-size="15" fill="#52514e" text-anchor="end" font-weight="400">0.3 s</text>
+<text x="40.0" y="216.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="600">L1 кеш</text>
+<text x="170.0" y="216.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">32–64 KB / ядро</text>
+<rect x="330.0" y="200.0" width="82.5" height="24.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="422.5" y="217.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">1 ns</text>
+<text x="1060.0" y="216.0" font-size="15" fill="#52514e" text-anchor="end" font-weight="400">1 s</text>
+<text x="40.0" y="270.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="600">L2 кеш</text>
+<text x="170.0" y="270.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">0.5–2 MB / ядро</text>
+<rect x="330.0" y="254.0" width="132.2" height="24.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="472.2" y="271.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">4 ns</text>
+<text x="1060.0" y="270.0" font-size="15" fill="#52514e" text-anchor="end" font-weight="400">4 s</text>
+<text x="40.0" y="324.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="600">L3 кеш</text>
+<text x="170.0" y="324.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">8–96 MB, общ</text>
+<rect x="330.0" y="308.0" width="179.6" height="24.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="519.6" y="325.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">15 ns</text>
+<text x="1060.0" y="324.0" font-size="15" fill="#52514e" text-anchor="end" font-weight="400">15 s</text>
+<text x="40.0" y="378.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="600">RAM</text>
+<text x="170.0" y="378.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">8–64 GB</text>
+<rect x="330.0" y="362.0" width="243.8" height="24.0" rx="4" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<text x="583.8" y="379.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">90 ns</text>
+<text x="1060.0" y="378.0" font-size="15" fill="#52514e" text-anchor="end" font-weight="400">1.5 мин</text>
+<text x="40.0" y="432.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="600">SSD (NVMe)</text>
+<text x="170.0" y="432.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">0.5–4 TB</text>
+<rect x="330.0" y="416.0" width="487.2" height="24.0" rx="4" fill="#e87ba4" stroke="none" stroke-width="1.5"/>
+<text x="827.2" y="433.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">80 µs</text>
+<text x="1060.0" y="432.0" font-size="15" fill="#52514e" text-anchor="end" font-weight="400">≈ 1 ден</text>
+<text x="40.0" y="512.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Кешът е малък, но ~100 пъти по-бърз от RAM. Програма, която чете паметта подред, почти винаги уцелва кеша.</text>
+</svg>

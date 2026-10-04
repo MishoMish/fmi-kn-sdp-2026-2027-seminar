@@ -1,0 +1,17 @@
+part,variant,value
+traversal,row_major,10.039
+traversal,col_major,320.420
+transpose,naive,35.928
+transpose,blocked32,12.014
+stride,1,0.1032
+stride,2,0.2044
+stride,4,0.2287
+stride,8,0.3073
+stride,16,0.5348
+stride,32,0.8648
+stride,64,0.6990
+stride,128,0.8396
+stride,256,0.9992
+chasing,vector,0.1224
+chasing,list,0.9391
+chasing,shuffled_nodes,11.4994

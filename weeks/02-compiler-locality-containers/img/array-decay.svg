@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Масивът се превръща в указател при подаване на функция</title>
+<rect width="1000" height="380" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Масив → указател: размерът се губи</text>
+<text x="40.0" y="86.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">int a[5] = {1, 2, 3, 4, 5};</text>
+<rect x="40.0" y="120.0" width="82.0" height="48.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="81.0" y="150.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="81.0" y="190.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a[0]</text>
+<rect x="126.0" y="120.0" width="82.0" height="48.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="167.0" y="150.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<text x="167.0" y="190.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a[1]</text>
+<rect x="212.0" y="120.0" width="82.0" height="48.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="253.0" y="150.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="253.0" y="190.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a[2]</text>
+<rect x="298.0" y="120.0" width="82.0" height="48.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="339.0" y="150.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="339.0" y="190.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a[3]</text>
+<rect x="384.0" y="120.0" width="82.0" height="48.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="425.0" y="150.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<text x="425.0" y="190.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a[4]</text>
+<text x="40.0" y="222.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">sizeof(a) == 20   — компилаторът знае, че са 5 int-а</text>
+<text x="40.0" y="280.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">void f(int arr[]) { sizeof(arr); }   // == sizeof(int*) == 8</text>
+<rect x="600.0" y="120.0" width="90.0" height="48.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="645.0" y="150.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">arr</text>
+<path d="M 645,120 C 645,100 130,100 81,117" fill="none" stroke="#eb6834" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="710.0" y="150.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">указател: само адрес,</text>
+<text x="710.0" y="172.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">без размер</text>
+<text x="40.0" y="330.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Решение: std::array&lt;int, 5&gt; (размерът е част от типа) или подавайте размера отделно.</text>
+<text x="40.0" y="356.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">a[i] е просто *(a + i): адрес = начало + i · sizeof(int) → Θ(1) достъп.</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 440" width="1100" height="440" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Три експеримента: еднаква сложност, различен достъп до паметта</title>
+<rect width="1100" height="440" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Еднаква сложност, различно време</text>
+<text x="40.0" y="70.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Release build, примерна машина (AMD Ryzen 7 7800X3D, 96 MB L3)</text>
+<text x="40.0" y="116.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">Сума на матрица 4096², ms</text>
+<text x="40.0" y="154.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">по редове</text>
+<rect x="40.0" y="164.0" width="7.8" height="24.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="55.8" y="182.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">10.0</text>
+<text x="40.0" y="230.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">по колони</text>
+<rect x="40.0" y="240.0" width="250.0" height="24.0" rx="4" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<text x="298.0" y="258.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">320.4</text>
+<text x="40.0" y="400.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="700">разлика ×32</text>
+<text x="390.0" y="116.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">Транспониране 2048², ms</text>
+<text x="390.0" y="154.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">наивно</text>
+<rect x="390.0" y="164.0" width="250.0" height="24.0" rx="4" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<text x="648.0" y="182.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">35.9</text>
+<text x="390.0" y="230.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">на блокове</text>
+<rect x="390.0" y="240.0" width="83.6" height="24.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="481.6" y="258.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">12.0</text>
+<text x="390.0" y="400.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="700">разлика ×3</text>
+<text x="740.0" y="116.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">Сума на 4M елемента, ns/елемент</text>
+<text x="740.0" y="154.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">vector</text>
+<rect x="740.0" y="164.0" width="3.0" height="24.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="751.0" y="182.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">0.12</text>
+<text x="740.0" y="230.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">list</text>
+<rect x="740.0" y="240.0" width="20.4" height="24.0" rx="4" fill="#1baf7a" stroke="none" stroke-width="1.5"/>
+<text x="768.4" y="258.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">0.94</text>
+<text x="740.0" y="306.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">разбъркани възли</text>
+<rect x="740.0" y="316.0" width="250.0" height="24.0" rx="4" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<text x="998.0" y="334.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">11.5</text>
+<text x="740.0" y="400.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="700">разлика ×94</text>
+</svg>

@@ -3,19 +3,132 @@
   "repo": "https://github.com/MishoMish/fmi-kn-sdp-2026-2027-seminar",
   "branch": "main",
   "seminars": [
-    { "n": 1,  "date": "2026-10-08", "weeks": ["01-intro-complexity-testing"], "title": "Увод: сложност, тестване и double", "ready": true },
-    { "n": 2,  "date": "2026-10-15", "weeks": ["02-compiler-locality-containers"], "title": "Компилаторът, локалност, контейнери", "ready": false },
-    { "n": 3,  "date": "2026-10-22", "weeks": ["03-array-binary-search"], "title": "Масив и двоично търсене", "ready": false },
-    { "n": 4,  "date": "2026-10-29", "weeks": ["04-dynamic-array"], "title": "Динамичен масив", "ready": false },
-    { "n": 5,  "date": "2026-11-05", "weeks": ["05-singly-linked-list"], "title": "Едносвързан списък", "ready": false },
-    { "n": 6,  "date": "2026-11-12", "weeks": ["06-doubly-linked-list-iterators"], "title": "Двусвързан списък, итератори, изтичане на памет", "ready": false },
-    { "n": 7,  "date": "2026-11-19", "weeks": ["07-proxy-stack-queue"], "title": "Proxy, стек и опашка", "ready": false },
-    { "n": 8,  "date": "2026-11-26", "weeks": ["08-shunting-yard-hashing"], "title": "Shunting-yard, хеширане, хеш таблици", "ready": false },
-    { "n": 9,  "date": "2026-12-03", "weeks": ["09-trees-1"], "title": "Дървета I: двоични и двоични наредени дървета", "ready": false },
-    { "n": 10, "date": "2026-12-10", "weeks": ["10-trees-2"], "title": "Дървета II: балансирани дървета", "ready": false },
-    { "n": 11, "date": "2026-12-17", "weeks": ["11-heap-sorting-1"], "title": "Двоична пирамида, сортировки I", "ready": false },
-    { "n": 12, "date": "2027-01-07", "weeks": ["12-sorting-2"], "title": "Сортировки II", "ready": false },
-    { "n": 13, "date": "2027-01-14", "weeks": ["13-graphs-1"], "title": "Графи I: представяне и обхождане", "ready": false },
-    { "n": 14, "date": "2027-01-21", "weeks": ["14-graphs-2", "15-bitwise-retrospective"], "title": "Графи II; побитови операции; ретроспекция", "ready": false }
+    {
+      "n": 1,
+      "date": "2026-10-08",
+      "weeks": [
+        "01-intro-complexity-testing"
+      ],
+      "title": "Увод: сложност, тестване и double",
+      "ready": true
+    },
+    {
+      "n": 2,
+      "date": "2026-10-15",
+      "weeks": [
+        "02-compiler-locality-containers"
+      ],
+      "title": "Компилаторът, локалност, контейнери",
+      "ready": true
+    },
+    {
+      "n": 3,
+      "date": "2026-10-22",
+      "weeks": [
+        "03-array-binary-search"
+      ],
+      "title": "Масив и двоично търсене",
+      "ready": false
+    },
+    {
+      "n": 4,
+      "date": "2026-10-29",
+      "weeks": [
+        "04-dynamic-array"
+      ],
+      "title": "Динамичен масив",
+      "ready": false
+    },
+    {
+      "n": 5,
+      "date": "2026-11-05",
+      "weeks": [
+        "05-singly-linked-list"
+      ],
+      "title": "Едносвързан списък",
+      "ready": false
+    },
+    {
+      "n": 6,
+      "date": "2026-11-12",
+      "weeks": [
+        "06-doubly-linked-list-iterators"
+      ],
+      "title": "Двусвързан списък, итератори, изтичане на памет",
+      "ready": false
+    },
+    {
+      "n": 7,
+      "date": "2026-11-19",
+      "weeks": [
+        "07-proxy-stack-queue"
+      ],
+      "title": "Proxy, стек и опашка",
+      "ready": false
+    },
+    {
+      "n": 8,
+      "date": "2026-11-26",
+      "weeks": [
+        "08-shunting-yard-hashing"
+      ],
+      "title": "Shunting-yard, хеширане, хеш таблици",
+      "ready": false
+    },
+    {
+      "n": 9,
+      "date": "2026-12-03",
+      "weeks": [
+        "09-trees-1"
+      ],
+      "title": "Дървета I: двоични и двоични наредени дървета",
+      "ready": false
+    },
+    {
+      "n": 10,
+      "date": "2026-12-10",
+      "weeks": [
+        "10-trees-2"
+      ],
+      "title": "Дървета II: балансирани дървета",
+      "ready": false
+    },
+    {
+      "n": 11,
+      "date": "2026-12-17",
+      "weeks": [
+        "11-heap-sorting-1"
+      ],
+      "title": "Двоична пирамида, сортировки I",
+      "ready": false
+    },
+    {
+      "n": 12,
+      "date": "2027-01-07",
+      "weeks": [
+        "12-sorting-2"
+      ],
+      "title": "Сортировки II",
+      "ready": false
+    },
+    {
+      "n": 13,
+      "date": "2027-01-14",
+      "weeks": [
+        "13-graphs-1"
+      ],
+      "title": "Графи I: представяне и обхождане",
+      "ready": false
+    },
+    {
+      "n": 14,
+      "date": "2027-01-21",
+      "weeks": [
+        "14-graphs-2",
+        "15-bitwise-retrospective"
+      ],
+      "title": "Графи II; побитови операции; ретроспекция",
+      "ready": false
+    }
   ]
 }
