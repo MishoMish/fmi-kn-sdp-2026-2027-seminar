@@ -76,7 +76,7 @@ ctest --preset default            # test
 
 ```bash
 ctest --preset default -R "Task 1"           # само тестовете, чието име съдържа "Task 1"
-ctest --preset default -L w01                # само седмица 01
+ctest --preset default -R "^w01/"            # само седмица 01
 ./build/default/w01_tests                    # тестовете на седмица 01 директно, с подробен изход
 ./build/default/w01_tests "[task2]"          # само тестове с таг [task2]
 ./build/default/w01_tests --list-tests       # списък с всички тестове

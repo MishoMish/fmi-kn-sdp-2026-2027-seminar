@@ -41,7 +41,7 @@ function(_sdp_add_variant num variant code_dir week_dir)
     catch_discover_tests(${prefix}_tests
         TEST_PREFIX "w${num}/${variant}: "
         DISCOVERY_MODE PRE_TEST
-        PROPERTIES LABELS "${variant};w${num}")
+        PROPERTIES LABELS "${variant}")
 
     if(bench_src)
         add_executable(${prefix}_bench ${bench_src} ${code_src})
