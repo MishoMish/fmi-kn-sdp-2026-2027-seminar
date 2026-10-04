@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Двоично търсене по отговора: монотонен предикат</title>
+<rect width="1000" height="300" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Двоично търсене по отговора</text>
+<text x="40.0" y="72.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">pred(x) = x·x &gt; 20: false, false, …, false, true, …, true — търсим първото true</text>
+<rect x="60.0" y="120.0" width="86.0" height="50.0" rx="6" fill="#fbe3e3" stroke="#e34948" stroke-width="1.5"/>
+<text x="103.0" y="151.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">F</text>
+<rect x="150.0" y="120.0" width="86.0" height="50.0" rx="6" fill="#fbe3e3" stroke="#e34948" stroke-width="1.5"/>
+<text x="193.0" y="151.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">F</text>
+<rect x="240.0" y="120.0" width="86.0" height="50.0" rx="6" fill="#fbe3e3" stroke="#e34948" stroke-width="1.5"/>
+<text x="283.0" y="151.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">F</text>
+<rect x="330.0" y="120.0" width="86.0" height="50.0" rx="6" fill="#fbe3e3" stroke="#e34948" stroke-width="1.5"/>
+<text x="373.0" y="151.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">F</text>
+<rect x="420.0" y="120.0" width="86.0" height="50.0" rx="6" fill="#fbe3e3" stroke="#e34948" stroke-width="1.5"/>
+<text x="463.0" y="151.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">F</text>
+<rect x="510.0" y="120.0" width="86.0" height="50.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="553.0" y="151.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">T</text>
+<rect x="600.0" y="120.0" width="86.0" height="50.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="643.0" y="151.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">T</text>
+<rect x="690.0" y="120.0" width="86.0" height="50.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="733.0" y="151.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">T</text>
+<rect x="780.0" y="120.0" width="86.0" height="50.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="823.0" y="151.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">T</text>
+<text x="103.0" y="192.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x=0</text>
+<text x="103.0" y="212.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="193.0" y="192.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x=1</text>
+<text x="193.0" y="212.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="283.0" y="192.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x=2</text>
+<text x="283.0" y="212.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="373.0" y="192.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x=3</text>
+<text x="373.0" y="212.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">9</text>
+<text x="463.0" y="192.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x=4</text>
+<text x="463.0" y="212.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">16</text>
+<text x="553.0" y="192.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x=5</text>
+<text x="553.0" y="212.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">25</text>
+<text x="643.0" y="192.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x=6</text>
+<text x="643.0" y="212.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">36</text>
+<text x="733.0" y="192.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x=7</text>
+<text x="733.0" y="212.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">49</text>
+<text x="823.0" y="192.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x=8</text>
+<text x="823.0" y="212.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">64</text>
+<line x1="507.0" y1="110.0" x2="507.0" y2="180.0" stroke="#0b0b0b" stroke-width="2.5" stroke-linecap="round"/>
+<text x="507.0" y="104.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">firstTrue = 5</text>
+<text x="40.0" y="254.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">⌊√20⌋ = firstTrue − 1 = 4. Няма масив — „масивът“ е предикатът, който пресмятаме при нужда.</text>
+<text x="40.0" y="278.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Работи за всеки монотонен въпрос: минимален капацитет, най-малко време, първа лоша версия…</text>
+</svg>

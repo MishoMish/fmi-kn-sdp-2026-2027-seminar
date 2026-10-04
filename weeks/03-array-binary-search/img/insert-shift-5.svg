@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" width="1000" height="250" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Вмъкване в масив, стъпка 5</title>
+<rect width="1000" height="250" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">Вмъкване в средата: всичко отдясно се мести</text>
+<rect x="60.0" y="100.0" width="92.0" height="52.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="106.0" y="132.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">A</text>
+<text x="106.0" y="170.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="156.0" y="100.0" width="92.0" height="52.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="202.0" y="132.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">B</text>
+<text x="202.0" y="170.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="252.0" y="100.0" width="92.0" height="52.0" rx="6" fill="#1baf7a" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="298.0" y="132.0" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">X</text>
+<text x="298.0" y="170.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="348.0" y="100.0" width="92.0" height="52.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="394.0" y="132.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">C</text>
+<text x="394.0" y="170.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<rect x="444.0" y="100.0" width="92.0" height="52.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="490.0" y="132.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">D</text>
+<text x="490.0" y="170.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<rect x="540.0" y="100.0" width="92.0" height="52.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="586.0" y="132.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">E</text>
+<text x="586.0" y="170.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="636.0" y="100.0" width="92.0" height="52.0" rx="6" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="682.0" y="170.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="40.0" y="226.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="600">запис: data[2] = X, size = 6 — общо size − index = 3 премествания</text>
+</svg>

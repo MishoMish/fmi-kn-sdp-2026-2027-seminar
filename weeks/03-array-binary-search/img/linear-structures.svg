@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" width="1100" height="420" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Линейна структура: абстракция и две представяния</title>
+<rect width="1100" height="420" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Линейна структура: всеки елемент има предишен и следващ</text>
+<text x="40.0" y="72.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Една и съща абстракция — две коренно различни представяния в паметта</text>
+<circle cx="90.0" cy="130.0" r="26" fill="#e3eefb" stroke="#2a78d6" stroke-width="2"/>
+<text x="90.0" y="136.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="600">A</text>
+<line x1="120.0" y1="130.0" x2="186.0" y2="130.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="220.0" cy="130.0" r="26" fill="#e3eefb" stroke="#2a78d6" stroke-width="2"/>
+<text x="220.0" y="136.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="600">B</text>
+<line x1="250.0" y1="130.0" x2="316.0" y2="130.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="350.0" cy="130.0" r="26" fill="#e3eefb" stroke="#2a78d6" stroke-width="2"/>
+<text x="350.0" y="136.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="600">C</text>
+<line x1="380.0" y1="130.0" x2="446.0" y2="130.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="480.0" cy="130.0" r="26" fill="#e3eefb" stroke="#2a78d6" stroke-width="2"/>
+<text x="480.0" y="136.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="600">D</text>
+<line x1="510.0" y1="130.0" x2="576.0" y2="130.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="610.0" cy="130.0" r="26" fill="#e3eefb" stroke="#2a78d6" stroke-width="2"/>
+<text x="610.0" y="136.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="600">E</text>
+<text x="60.0" y="186.0" font-size="13" fill="#8a8984" text-anchor="start" font-weight="400">първи</text>
+<text x="610.0" y="186.0" font-size="13" fill="#8a8984" text-anchor="start" font-weight="400">последен</text>
+<text x="790.0" y="124.0" font-size="17" fill="#0b0b0b" text-anchor="start" font-weight="700">АТД: редица</text>
+<text x="790.0" y="148.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">достъп по позиция, вмъкване,</text>
+<text x="790.0" y="168.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">изтриване, обхождане подред</text>
+<text x="40.0" y="238.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">масив — непрекъснат блок (седмици 03–04)</text>
+<rect x="40.0" y="254.0" width="52.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="66.0" y="282.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">A</text>
+<rect x="96.0" y="254.0" width="52.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="122.0" y="282.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">B</text>
+<rect x="152.0" y="254.0" width="52.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="178.0" y="282.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">C</text>
+<rect x="208.0" y="254.0" width="52.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="234.0" y="282.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">D</text>
+<rect x="264.0" y="254.0" width="52.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="290.0" y="282.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">E</text>
+<text x="40.0" y="330.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">позиция i → адрес начало + i·size: Θ(1)</text>
+<text x="600.0" y="238.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">свързан списък — възли с указатели (седмици 05–06)</text>
+<rect x="600.0" y="258.0" width="44.0" height="34.0" rx="5" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="622.0" y="281.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">A</text>
+<line x1="644.0" y1="275.0" x2="690.0" y2="313.0" stroke="#eb6834" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="690.0" y="296.0" width="44.0" height="34.0" rx="5" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="712.0" y="319.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">B</text>
+<line x1="734.0" y1="313.0" x2="780.0" y2="271.0" stroke="#eb6834" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="780.0" y="254.0" width="44.0" height="34.0" rx="5" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="802.0" y="277.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">C</text>
+<line x1="824.0" y1="271.0" x2="870.0" y2="317.0" stroke="#eb6834" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="870.0" y="300.0" width="44.0" height="34.0" rx="5" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="892.0" y="323.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">D</text>
+<line x1="914.0" y1="317.0" x2="960.0" y2="279.0" stroke="#eb6834" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="960.0" y="262.0" width="44.0" height="34.0" rx="5" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="982.0" y="285.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">E</text>
+<text x="600.0" y="370.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">позиция i → минаваме през i възела: Θ(i)</text>
+<text x="40.0" y="404.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Стек, опашка и дек (седмица 07) са ограничени интерфейси върху едно от двете представяния.</text>
+</svg>

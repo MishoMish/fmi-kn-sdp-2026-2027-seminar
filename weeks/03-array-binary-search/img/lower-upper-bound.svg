@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>lower_bound, upper_bound и equal_range при повторения</title>
+<rect width="1000" height="360" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">lower_bound и upper_bound при повторения</text>
+<rect x="200.0" y="140.0" width="86.0" height="52.0" rx="6" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="243.0" y="172.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="243.0" y="210.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="290.0" y="140.0" width="86.0" height="52.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="333.0" y="172.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="333.0" y="210.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="380.0" y="140.0" width="86.0" height="52.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="423.0" y="172.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="423.0" y="210.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="470.0" y="140.0" width="86.0" height="52.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="513.0" y="172.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="513.0" y="210.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<rect x="560.0" y="140.0" width="86.0" height="52.0" rx="6" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="603.0" y="172.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="603.0" y="210.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<rect x="650.0" y="140.0" width="86.0" height="52.0" rx="6" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="693.0" y="172.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">9</text>
+<text x="693.0" y="210.0" font-size="12" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="740.0" y="140.0" width="86.0" height="52.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="783.0" y="172.0" font-size="14" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">end</text>
+<line x1="288.0" y1="132.0" x2="288.0" y2="110.0" stroke="#2a78d6" stroke-width="2.5" stroke-linecap="round"/>
+<text x="288.0" y="104.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">lower_bound(3) = 1</text>
+<line x1="558.0" y1="132.0" x2="558.0" y2="110.0" stroke="#1baf7a" stroke-width="2.5" stroke-linecap="round"/>
+<text x="558.0" y="104.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">upper_bound(3) = 4</text>
+<path d="M 290,226 L 290,236 L 556,236 L 556,226" fill="none" stroke="#2a78d6" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="423.0" y="258.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600">equal_range(3) = [1, 4): трите тройки</text>
+<text x="40.0" y="302.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">lower_bound(5) = 4 = upper_bound(5): 5 липсва, но 4 е мястото, където би се вмъкнало.</text>
+<text x="40.0" y="328.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Брой срещания на x = upper_bound(x) − lower_bound(x), за Θ(log n).</text>
+</svg>

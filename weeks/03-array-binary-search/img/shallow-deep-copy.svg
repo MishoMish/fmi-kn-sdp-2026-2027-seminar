@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 380" width="1100" height="380" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Плитко срещу дълбоко копиране</title>
+<rect width="1100" height="380" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Копиране на обект, който притежава памет</text>
+<text x="40.0" y="96.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">плитко (копиращ конструктор по подразбиране)</text>
+<rect x="40.0" y="120.0" width="120.0" height="40.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="54.0" y="146.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a.data_</text>
+<rect x="40.0" y="230.0" width="120.0" height="40.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="54.0" y="256.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">b.data_</text>
+<rect x="270.0" y="170.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="298.0" y="196.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="330.0" y="170.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="358.0" y="196.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="390.0" y="170.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="418.0" y="196.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<path d="M 160,140 C 220,140 230,176 268,186" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 160,250 C 220,250 230,210 268,196" fill="none" stroke="#52514e" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="40.0" y="300.0" width="500.0" height="54.0" rx="8" fill="#fbe3e3" stroke="#e34948" stroke-width="1.5"/>
+<text x="56.0" y="324.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600">един буфер, два собственика:</text>
+<text x="56.0" y="344.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">b[0] = 9 променя и a; двата деструктора → двойно delete[]</text>
+<text x="580.0" y="96.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">дълбоко (нашият копиращ конструктор)</text>
+<rect x="580.0" y="120.0" width="120.0" height="40.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="594.0" y="146.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a.data_</text>
+<rect x="580.0" y="230.0" width="120.0" height="40.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="594.0" y="256.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">b.data_</text>
+<rect x="810.0" y="120.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="838.0" y="146.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="870.0" y="120.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="898.0" y="146.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="930.0" y="120.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="958.0" y="146.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<rect x="810.0" y="230.0" width="56.0" height="40.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="838.0" y="256.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="870.0" y="230.0" width="56.0" height="40.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="898.0" y="256.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="930.0" y="230.0" width="56.0" height="40.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="958.0" y="256.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<line x1="700.0" y1="140.0" x2="808.0" y2="140.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="700.0" y1="250.0" x2="808.0" y2="250.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="580.0" y="300.0" width="480.0" height="54.0" rx="8" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="596.0" y="324.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600">всеки обект има свой буфер:</text>
+<text x="596.0" y="344.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">промените са независими, всеки деструктор трие своето</text>
+</svg>
