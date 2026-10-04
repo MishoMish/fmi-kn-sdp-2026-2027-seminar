@@ -1,0 +1,9 @@
+mergeSort random                965754  = 0.92 n log2 n
+mergeSort sorted                524288  = 0.50 n log2 n
+quickSort random               2040935  = 1.95 n log2 n
+quickSort sorted               2074850  = 1.98 n log2 n
+quickSort 10 values             362070  = 0.35 n log2 n
+std::sort random               1261465  = 1.20 n log2 n
+std::sort 10 values             987722  = 0.94 n log2 n
+nthElement median: 452619 = 6.91 n
+log2(n!) = 954037, n log2 n = 1048576

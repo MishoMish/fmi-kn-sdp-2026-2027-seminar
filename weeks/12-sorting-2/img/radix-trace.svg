@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" width="1100" height="420" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Поразрядно сортиране (LSD)</title>
+<rect width="1100" height="420" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">Поразрядно сортиране (LSD): стабилно по единици, десетици, стотици</text>
+<rect x="40.0" y="90.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="62.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="82.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="102.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="132.0" y="90.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="154.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="174.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="194.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="224.0" y="90.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="246.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="266.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="286.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="316.0" y="90.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="338.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="358.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">9</text>
+<text x="378.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="408.0" y="90.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="430.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8</text>
+<text x="450.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="470.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="500.0" y="90.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="522.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="542.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<text x="562.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<rect x="592.0" y="90.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="614.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="634.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="654.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="684.0" y="90.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="706.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="726.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="746.0" y="117.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="800.0" y="116.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">вход</text>
+<rect x="40.0" y="154.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="62.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="82.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="102.0" y="181.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="132.0" y="154.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="154.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="174.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">9</text>
+<text x="194.0" y="181.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="224.0" y="154.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="246.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8</text>
+<text x="266.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="286.0" y="181.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="316.0" y="154.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="338.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="358.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="378.0" y="181.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="408.0" y="154.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="430.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="450.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<text x="470.0" y="181.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<rect x="500.0" y="154.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="522.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="542.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="562.0" y="181.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="592.0" y="154.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="614.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="634.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="654.0" y="181.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="684.0" y="154.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="706.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="726.0" y="181.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="746.0" y="181.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="800.0" y="180.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">по единици</text>
+<rect x="40.0" y="218.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="62.0" y="245.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8</text>
+<text x="82.0" y="245.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="102.0" y="245.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="132.0" y="218.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="154.0" y="245.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="174.0" y="245.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="194.0" y="245.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="224.0" y="218.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="246.0" y="245.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="266.0" y="245.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<text x="286.0" y="245.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<rect x="316.0" y="218.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="338.0" y="245.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="358.0" y="245.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="378.0" y="245.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="408.0" y="218.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="430.0" y="245.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="450.0" y="245.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="470.0" y="245.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<rect x="500.0" y="218.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="522.0" y="245.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="542.0" y="245.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="562.0" y="245.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="592.0" y="218.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="614.0" y="245.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="634.0" y="245.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="654.0" y="245.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="684.0" y="218.0" width="84.0" height="40.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="706.0" y="245.0" font-size="17" fill="#8a8984" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="726.0" y="245.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">9</text>
+<text x="746.0" y="245.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="800.0" y="244.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">по десетици</text>
+<rect x="40.0" y="282.0" width="84.0" height="40.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="62.0" y="309.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="82.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="102.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="132.0" y="282.0" width="84.0" height="40.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="154.0" y="309.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="174.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<text x="194.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<rect x="224.0" y="282.0" width="84.0" height="40.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="246.0" y="309.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="266.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="286.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="316.0" y="282.0" width="84.0" height="40.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="338.0" y="309.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="358.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="378.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<rect x="408.0" y="282.0" width="84.0" height="40.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="430.0" y="309.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="450.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="470.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="500.0" y="282.0" width="84.0" height="40.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="522.0" y="309.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="542.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">9</text>
+<text x="562.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="592.0" y="282.0" width="84.0" height="40.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="614.0" y="309.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="634.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="654.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="684.0" y="282.0" width="84.0" height="40.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="706.0" y="309.0" font-size="17" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8</text>
+<text x="726.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="746.0" y="309.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<text x="800.0" y="308.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">по стотици</text>
+<text x="40.0" y="380.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Всеки проход е стабилно сортиране чрез броене по една цифра. Стабилността пази наредбата от предишните</text>
+<text x="40.0" y="402.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">проходи. d цифри в база b: Θ(d(n + b)). 32-битови числа, b = 256: 4 прохода — задача 5.</text>
+</svg>

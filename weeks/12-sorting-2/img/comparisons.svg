@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" width="1100" height="420" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Брой сравнения спрямо n log2 n</title>
+<rect width="1100" height="420" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">Сравнения / (n log₂ n), n = 65 536 (преброени с CountingLess)</text>
+<rect x="330.0" y="80.0" width="267.6" height="30.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="318.0" y="100.0" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="400">merge sort, случаен</text>
+<text x="605.6" y="100.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0.92</text>
+<rect x="330.0" y="126.0" width="145.5" height="30.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="318.0" y="146.0" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="400">merge sort, сортиран</text>
+<text x="483.5" y="146.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0.50</text>
+<rect x="330.0" y="172.0" width="349.1" height="30.0" rx="4" fill="#0b0b0b" stroke="none" stroke-width="1.5"/>
+<text x="318.0" y="192.0" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="400">std::sort, случаен</text>
+<text x="687.1" y="192.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1.20</text>
+<rect x="330.0" y="218.0" width="567.3" height="30.0" rx="4" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<text x="318.0" y="238.0" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="400">quicksort 3-way, случаен</text>
+<text x="905.3" y="238.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1.95</text>
+<rect x="330.0" y="264.0" width="101.8" height="30.0" rx="4" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<text x="318.0" y="284.0" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="400">quicksort 3-way, 10 стойности</text>
+<text x="439.8" y="284.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0.35</text>
+<rect x="330.0" y="310.0" width="273.5" height="30.0" rx="4" fill="#0b0b0b" stroke="none" stroke-width="1.5"/>
+<text x="318.0" y="330.0" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="400">std::sort, 10 стойности</text>
+<text x="611.5" y="330.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0.94</text>
+<line x1="594.7" y1="70.0" x2="594.7" y2="356.0" stroke="#e34948" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 4"/>
+<text x="600.7" y="66.0" font-size="13" fill="#e34948" text-anchor="start" font-weight="600">долна граница log₂ n! = 0.91 n log₂ n</text>
+<text x="40.0" y="390.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Merge sort е на 1% от долната граница. Тристранният quicksort прави ~2 сравнения на елемент на ниво, но при много равни ключове печели.</text>
+</svg>

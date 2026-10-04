@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" width="1100" height="470" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Сортиране чрез броене</title>
+<rect width="1100" height="470" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Сортиране чрез броене: преброй, сумирай, разположи</text>
+<text x="40.0" y="92.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">① вход (ключ, етикет)</text>
+<rect x="40.0" y="104.0" width="58.0" height="36.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="69.0" y="127.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3a</text>
+<rect x="104.0" y="104.0" width="58.0" height="36.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="133.0" y="127.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1b</text>
+<rect x="168.0" y="104.0" width="58.0" height="36.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="197.0" y="127.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3c</text>
+<rect x="232.0" y="104.0" width="58.0" height="36.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="261.0" y="127.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0d</text>
+<rect x="296.0" y="104.0" width="58.0" height="36.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="325.0" y="127.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1e</text>
+<rect x="360.0" y="104.0" width="58.0" height="36.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="389.0" y="127.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3f</text>
+<text x="40.0" y="182.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">② count[ключ]</text>
+<rect x="40.0" y="194.0" width="58.0" height="36.0" rx="5" fill="#fff4d6" stroke="#eda100" stroke-width="1.4"/>
+<text x="69.0" y="217.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="69.0" y="246.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="104.0" y="194.0" width="58.0" height="36.0" rx="5" fill="#fff4d6" stroke="#eda100" stroke-width="1.4"/>
+<text x="133.0" y="217.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<text x="133.0" y="246.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="168.0" y="194.0" width="58.0" height="36.0" rx="5" fill="#fff4d6" stroke="#eda100" stroke-width="1.4"/>
+<text x="197.0" y="217.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<text x="197.0" y="246.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="232.0" y="194.0" width="58.0" height="36.0" rx="5" fill="#fff4d6" stroke="#eda100" stroke-width="1.4"/>
+<text x="261.0" y="217.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="261.0" y="246.0" font-size="11" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="40.0" y="284.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">③ start[ключ] — префиксни суми: къде започва всеки ключ</text>
+<rect x="40.0" y="296.0" width="58.0" height="36.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="69.0" y="319.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="104.0" y="296.0" width="58.0" height="36.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="133.0" y="319.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="168.0" y="296.0" width="58.0" height="36.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="197.0" y="319.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<rect x="232.0" y="296.0" width="58.0" height="36.0" rx="5" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.4"/>
+<text x="261.0" y="319.4" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="40.0" y="374.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">④ обхождаме входа ОТЛЯВО НАДЯСНО: out[start[ключ]++] = елемент</text>
+<rect x="40.0" y="386.0" width="58.0" height="36.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="69.0" y="409.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0d</text>
+<rect x="104.0" y="386.0" width="58.0" height="36.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="133.0" y="409.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1b</text>
+<rect x="168.0" y="386.0" width="58.0" height="36.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="197.0" y="409.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1e</text>
+<rect x="232.0" y="386.0" width="58.0" height="36.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="261.0" y="409.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3a</text>
+<rect x="296.0" y="386.0" width="58.0" height="36.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="325.0" y="409.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3c</text>
+<rect x="360.0" y="386.0" width="58.0" height="36.0" rx="5" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.4"/>
+<text x="389.0" y="409.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3f</text>
+<text x="500.0" y="130.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">Без нито едно сравнение.</text>
+<text x="500.0" y="156.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Θ(n + k) време и памет, k = брой ключове</text>
+<text x="500.0" y="210.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Стабилно: 3a, 3c, 3f остават в този ред —</text>
+<text x="500.0" y="232.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">затова обхождаме входа по ред.</text>
+<text x="500.0" y="286.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Само за малки цели ключове:</text>
+<text x="500.0" y="308.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">оценки, възраст, байт (k = 256).</text>
+<text x="500.0" y="330.0" font-size="14" fill="#e34948" text-anchor="start" font-weight="400">При k = 2^32 — 16 GB за броячите.</text>
+</svg>
