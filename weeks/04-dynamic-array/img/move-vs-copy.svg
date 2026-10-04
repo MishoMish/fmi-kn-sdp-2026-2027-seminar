@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 380" width="1100" height="380" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Копиране срещу преместване на DynamicArray</title>
+<rect width="1100" height="380" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Копиране и преместване</text>
+<text x="40.0" y="96.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">DynamicArray b(a);  — копиране</text>
+<rect x="40.0" y="120.0" width="150.0" height="60.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="52.0" y="144.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a.data_ </text>
+<text x="52.0" y="166.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a.size_ = 3</text>
+<rect x="40.0" y="230.0" width="150.0" height="60.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="52.0" y="254.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">b.data_ </text>
+<text x="52.0" y="276.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">b.size_ = 3</text>
+<rect x="300.0" y="120.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="328.0" y="146.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="360.0" y="120.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="388.0" y="146.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="420.0" y="120.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="448.0" y="146.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<rect x="300.0" y="230.0" width="56.0" height="40.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="328.0" y="256.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="360.0" y="230.0" width="56.0" height="40.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="388.0" y="256.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="420.0" y="230.0" width="56.0" height="40.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="448.0" y="256.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<line x1="190.0" y1="140.0" x2="298.0" y2="140.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="190.0" y1="250.0" x2="298.0" y2="250.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="40.0" y="316.0" width="470.0" height="46.0" rx="8" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="54.0" y="344.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600">нова алокация + n копирания: Θ(n).</text>
+<text x="580.0" y="96.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">DynamicArray b(std::move(a));  — преместване</text>
+<rect x="580.0" y="120.0" width="150.0" height="60.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="592.0" y="144.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a.data_ nullptr</text>
+<text x="592.0" y="166.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a.size_ = 0</text>
+<rect x="580.0" y="230.0" width="150.0" height="60.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="592.0" y="254.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">b.data_ </text>
+<text x="592.0" y="276.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">b.size_ = 3</text>
+<rect x="840.0" y="230.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="868.0" y="256.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="900.0" y="230.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="928.0" y="256.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="960.0" y="230.0" width="56.0" height="40.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="988.0" y="256.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<line x1="730.0" y1="250.0" x2="838.0" y2="250.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="580.0" y="316.0" width="470.0" height="46.0" rx="8" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="594.0" y="344.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600">3 присвоявания на указатели. Без алокация, Θ(1).</text>
+</svg>

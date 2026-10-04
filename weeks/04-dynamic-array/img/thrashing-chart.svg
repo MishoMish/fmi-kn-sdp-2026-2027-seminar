@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Капацитет при редуване на pushBack и popBack около границата</title>
+<rect width="1000" height="470" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Свиване: при ½ или при ¼ запълване?</text>
+<text x="40.0" y="70.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Масив с 8 елемента и капацитет 8; редуваме pushBack, popBack, pushBack, …</text>
+<line x1="90.0" y1="340.0" x2="710.0" y2="340.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="80.0" y="345.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">4</text>
+<line x1="90.0" y1="274.3" x2="710.0" y2="274.3" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="80.0" y="279.3" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">8</text>
+<line x1="90.0" y1="208.6" x2="710.0" y2="208.6" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="80.0" y="213.6" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">12</text>
+<line x1="90.0" y1="142.9" x2="710.0" y2="142.9" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="80.0" y="147.9" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">16</text>
+<line x1="90.0" y1="340.0" x2="90.0" y2="346.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="364.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">0</text>
+<line x1="251.7" y1="340.0" x2="251.7" y2="346.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="251.7" y="364.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">6</text>
+<line x1="413.5" y1="340.0" x2="413.5" y2="346.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="413.5" y="364.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">12</text>
+<line x1="575.2" y1="340.0" x2="575.2" y2="346.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="575.2" y="364.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">18</text>
+<line x1="710.0" y1="340.0" x2="710.0" y2="346.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="710.0" y="364.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">23</text>
+<line x1="90.0" y1="340.0" x2="710.0" y2="340.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="400.0" y="392.0" font-size="15" fill="#52514e" text-anchor="middle" font-weight="400">операция</text>
+<text transform="translate(32,225.0) rotate(-90)" font-size="15" fill="#52514e" text-anchor="middle">капацитет</text>
+<path d="M90.0,142.9 L117.0,142.9 L117.0,274.3 L143.9,274.3 L143.9,142.9 L170.9,142.9 L170.9,274.3 L197.8,274.3 L197.8,142.9 L224.8,142.9 L224.8,274.3 L251.7,274.3 L251.7,142.9 L278.7,142.9 L278.7,274.3 L305.7,274.3 L305.7,142.9 L332.6,142.9 L332.6,274.3 L359.6,274.3 L359.6,142.9 L386.5,142.9 L386.5,274.3 L413.5,274.3 L413.5,142.9 L440.4,142.9 L440.4,274.3 L467.4,274.3 L467.4,142.9 L494.3,142.9 L494.3,274.3 L521.3,274.3 L521.3,142.9 L548.3,142.9 L548.3,274.3 L575.2,274.3 L575.2,142.9 L602.2,142.9 L602.2,274.3 L629.1,274.3 L629.1,142.9 L656.1,142.9 L656.1,274.3 L683.0,274.3 L683.0,142.9 L710.0,142.9 L710.0,274.3" fill="none" stroke="#e34948" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="722.0" y="279.3" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">24 преоразмерявания</text>
+<path d="M90.0,142.9 L117.0,142.9 L117.0,142.9 L143.9,142.9 L143.9,142.9 L170.9,142.9 L170.9,142.9 L197.8,142.9 L197.8,142.9 L224.8,142.9 L224.8,142.9 L251.7,142.9 L251.7,142.9 L278.7,142.9 L278.7,142.9 L305.7,142.9 L305.7,142.9 L332.6,142.9 L332.6,142.9 L359.6,142.9 L359.6,142.9 L386.5,142.9 L386.5,142.9 L413.5,142.9 L413.5,142.9 L440.4,142.9 L440.4,142.9 L467.4,142.9 L467.4,142.9 L494.3,142.9 L494.3,142.9 L521.3,142.9 L521.3,142.9 L548.3,142.9 L548.3,142.9 L575.2,142.9 L575.2,142.9 L602.2,142.9 L602.2,142.9 L629.1,142.9 L629.1,142.9 L656.1,142.9 L656.1,142.9 L683.0,142.9 L683.0,142.9 L710.0,142.9 L710.0,142.9" fill="none" stroke="#2a78d6" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="722.0" y="147.9" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">1 преоразмеряване</text>
+<line x1="90.0" y1="420.0" x2="112.0" y2="420.0" stroke="#e34948" stroke-width="3" stroke-linecap="round"/>
+<text x="120.0" y="425.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">свиване при size ≤ cap/2: всяка операция преоразмерява (Θ(n) всяка!)</text>
+<line x1="90.0" y1="444.0" x2="112.0" y2="444.0" stroke="#2a78d6" stroke-width="3" stroke-linecap="round"/>
+<text x="120.0" y="449.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">свиване при size ≤ cap/4: след първия растеж — нито едно</text>
+</svg>

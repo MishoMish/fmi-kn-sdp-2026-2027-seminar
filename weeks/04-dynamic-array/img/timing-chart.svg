@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Време за n pushBack при различни стратегии</title>
+<rect width="1100" height="520" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Време за n pushBack на int</text>
+<text x="40.0" y="70.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Release build, примерна машина; най-доброто от няколко пускания</text>
+<line x1="110.0" y1="430.0" x2="730.0" y2="430.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="435.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">0.001</text>
+<line x1="110.0" y1="364.0" x2="730.0" y2="364.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="369.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">0.01</text>
+<line x1="110.0" y1="298.0" x2="730.0" y2="298.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="303.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">0.1</text>
+<line x1="110.0" y1="232.0" x2="730.0" y2="232.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="237.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">1</text>
+<line x1="110.0" y1="166.0" x2="730.0" y2="166.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="171.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">10</text>
+<line x1="110.0" y1="100.0" x2="730.0" y2="100.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="105.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">100</text>
+<line x1="110.0" y1="430.0" x2="110.0" y2="436.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="110.0" y="454.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">2^12</text>
+<line x1="234.0" y1="430.0" x2="234.0" y2="436.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="234.0" y="454.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">2^14</text>
+<line x1="358.0" y1="430.0" x2="358.0" y2="436.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="358.0" y="454.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">2^16</text>
+<line x1="482.0" y1="430.0" x2="482.0" y2="436.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="482.0" y="454.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">2^18</text>
+<line x1="606.0" y1="430.0" x2="606.0" y2="436.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="606.0" y="454.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">2^20</text>
+<line x1="730.0" y1="430.0" x2="730.0" y2="436.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="730.0" y="454.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">2^22</text>
+<line x1="110.0" y1="430.0" x2="730.0" y2="430.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="420.0" y="482.0" font-size="15" fill="#52514e" text-anchor="middle" font-weight="400">n (лог. ос)</text>
+<text transform="translate(52,265.0) rotate(-90)" font-size="15" fill="#52514e" text-anchor="middle">ms (лог. ос)</text>
+<path d="M110.0,375.1 L172.0,331.2 L234.0,282.6 L296.0,206.5 L358.0,171.6 L420.0,145.3 L482.0,104.6" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="110.0" cy="375.1" r="4" fill="#eb6834" stroke="#ffffff" stroke-width="2"/>
+<circle cx="172.0" cy="331.2" r="4" fill="#eb6834" stroke="#ffffff" stroke-width="2"/>
+<circle cx="234.0" cy="282.6" r="4" fill="#eb6834" stroke="#ffffff" stroke-width="2"/>
+<circle cx="296.0" cy="206.5" r="4" fill="#eb6834" stroke="#ffffff" stroke-width="2"/>
+<circle cx="358.0" cy="171.6" r="4" fill="#eb6834" stroke="#ffffff" stroke-width="2"/>
+<circle cx="420.0" cy="145.3" r="4" fill="#eb6834" stroke="#ffffff" stroke-width="2"/>
+<circle cx="482.0" cy="104.6" r="4" fill="#eb6834" stroke="#ffffff" stroke-width="2"/>
+<path d="M110.0,418.4 L172.0,399.5 L234.0,380.1 L296.0,314.2 L358.0,294.1 L420.0,263.6 L482.0,248.6 L544.0,222.6 L606.0,210.5 L668.0,199.4 L730.0,188.1" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="110.0" cy="418.4" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="172.0" cy="399.5" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="234.0" cy="380.1" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="296.0" cy="314.2" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="358.0" cy="294.1" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="420.0" cy="263.6" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="482.0" cy="248.6" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="544.0" cy="222.6" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="606.0" cy="210.5" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="668.0" cy="199.4" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="730.0" cy="188.1" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<path d="M110.0,422.5 L172.0,404.9 L234.0,385.6 L296.0,315.2 L358.0,295.6 L420.0,271.2 L482.0,255.3 L544.0,237.0 L606.0,231.4 L668.0,221.3 L730.0,209.2" fill="none" stroke="#e87ba4" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="110.0" cy="422.5" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="172.0" cy="404.9" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="234.0" cy="385.6" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="296.0" cy="315.2" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="358.0" cy="295.6" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="420.0" cy="271.2" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="482.0" cy="255.3" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="544.0" cy="237.0" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="606.0" cy="231.4" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="668.0" cy="221.3" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="730.0" cy="209.2" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<path d="M110.0,411.6 L172.0,392.5 L234.0,372.6 L296.0,352.8 L358.0,333.0 L420.0,313.1 L482.0,293.2 L544.0,275.1 L606.0,256.3 L668.0,237.1 L730.0,217.2" fill="none" stroke="#1baf7a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="110.0" cy="411.6" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="172.0" cy="392.5" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="234.0" cy="372.6" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="296.0" cy="352.8" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="358.0" cy="333.0" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="420.0" cy="313.1" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="482.0" cy="293.2" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="544.0" cy="275.1" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="606.0" cy="256.3" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="668.0" cy="237.1" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="730.0" cy="217.2" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<line x1="770.0" y1="130.0" x2="792.0" y2="130.0" stroke="#eb6834" stroke-width="3" stroke-linecap="round"/>
+<text x="800.0" y="135.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">+64 (адитивно)</text>
+<line x1="770.0" y1="154.0" x2="792.0" y2="154.0" stroke="#2a78d6" stroke-width="3" stroke-linecap="round"/>
+<text x="800.0" y="159.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">×2 (вашият)</text>
+<line x1="770.0" y1="178.0" x2="792.0" y2="178.0" stroke="#e87ba4" stroke-width="3" stroke-linecap="round"/>
+<text x="800.0" y="183.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">std::vector</text>
+<line x1="770.0" y1="202.0" x2="792.0" y2="202.0" stroke="#1baf7a" stroke-width="3" stroke-linecap="round"/>
+<text x="800.0" y="207.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">×2 + reserve(n)</text>
+<text x="770.0" y="250.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">На лог-лог графика наклонът</text>
+<text x="770.0" y="270.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">е степента: +64 се изкачва</text>
+<text x="770.0" y="290.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">двойно по-стръмно → Θ(n²).</text>
+<text x="770.0" y="326.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">reserve(n): нула преоразме-</text>
+<text x="770.0" y="346.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">рявания, ~2–3× по-бързо.</text>
+</svg>
