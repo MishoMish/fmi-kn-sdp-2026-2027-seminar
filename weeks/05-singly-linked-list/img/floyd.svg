@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Алгоритъмът на Флойд: костенурката и заекът</title>
+<rect width="1000" height="420" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Има ли цикъл? Костенурката и заекът (Floyd)</text>
+<circle cx="80.0" cy="215.0" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="80.0" y="221.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<circle cx="230.0" cy="215.0" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="230.0" y="221.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="380.0" cy="215.0" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="380.0" y="221.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="485.0" cy="215.0" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="485.0" y="221.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<circle cx="518.7" cy="133.7" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="518.7" y="139.7" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<circle cx="600.0" cy="100.0" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="600.0" y="106.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<circle cx="681.3" cy="133.7" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="681.3" y="139.7" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<circle cx="715.0" cy="215.0" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="715.0" y="221.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<circle cx="681.3" cy="296.3" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="681.3" y="302.3" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8</text>
+<circle cx="600.0" cy="330.0" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="600.0" y="336.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">9</text>
+<circle cx="518.7" cy="296.3" r="22" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="518.7" y="302.3" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">10</text>
+<line x1="104.0" y1="215.0" x2="204.0" y2="215.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="254.0" y1="215.0" x2="354.0" y2="215.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="404.0" y1="215.0" x2="459.0" y2="215.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="494.2" y1="192.8" x2="508.7" y2="157.7" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="540.9" y1="124.5" x2="576.0" y2="109.9" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="622.2" y1="109.2" x2="657.3" y2="123.7" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="690.5" y1="155.9" x2="705.1" y2="191.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="705.8" y1="237.2" x2="691.3" y2="272.3" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="659.1" y1="305.5" x2="624.0" y2="320.1" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="577.8" y1="320.8" x2="542.7" y2="306.3" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="509.5" y1="274.1" x2="494.9" y2="239.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="681.3" cy="133.7" r="22" fill="#1baf7a" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="681.3" y="139.7" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<text x="681.3" y="101.7" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">slow</text>
+<circle cx="600.0" cy="330.0" r="22" fill="#eb6834" stroke="#eb6834" stroke-width="1.6"/>
+<text x="600.0" y="336.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">9</text>
+<text x="632.0" y="336.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">fast</text>
+<text x="40.0" y="380.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">slow прави 1 стъпка, fast — 2. Ако няма цикъл, fast стига nullptr. Ако има — вътре в цикъла</text>
+<text x="40.0" y="404.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">fast настига slow с по една позиция на стъпка, значи го застига за ≤ дължината на цикъла. Θ(1) памет.</text>
+</svg>

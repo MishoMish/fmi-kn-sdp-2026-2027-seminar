@@ -14,7 +14,7 @@
 | 2 | 15 окт | Компилаторът, локалност, контейнери | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=02-compiler-locality-containers) · [записки](weeks/02-compiler-locality-containers/notes.md) · [задачи](weeks/02-compiler-locality-containers/exercises.md) |
 | 3 | 22 окт | Масив и двоично търсене | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=03-array-binary-search) · [записки](weeks/03-array-binary-search/notes.md) · [задачи](weeks/03-array-binary-search/exercises.md) |
 | 4 | 29 окт | Динамичен масив | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=04-dynamic-array) · [записки](weeks/04-dynamic-array/notes.md) · [задачи](weeks/04-dynamic-array/exercises.md) |
-| 5 | 5 ное | Едносвързан списък | предстои |
+| 5 | 5 ное | Едносвързан списък | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=05-singly-linked-list) · [записки](weeks/05-singly-linked-list/notes.md) · [задачи](weeks/05-singly-linked-list/exercises.md) |
 | 6 | 12 ное | Двусвързан списък, итератори, изтичане на памет | предстои |
 | 7 | 19 ное | Proxy, стек и опашка | предстои |
 | 8 | 26 ное | Shunting-yard, хеширане, хеш таблици | предстои |

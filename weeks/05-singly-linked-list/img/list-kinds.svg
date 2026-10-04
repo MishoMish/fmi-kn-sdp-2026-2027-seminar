@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Видове свързани списъци</title>
+<rect width="1100" height="520" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Видове свързани списъци</text>
+<text x="40.0" y="88.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">едносвързан</text>
+<text x="40.0" y="198.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">двусвързан (седмица 06)</text>
+<text x="40.0" y="308.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">цикличен едносвързан</text>
+<text x="40.0" y="418.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">с фиктивен възел (sentinel)</text>
+<rect x="60.0" y="100.0" width="92.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="118.0" y1="100.0" x2="118.0" y2="144.0" stroke="#2a78d6" stroke-width="1.2" stroke-linecap="round"/>
+<text x="89.0" y="128.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a</text>
+<circle cx="135.0" cy="122.0" r="3.5" fill="#52514e" stroke="#52514e" stroke-width="0"/>
+<line x1="135.0" y1="122.0" x2="218.0" y2="122.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="220.0" y="100.0" width="92.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="278.0" y1="100.0" x2="278.0" y2="144.0" stroke="#2a78d6" stroke-width="1.2" stroke-linecap="round"/>
+<text x="249.0" y="128.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">b</text>
+<circle cx="295.0" cy="122.0" r="3.5" fill="#52514e" stroke="#52514e" stroke-width="0"/>
+<line x1="295.0" y1="122.0" x2="378.0" y2="122.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="380.0" y="100.0" width="92.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="438.0" y1="100.0" x2="438.0" y2="144.0" stroke="#2a78d6" stroke-width="1.2" stroke-linecap="round"/>
+<text x="409.0" y="128.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">c</text>
+<line x1="442.0" y1="138.0" x2="466.0" y2="106.0" stroke="#8a8984" stroke-width="1.5" stroke-linecap="round"/>
+<text x="560.0" y="128.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">напред; вмъкване/изтриване след даден възел — Θ(1)</text>
+<rect x="60.0" y="210.0" width="120.0" height="44.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="86.0" y1="210.0" x2="86.0" y2="254.0" stroke="#eb6834" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="154.0" y1="210.0" x2="154.0" y2="254.0" stroke="#eb6834" stroke-width="1.2" stroke-linecap="round"/>
+<text x="120.0" y="238.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a</text>
+<line x1="167.0" y1="222.0" x2="218.0" y2="222.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="233.0" y1="244.0" x2="182.0" y2="244.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="220.0" y="210.0" width="120.0" height="44.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="246.0" y1="210.0" x2="246.0" y2="254.0" stroke="#eb6834" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="314.0" y1="210.0" x2="314.0" y2="254.0" stroke="#eb6834" stroke-width="1.2" stroke-linecap="round"/>
+<text x="280.0" y="238.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">b</text>
+<line x1="327.0" y1="222.0" x2="378.0" y2="222.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="393.0" y1="244.0" x2="342.0" y2="244.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="380.0" y="210.0" width="120.0" height="44.0" rx="6" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="406.0" y1="210.0" x2="406.0" y2="254.0" stroke="#eb6834" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="474.0" y1="210.0" x2="474.0" y2="254.0" stroke="#eb6834" stroke-width="1.2" stroke-linecap="round"/>
+<text x="440.0" y="238.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">c</text>
+<text x="560.0" y="238.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">в двете посоки; изтриване на даден възел — Θ(1)</text>
+<rect x="60.0" y="320.0" width="92.0" height="44.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<line x1="118.0" y1="320.0" x2="118.0" y2="364.0" stroke="#1baf7a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="89.0" y="348.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a</text>
+<circle cx="135.0" cy="342.0" r="3.5" fill="#52514e" stroke="#52514e" stroke-width="0"/>
+<line x1="135.0" y1="342.0" x2="218.0" y2="342.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="220.0" y="320.0" width="92.0" height="44.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<line x1="278.0" y1="320.0" x2="278.0" y2="364.0" stroke="#1baf7a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="249.0" y="348.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">b</text>
+<circle cx="295.0" cy="342.0" r="3.5" fill="#52514e" stroke="#52514e" stroke-width="0"/>
+<line x1="295.0" y1="342.0" x2="378.0" y2="342.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="380.0" y="320.0" width="92.0" height="44.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<line x1="438.0" y1="320.0" x2="438.0" y2="364.0" stroke="#1baf7a" stroke-width="1.2" stroke-linecap="round"/>
+<text x="409.0" y="348.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">c</text>
+<circle cx="455.0" cy="342.0" r="3.5" fill="#52514e" stroke="#52514e" stroke-width="0"/>
+<path d="M 455,342 C 520,342 520,392 300,392 C 80,392 30,392 58,350" fill="none" stroke="#1baf7a" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="560.0" y="348.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">последният сочи първия; удобен за „кръгове“ (Йосиф, задача 6)</text>
+<rect x="60.0" y="430.0" width="92.0" height="44.0" rx="6" fill="#f6f5f2" stroke="#8a8984" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="90.0" y="458.0" font-size="16" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">—</text>
+<circle cx="135.0" cy="452.0" r="3.5" fill="#52514e" stroke="#52514e" stroke-width="0"/>
+<line x1="135.0" y1="452.0" x2="218.0" y2="452.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="220.0" y="430.0" width="92.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="278.0" y1="430.0" x2="278.0" y2="474.0" stroke="#2a78d6" stroke-width="1.2" stroke-linecap="round"/>
+<text x="249.0" y="458.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a</text>
+<circle cx="295.0" cy="452.0" r="3.5" fill="#52514e" stroke="#52514e" stroke-width="0"/>
+<line x1="295.0" y1="452.0" x2="378.0" y2="452.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="380.0" y="430.0" width="92.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="438.0" y1="430.0" x2="438.0" y2="474.0" stroke="#2a78d6" stroke-width="1.2" stroke-linecap="round"/>
+<text x="409.0" y="458.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">b</text>
+<line x1="442.0" y1="468.0" x2="466.0" y2="436.0" stroke="#8a8984" stroke-width="1.5" stroke-linecap="round"/>
+<text x="560.0" y="458.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">винаги има „възел преди първия“ → без специален случай за началото</text>
+</svg>

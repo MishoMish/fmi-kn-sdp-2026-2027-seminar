@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Задачата на Йосиф за n = 7, k = 3</title>
+<rect width="1000" height="430" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Йосиф: n = 7, k = 3</text>
+<circle cx="260.0" cy="135.0" r="26" fill="#fbe3e3" stroke="#e34948" stroke-width="2"/>
+<text x="260.0" y="141.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700">1</text>
+<text x="260.0" y="90.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="600">#6</text>
+<circle cx="349.9" cy="178.3" r="26" fill="#fbe3e3" stroke="#e34948" stroke-width="2"/>
+<text x="349.9" y="184.3" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700">2</text>
+<text x="389.0" y="152.1" font-size="14" fill="#52514e" text-anchor="middle" font-weight="600">#3</text>
+<circle cx="372.1" cy="275.6" r="26" fill="#fbe3e3" stroke="#e34948" stroke-width="2"/>
+<text x="372.1" y="281.6" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700">3</text>
+<text x="420.9" y="291.7" font-size="14" fill="#52514e" text-anchor="middle" font-weight="600">#1</text>
+<circle cx="309.9" cy="353.6" r="26" fill="#1baf7a" stroke="#1baf7a" stroke-width="2"/>
+<text x="309.9" y="359.6" font-size="17" fill="#ffffff" text-anchor="middle" font-weight="700">4</text>
+<circle cx="210.1" cy="353.6" r="26" fill="#fbe3e3" stroke="#e34948" stroke-width="2"/>
+<text x="210.1" y="359.6" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700">5</text>
+<text x="188.4" y="403.7" font-size="14" fill="#52514e" text-anchor="middle" font-weight="600">#5</text>
+<circle cx="147.9" cy="275.6" r="26" fill="#fbe3e3" stroke="#e34948" stroke-width="2"/>
+<text x="147.9" y="281.6" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700">6</text>
+<text x="99.1" y="291.7" font-size="14" fill="#52514e" text-anchor="middle" font-weight="600">#2</text>
+<circle cx="170.1" cy="178.3" r="26" fill="#fbe3e3" stroke="#e34948" stroke-width="2"/>
+<text x="170.1" y="184.3" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700">7</text>
+<text x="131.0" y="152.1" font-size="14" fill="#52514e" text-anchor="middle" font-weight="600">#4</text>
+<text x="520.0" y="130.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">Ред на излизане:</text>
+<text x="520.0" y="160.0" font-size="18" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 → 6 → 2 → 7 → 5 → 1</text>
+<text x="520.0" y="200.0" font-size="18" fill="#0b0b0b" text-anchor="start" font-weight="700">Оцелява: 4</text>
+<text x="520.0" y="250.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Симулация с цикличен списък: Θ(n·k).</text>
+<text x="520.0" y="274.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Рекурентна формула: J(1) = 0,</text>
+<text x="520.0" y="298.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">J(n) = (J(n−1) + k) mod n → Θ(n).</text>
+</svg>

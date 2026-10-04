@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" width="1000" height="330" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Колко памет струва един int в списък и във вектор</title>
+<rect width="1000" height="330" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Цената на един int: 4 байта във вектор, 32 в списък</text>
+<text x="40.0" y="96.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">std::vector&lt;int&gt;</text>
+<rect x="40.0" y="108.0" width="40.0" height="36.0" rx="4" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<rect x="84.0" y="108.0" width="40.0" height="36.0" rx="4" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<rect x="128.0" y="108.0" width="40.0" height="36.0" rx="4" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<rect x="172.0" y="108.0" width="40.0" height="36.0" rx="4" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<rect x="216.0" y="108.0" width="40.0" height="36.0" rx="4" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<rect x="260.0" y="108.0" width="40.0" height="36.0" rx="4" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<rect x="304.0" y="108.0" width="40.0" height="36.0" rx="4" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<rect x="348.0" y="108.0" width="40.0" height="36.0" rx="4" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="402.0" y="132.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">4 B на елемент, един до друг</text>
+<text x="40.0" y="190.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">Node&lt;int&gt; в heap-а (glibc, x86-64)</text>
+<rect x="40.0" y="202.0" width="205.0" height="40.0" rx="4" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="142.5" y="227.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8 B</text>
+<text x="142.5" y="262.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">заглавие на malloc</text>
+<rect x="248.0" y="202.0" width="101.0" height="40.0" rx="4" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="298.5" y="227.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4 B</text>
+<text x="298.5" y="262.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">value</text>
+<rect x="352.0" y="202.0" width="101.0" height="40.0" rx="4" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="402.5" y="227.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4 B</text>
+<text x="402.5" y="262.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">подравняване</text>
+<rect x="456.0" y="202.0" width="205.0" height="40.0" rx="4" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="558.5" y="227.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8 B</text>
+<text x="558.5" y="262.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">next</text>
+<rect x="664.0" y="202.0" width="205.0" height="40.0" rx="4" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="766.5" y="227.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8 B</text>
+<text x="766.5" y="262.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400">неизползвани</text>
+<text x="886.0" y="227.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">= 32 B</text>
+<text x="40.0" y="306.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">sizeof(Node&lt;int&gt;) = 16, но malloc заделя поне 32 байта на блок. 8× повече памет — и 8× по-малко</text>
+<text x="40.0" y="326.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">елементи в една кеш линия.</text>
+</svg>
