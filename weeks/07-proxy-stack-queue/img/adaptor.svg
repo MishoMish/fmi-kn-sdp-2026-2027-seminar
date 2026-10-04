@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Адаптер: стек върху вектор</title>
+<rect width="1000" height="340" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">Адаптер: стекът скрива всичко, което векторът може</text>
+<rect x="60.0" y="90.0" width="880.0" height="200.0" rx="12" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="84.0" y="120.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">Stack&lt;T, std::vector&lt;T&gt;&gt;</text>
+<rect x="84.0" y="140.0" width="180.0" height="34.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="174.0" y="163.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">push(x)</text>
+<line x1="268.0" y1="157.0" x2="390.0" y2="157.0" stroke="#52514e" stroke-width="1.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="400.0" y="163.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">c_.push_back(x)</text>
+<rect x="84.0" y="184.0" width="180.0" height="34.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="174.0" y="207.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">pop()</text>
+<line x1="268.0" y1="201.0" x2="390.0" y2="201.0" stroke="#52514e" stroke-width="1.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="400.0" y="207.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">c_.pop_back()</text>
+<rect x="84.0" y="228.0" width="180.0" height="34.0" rx="6" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="174.0" y="251.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">top()</text>
+<line x1="268.0" y1="245.0" x2="390.0" y2="245.0" stroke="#52514e" stroke-width="1.4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="400.0" y="251.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">c_.back()</text>
+<rect x="620.0" y="136.0" width="290.0" height="136.0" rx="8" fill="#ffffff" stroke="#8a8984" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="765.0" y="162.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">private: Container c_</text>
+<text x="765.0" y="192.0" font-size="14" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">operator[]</text>
+<line x1="700.0" y1="187.0" x2="830.0" y2="187.0" stroke="#e34948" stroke-width="1.2" stroke-linecap="round"/>
+<text x="765.0" y="216.0" font-size="14" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">insert / erase</text>
+<line x1="700.0" y1="211.0" x2="830.0" y2="211.0" stroke="#e34948" stroke-width="1.2" stroke-linecap="round"/>
+<text x="765.0" y="240.0" font-size="14" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">begin / end</text>
+<line x1="700.0" y1="235.0" x2="830.0" y2="235.0" stroke="#e34948" stroke-width="1.2" stroke-linecap="round"/>
+<text x="40.0" y="320.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Същото за std::stack, std::queue (върху deque) и std::priority_queue (върху vector, седмица 11).</text>
+</svg>

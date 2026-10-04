@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" width="1100" height="470" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Пет опашки при еднакво натоварване</title>
+<rect width="1100" height="470" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">ns на (pop + push), опашка с 1000 елемента</text>
+<text x="40.0" y="70.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Release, примерна машина. Дължината на стълбчето е в логаритмична скала.</text>
+<text x="40.0" y="126.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">RingQueue с &amp; (маска)</text>
+<rect x="330.0" y="108.0" width="160.9" height="28.0" rx="4" fill="#1baf7a" stroke="none" stroke-width="1.5"/>
+<text x="500.9" y="128.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">0.61</text>
+<text x="40.0" y="180.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">std::queue&lt;deque&gt;</text>
+<rect x="330.0" y="162.0" width="144.3" height="28.0" rx="4" fill="#e87ba4" stroke="none" stroke-width="1.5"/>
+<text x="484.3" y="182.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">0.50</text>
+<text x="40.0" y="234.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">TwoStackQueue</text>
+<rect x="330.0" y="216.0" width="193.4" height="28.0" rx="4" fill="#eda100" stroke="none" stroke-width="1.5"/>
+<text x="533.4" y="236.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">0.87</text>
+<text x="40.0" y="288.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">RingQueue с %</text>
+<rect x="330.0" y="270.0" width="319.3" height="28.0" rx="4" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="659.3" y="290.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">3.58</text>
+<text x="40.0" y="342.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">std::queue&lt;list&gt;</text>
+<rect x="330.0" y="324.0" width="407.1" height="28.0" rx="4" fill="#eb6834" stroke="none" stroke-width="1.5"/>
+<text x="747.1" y="344.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">9.58</text>
+<text x="40.0" y="396.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">vector + erase(begin)</text>
+<rect x="330.0" y="378.0" width="520.0" height="28.0" rx="4" fill="#e34948" stroke="none" stroke-width="1.5"/>
+<text x="860.0" y="398.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">33.9</text>
+<text x="40.0" y="432.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Една промяна — % на &amp; — прави кръговия буфер 6× по-бърз: делението струва десетки такта, маската — един.</text>
+<text x="40.0" y="456.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="400">(Стълбчето „с &amp; (маска)“ е от отделно пускане на същия бенчмарк с тази единствена промяна.)</text>
+</svg>

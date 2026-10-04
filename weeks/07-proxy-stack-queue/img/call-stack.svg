@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Стекът на извикванията при рекурсия</title>
+<rect width="1000" height="360" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">Стекът на извикванията — стекът, който ползвате всеки ден</text>
+<text x="60.0" y="96.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">int fact(int n) { return n &lt;= 1 ? 1 : n * fact(n - 1); }</text>
+<rect x="120.0" y="300.0" width="220.0" height="36.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="230.0" y="324.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">main()</text>
+<rect x="120.0" y="258.0" width="220.0" height="36.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="230.0" y="282.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">fact(4)</text>
+<rect x="120.0" y="216.0" width="220.0" height="36.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="230.0" y="240.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">fact(3)</text>
+<rect x="120.0" y="174.0" width="220.0" height="36.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="230.0" y="198.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">fact(2)</text>
+<rect x="120.0" y="132.0" width="220.0" height="36.0" rx="6" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="230.0" y="156.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">fact(1)</text>
+<text x="380.0" y="132.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">← връх: изпълнява се сега</text>
+<text x="380.0" y="320.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">← дъно</text>
+<text x="560.0" y="170.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400">Всяко извикване = push на кадър</text>
+<text x="560.0" y="194.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">(аргументи, локални, адрес за връщане).</text>
+<text x="560.0" y="230.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400">Всяко return = pop.</text>
+<text x="560.0" y="266.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Дълбочина n → n кадъра: затова</text>
+<text x="560.0" y="290.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">рекурсивният delete на милион</text>
+<text x="560.0" y="314.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">възела препълва (седмица 05).</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Шаблонът Proxy</title>
+<rect width="1100" height="360" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">Proxy: заместител със същия интерфейс, който контролира достъпа</text>
+<rect x="60.0" y="150.0" width="180.0" height="70.0" rx="10" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="150.0" y="192.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700">клиент</text>
+<rect x="420.0" y="130.0" width="240.0" height="110.0" rx="10" fill="#fde8df" stroke="#eb6834" stroke-width="2"/>
+<text x="540.0" y="170.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">Proxy</text>
+<text x="540.0" y="196.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400">същият интерфейс</text>
+<text x="540.0" y="218.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">+ проверка / отлагане / брояч</text>
+<rect x="840.0" y="150.0" width="200.0" height="70.0" rx="10" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="940.0" y="192.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700">истинският обект</text>
+<line x1="244.0" y1="185.0" x2="414.0" y2="185.0" stroke="#52514e" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="664.0" y1="185.0" x2="834.0" y2="185.0" stroke="#52514e" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<text x="330.0" y="172.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400">вика</text>
+<text x="750.0" y="172.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400">препраща (може и да не)</text>
+<text x="60.0" y="290.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">виртуален</text>
+<text x="60.0" y="312.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">създава скъпия обект едва при нужда</text>
+<text x="315.0" y="290.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">защитен</text>
+<text x="315.0" y="312.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">проверява права преди достъп</text>
+<text x="570.0" y="290.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">отдалечен</text>
+<text x="570.0" y="312.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">обектът е на друга машина</text>
+<text x="825.0" y="290.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">умна референция</text>
+<text x="825.0" y="312.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">брои, заключва, освобождава</text>
+</svg>

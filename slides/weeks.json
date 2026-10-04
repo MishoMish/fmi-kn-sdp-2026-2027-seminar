@@ -64,7 +64,7 @@
         "07-proxy-stack-queue"
       ],
       "title": "Proxy, стек и опашка",
-      "ready": false
+      "ready": true
     },
     {
       "n": 8,

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 290" width="1000" height="290" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Кръгов буфер, стъпка 3</title>
+<rect width="1000" height="290" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="20" fill="#0b0b0b" text-anchor="start" font-weight="700">Кръгов буфер: позиция i е на индекс (head_ + i) % capacity_</text>
+<rect x="60.0" y="110.0" width="100.0" height="52.0" rx="6" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="110.0" y="182.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<rect x="170.0" y="110.0" width="100.0" height="52.0" rx="6" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="220.0" y="182.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<rect x="280.0" y="110.0" width="100.0" height="52.0" rx="6" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="330.0" y="182.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="390.0" y="110.0" width="100.0" height="52.0" rx="6" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="440.0" y="142.0" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">d</text>
+<text x="440.0" y="182.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="440.0" y="100.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">#0</text>
+<rect x="500.0" y="110.0" width="100.0" height="52.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="550.0" y="142.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">e</text>
+<text x="550.0" y="182.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="550.0" y="100.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">#1</text>
+<rect x="610.0" y="110.0" width="100.0" height="52.0" rx="6" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="660.0" y="182.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<rect x="720.0" y="110.0" width="100.0" height="52.0" rx="6" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="770.0" y="182.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<rect x="830.0" y="110.0" width="100.0" height="52.0" rx="6" fill="#f6f5f2" stroke="#e4e3df" stroke-width="1.5"/>
+<text x="880.0" y="182.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<text x="440.0" y="210.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">head_</text>
+<text x="660.0" y="230.0" font-size="13" fill="#1baf7a" text-anchor="middle" font-weight="600">следващ push</text>
+<text x="40.0" y="268.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">pop ×3: head_ се мести, нищо не се копира   (size_ = 2)</text>
+</svg>

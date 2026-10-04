@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" width="1100" height="300" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Проверка на скоби със стек</title>
+<rect width="1100" height="300" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="20" fill="#0b0b0b" text-anchor="start" font-weight="700">Скоби: отваряща → push; затваряща → трябва да съвпада с върха → pop</text>
+<text x="110.0" y="92.0" font-size="22" fill="#1baf7a" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<rect x="75.0" y="216.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="110.0" y="238.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<path d="M 70,110 L 70,250 L 150,250 L 150,110" fill="none" stroke="#8a8984" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="238.0" y="92.0" font-size="22" fill="#1baf7a" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">[</text>
+<rect x="203.0" y="216.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="238.0" y="238.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<rect x="203.0" y="180.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="238.0" y="202.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">[</text>
+<path d="M 198,110 L 198,250 L 278,250 L 278,110" fill="none" stroke="#8a8984" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="366.0" y="92.0" font-size="22" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">]</text>
+<rect x="331.0" y="216.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="366.0" y="238.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<path d="M 326,110 L 326,250 L 406,250 L 406,110" fill="none" stroke="#8a8984" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="494.0" y="92.0" font-size="22" fill="#1baf7a" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">{</text>
+<rect x="459.0" y="216.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="494.0" y="238.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<rect x="459.0" y="180.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="494.0" y="202.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">{</text>
+<path d="M 454,110 L 454,250 L 534,250 L 534,110" fill="none" stroke="#8a8984" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="622.0" y="92.0" font-size="22" fill="#1baf7a" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<rect x="587.0" y="216.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="622.0" y="238.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<rect x="587.0" y="180.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="622.0" y="202.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">{</text>
+<rect x="587.0" y="144.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="622.0" y="166.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<path d="M 582,110 L 582,250 L 662,250 L 662,110" fill="none" stroke="#8a8984" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="750.0" y="92.0" font-size="22" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">)</text>
+<rect x="715.0" y="216.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="750.0" y="238.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<rect x="715.0" y="180.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="750.0" y="202.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">{</text>
+<path d="M 710,110 L 710,250 L 790,250 L 790,110" fill="none" stroke="#8a8984" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="878.0" y="92.0" font-size="22" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">}</text>
+<rect x="843.0" y="216.0" width="70.0" height="32.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="878.0" y="238.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<path d="M 838,110 L 838,250 L 918,250 L 918,110" fill="none" stroke="#8a8984" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1006.0" y="92.0" font-size="22" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">)</text>
+<path d="M 966,110 L 966,250 L 1046,250 L 1046,110" fill="none" stroke="#8a8984" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="40.0" y="284.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Накрая стекът е празен → балансирани. „([)]“: при ) върхът е [ → не съвпада → false.</text>
+</svg>

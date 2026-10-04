@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" width="1100" height="400" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Стек (LIFO) и опашка (FIFO)</title>
+<rect width="1100" height="400" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="21" fill="#0b0b0b" text-anchor="start" font-weight="700">Стек: последен влязъл — пръв излязъл. Опашка: пръв влязъл — пръв излязъл.</text>
+<text x="170.0" y="96.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">стек</text>
+<rect x="110.0" y="300.0" width="120.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="170.0" y="328.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">A</text>
+<rect x="110.0" y="250.0" width="120.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="170.0" y="278.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">B</text>
+<rect x="110.0" y="200.0" width="120.0" height="44.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="170.0" y="228.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">C</text>
+<rect x="110.0" y="150.0" width="120.0" height="44.0" rx="6" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="170.0" y="178.0" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">D</text>
+<path d="M 110,120 L 110,346 L 230,346 L 230,120" fill="none" stroke="#8a8984" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 300,170 C 270,170 260,160 240,160" fill="none" stroke="#1baf7a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="310.0" y="175.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">push</text>
+<path d="M 240,180 C 270,190 290,210 300,214" fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="310.0" y="222.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">pop / top</text>
+<text x="170.0" y="380.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400">един край: top</text>
+<text x="760.0" y="96.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="700">опашка</text>
+<rect x="560.0" y="200.0" width="90.0" height="50.0" rx="6" fill="#2a78d6" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="605.0" y="231.0" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">A</text>
+<rect x="660.0" y="200.0" width="90.0" height="50.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="705.0" y="231.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">B</text>
+<rect x="760.0" y="200.0" width="90.0" height="50.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="805.0" y="231.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">C</text>
+<rect x="860.0" y="200.0" width="90.0" height="50.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="905.0" y="231.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">D</text>
+<line x1="560.0" y1="194.0" x2="950.0" y2="194.0" stroke="#8a8984" stroke-width="2" stroke-linecap="round"/>
+<line x1="560.0" y1="256.0" x2="950.0" y2="256.0" stroke="#8a8984" stroke-width="2" stroke-linecap="round"/>
+<line x1="1050.0" y1="225.0" x2="958.0" y2="225.0" stroke="#1baf7a" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="1000.0" y="214.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">push</text>
+<line x1="552.0" y1="225.0" x2="470.0" y2="225.0" stroke="#eb6834" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="505.0" y="214.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">pop</text>
+<text x="605.0" y="290.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">front</text>
+<text x="905.0" y="290.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">back</text>
+<text x="760.0" y="380.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400">два края: влиза отзад, излиза отпред</text>
+</svg>
