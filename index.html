@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>СДП семинар 2026/27</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+  <style>
+    :root {
+      --surface: #ffffff; --panel: #f6f5f2; --ink: #0b0b0b; --ink-2: #52514e;
+      --muted: #8a8984; --grid: #e4e3df; --accent: #2a78d6; --accent-tint: #e3eefb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --surface: #1a1a19; --panel: #232321; --ink: #ffffff; --ink-2: #c3c2b7;
+        --muted: #8f8e88; --grid: #383835; --accent: #6da7ec; --accent-tint: #1c2a3b;
+      }
+    }
+    :root[data-theme="dark"] {
+      --surface: #1a1a19; --panel: #232321; --ink: #ffffff; --ink-2: #c3c2b7;
+      --muted: #8f8e88; --grid: #383835; --accent: #6da7ec; --accent-tint: #1c2a3b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--surface); color: var(--ink);
+      font: 17px/1.5 "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+    }
+    main { max-width: 960px; margin: 0 auto; padding: 48px 16px 64px; }
+    .kicker { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+    h1 { font-size: 34px; margin: 6px 0 8px; line-height: 1.15; }
+    .lead { color: var(--ink-2); margin: 0 0 28px; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px; }
+    .links a {
+      color: var(--ink); text-decoration: none; border: 1px solid var(--grid);
+      padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: 15px;
+    }
+    .links a:hover { border-color: var(--accent); }
+    ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+    li {
+      display: grid; grid-template-columns: 56px 1fr auto; gap: 14px; align-items: center;
+      padding: 14px 16px; border: 1px solid var(--grid); border-radius: 12px; background: var(--surface);
+    }
+    li.ready { background: var(--panel); }
+    .num { font: 600 15px "IBM Plex Mono", monospace; color: var(--muted); }
+    .title { font-weight: 600; }
+    .date { color: var(--ink-2); font-size: 14px; }
+    li:not(.ready) .title { color: var(--ink-2); font-weight: 400; }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+    .actions a {
+      font-size: 14px; font-weight: 600; text-decoration: none; padding: 6px 12px; border-radius: 8px;
+      color: var(--accent); background: var(--accent-tint);
+    }
+    .soon { font-size: 13px; color: var(--muted); }
+    footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+    footer a { color: inherit; }
+    @media (max-width: 640px) {
+      li { grid-template-columns: 40px 1fr; }
+      .actions { grid-column: 2; justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="kicker">Структури от данни и програмиране · КН, поток 1</div>
+  <h1>Семинарни упражнения 2026/27</h1>
+  <p class="lead">Четвъртък, 16:00–18:00. Всеки семинар упражнява темата от лекцията през предходната седмица.</p>
+  <div class="links">
+    <a id="repo" href="#">Repo в GitHub</a>
+    <a id="setup" href="#">Настройка на средата</a>
+  </div>
+  <ol id="list"><li>Зареждане…</li></ol>
+  <footer>Слайдове и записки: CC BY-NC-SA 4.0 · Код: MIT</footer>
+</main>
+<script>
+(async function () {
+  const list = document.getElementById("list");
+  try {
+    const meta = await (await fetch("slides/weeks.json")).json();
+    const blob = meta.repo + "/blob/" + meta.branch;
+    document.getElementById("repo").href = meta.repo;
+    document.getElementById("setup").href = blob + "/SETUP.md";
+    const fmt = new Intl.DateTimeFormat("bg-BG", { day: "numeric", month: "long" });
+    list.innerHTML = "";
+    for (const s of meta.seminars) {
+      const li = document.createElement("li");
+      if (s.ready) li.className = "ready";
+      const date = fmt.format(new Date(s.date + "T12:00:00"));
+      let actions = '<span class="soon">предстои</span>';
+      if (s.ready) {
+        actions = s.weeks.map((w) =>
+          '<a href="slides/?w=' + w + '">Слайдове</a>' +
+          '<a href="' + blob + "/weeks/" + w + '/notes.md">Записки</a>' +
+          '<a href="' + blob + "/weeks/" + w + '/exercises.md">Задачи</a>').join("");
+      }
+      li.innerHTML =
+        '<span class="num">' + String(s.n).padStart(2, "0") + "</span>" +
+        '<div><div class="title"></div><div class="date">' + date + "</div></div>" +
+        '<div class="actions">' + actions + "</div>";
+      li.querySelector(".title").textContent = s.title;
+      list.appendChild(li);
+    }
+  } catch (e) {
+    list.innerHTML = "<li>Списъкът не се зареди. Отворете страницата през GitHub Pages.</li>";
+  }
+})();
+</script>
+</body>
+</html>

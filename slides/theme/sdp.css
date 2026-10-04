@@ -1,0 +1,143 @@
+/* SDP seminar theme for reveal.js: light, high-contrast, projector-friendly.
+   Loaded after reveal's white.css; only overrides what we need. */
+
+:root {
+  --sdp-surface: #ffffff;
+  --sdp-ink: #0b0b0b;
+  --sdp-ink-2: #52514e;
+  --sdp-muted: #8a8984;
+  --sdp-grid: #e4e3df;
+  --sdp-panel: #f6f5f2;
+  --sdp-accent: #2a78d6;
+  --sdp-accent-2: #eb6834;
+  --sdp-good: #1baf7a;
+  --sdp-bad: #e34948;
+  --sdp-tint-accent: #e3eefb;
+  --sdp-tint-good: #dcf3ea;
+  --sdp-tint-bad: #fbe3e3;
+  --sdp-tint-warn: #fdf1d8;
+
+  --r-background-color: var(--sdp-surface);
+  --r-main-font: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --r-main-font-size: 30px;
+  --r-main-color: var(--sdp-ink);
+  --r-heading-font: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --r-heading-color: var(--sdp-ink);
+  --r-heading-font-weight: 700;
+  --r-heading-text-transform: none;
+  --r-heading-letter-spacing: -0.01em;
+  --r-heading1-size: 2.1em;
+  --r-heading2-size: 1.45em;
+  --r-heading3-size: 1.1em;
+  --r-code-font: "IBM Plex Mono", Consolas, Menlo, monospace;
+  --r-link-color: var(--sdp-accent);
+  --r-link-color-hover: #1c5cab;
+  --r-selection-background-color: var(--sdp-tint-accent);
+}
+
+body { background: var(--sdp-surface); }
+
+.reveal .slides section { text-align: left; }
+.reveal h1, .reveal h2, .reveal h3 { margin-bottom: 0.5em; }
+.reveal h2 { border-bottom: 3px solid var(--sdp-grid); padding-bottom: 0.2em; }
+
+.reveal p, .reveal li { line-height: 1.4; }
+.reveal ul, .reveal ol { display: block; margin-left: 1.1em; }
+.reveal li { margin: 0.25em 0; }
+.reveal strong { font-weight: 700; }
+
+/* Title slide: first slide of every deck */
+.reveal .slides > section:first-child,
+.reveal .slides > section > section:first-child { }
+.reveal section.title-slide { text-align: left; }
+.reveal section.title-slide h1 { margin-top: 1.6em; font-size: 2.3em; }
+.reveal section.title-slide .kicker {
+  color: var(--sdp-accent); font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; font-size: 0.7em;
+}
+
+/* Code */
+.reveal pre {
+  width: 100%;
+  box-shadow: none;
+  font-size: 0.6em;
+  border: 1px solid var(--sdp-grid);
+  border-radius: 10px;
+  background: #fafaf8;
+}
+.reveal pre code {
+  max-height: 520px;
+  padding: 0.8em 1em;
+  line-height: 1.45;
+  background: transparent;
+}
+.reveal code { font-family: var(--r-code-font); }
+.reveal p code, .reveal li code, .reveal td code {
+  background: var(--sdp-panel);
+  border: 1px solid var(--sdp-grid);
+  border-radius: 5px;
+  padding: 0.05em 0.3em;
+  font-size: 0.88em;
+}
+.reveal .hljs-ln-numbers { color: var(--sdp-muted); }
+.reveal .hljs:not(:first-child).fragment { position: absolute; top: 0; left: 0; width: 100%; box-sizing: border-box; }
+
+/* Tables */
+.reveal table { font-size: 0.75em; border-collapse: collapse; margin: 0.6em 0; }
+.reveal table th { background: var(--sdp-panel); font-weight: 600; }
+.reveal table th, .reveal table td { border: 1px solid var(--sdp-grid); padding: 0.35em 0.7em; }
+
+/* Images: figures are SVG on a white card */
+.reveal img { max-height: 520px; margin: 0.3em 0; }
+.reveal .r-stack img { max-height: 500px; }
+
+/* Layout helpers usable from Markdown via raw HTML */
+.reveal .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2em; align-items: start; }
+.reveal .cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8em; }
+.reveal .small { font-size: 0.75em; color: var(--sdp-ink-2); }
+.reveal .muted { color: var(--sdp-muted); }
+.reveal .center { text-align: center; }
+
+/* Call-outs. In Markdown use GitHub alerts (> [!TIP]); on slides they
+   arrive as blockquotes, styled here. */
+.reveal blockquote {
+  width: auto;
+  margin: 0.6em 0;
+  padding: 0.5em 0.9em;
+  font-style: normal;
+  background: var(--sdp-tint-accent);
+  border-left: 6px solid var(--sdp-accent);
+  border-radius: 8px;
+  box-shadow: none;
+}
+.reveal blockquote p { margin: 0.2em 0; }
+.reveal .box { padding: 0.5em 0.9em; border-radius: 10px; margin: 0.4em 0; }
+.reveal .box.good { background: var(--sdp-tint-good); border-left: 6px solid var(--sdp-good); }
+.reveal .box.bad { background: var(--sdp-tint-bad); border-left: 6px solid var(--sdp-bad); }
+.reveal .box.warn { background: var(--sdp-tint-warn); border-left: 6px solid #eda100; }
+.reveal .box.task { background: var(--sdp-panel); border-left: 6px solid var(--sdp-ink-2); }
+
+/* Timer badge for practice slides: <span class="timer">35 мин</span> */
+.reveal .timer {
+  float: right; font-size: 0.55em; font-weight: 700; color: var(--sdp-surface);
+  background: var(--sdp-accent-2); padding: 0.2em 0.7em; border-radius: 999px;
+}
+
+/* Quiz answers: revealed as a fragment */
+.reveal .answer { color: var(--sdp-good); font-weight: 700; }
+
+/* Footer: СДП 2026/27 · Семинар N · title */
+.sdp-footer {
+  position: fixed; left: 24px; bottom: 14px; z-index: 30;
+  font: 15px "IBM Plex Sans", Arial, sans-serif; color: var(--sdp-muted);
+}
+.reveal .slide-number {
+  background: transparent; color: var(--sdp-muted);
+  font: 15px "IBM Plex Sans", Arial, sans-serif; right: 120px; bottom: 14px;
+}
+.reveal .progress { color: var(--sdp-accent); height: 4px; }
+.reveal .controls { color: var(--sdp-accent); }
+
+@media print {
+  .sdp-footer { display: none; }
+}

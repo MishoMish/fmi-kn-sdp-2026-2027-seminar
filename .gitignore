@@ -1,0 +1,28 @@
+# Build output (CMake presets put everything under build/)
+build/
+cmake-build-*/
+out/
+CMakeUserPresets.json
+
+# Compiled files (also from the g++ fallback commands in SETUP.md)
+*.o
+*.obj
+*.exe
+*.out
+w[0-9][0-9]_tests
+w[0-9][0-9]_bench
+
+# Python
+__pycache__/
+
+# Editors / IDEs
+.vscode/
+.idea/
+.vs/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

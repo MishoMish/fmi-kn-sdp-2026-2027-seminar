@@ -1,0 +1,24 @@
+name: CI
+
+# Builds everything on all three OSes students use. Starter tests are
+# expected to fail (they wait for students' solutions), so only released
+# reference solutions are run.
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake --preset default
+      - name: Build
+        run: cmake --build --preset default
+      - name: Test released solutions
+        run: ctest --preset solution
