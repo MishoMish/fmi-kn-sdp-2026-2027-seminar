@@ -17,86 +17,10 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent
 
-# Tokens shared with slides/theme/sdp.css.
-SURFACE = "#ffffff"
-INK = "#0b0b0b"
-INK2 = "#52514e"
-MUTED = "#8a8984"
-GRID = "#e4e3df"
-PANEL = "#f6f5f2"
-S1, S2, S3, S4, S5 = "#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4"
-RED, GREEN = "#e34948", "#1baf7a"
-TINT1, TINT2, TINT3, TINT5 = "#e3eefb", "#fde8df", "#dcf3ea", "#fbe7ef"
+import sys
 
-SANS = "'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif"
-MONO = "'IBM Plex Mono',Consolas,Menlo,monospace"
-
-
-def esc(text):
-    return (str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
-
-
-class Svg:
-    def __init__(self, width, height, title):
-        self.w, self.h = width, height
-        self.parts = [
-            f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
-            f'width="{width}" height="{height}" role="img" font-family="{SANS}">',
-            f"<title>{esc(title)}</title>",
-            f'<rect width="{width}" height="{height}" rx="12" fill="{SURFACE}"/>',
-            "<defs>"
-            f'<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" '
-            f'markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="{INK2}"/></marker>'
-            "</defs>",
-        ]
-
-    def add(self, s):
-        self.parts.append(s)
-
-    def text(self, x, y, s, size=16, fill=INK, anchor="start", weight=400, family=None, italic=False):
-        fam = f' font-family="{family}"' if family else ""
-        st = ' font-style="italic"' if italic else ""
-        self.add(f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" fill="{fill}" '
-                 f'text-anchor="{anchor}" font-weight="{weight}"{fam}{st}>{esc(s)}</text>')
-
-    def rect(self, x, y, w, h, fill, stroke="none", rx=8, sw=1.5, dash=None):
-        d = f' stroke-dasharray="{dash}"' if dash else ""
-        self.add(f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" rx="{rx}" '
-                 f'fill="{fill}" stroke="{stroke}" stroke-width="{sw}"{d}/>')
-
-    def line(self, x1, y1, x2, y2, stroke=INK2, sw=1.5, arrow=False, dash=None):
-        a = ' marker-end="url(#arrow)"' if arrow else ""
-        d = f' stroke-dasharray="{dash}"' if dash else ""
-        self.add(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{stroke}" '
-                 f'stroke-width="{sw}" stroke-linecap="round"{a}{d}/>')
-
-    def path(self, d, stroke, sw=2, fill="none", dash=None, arrow=False):
-        da = f' stroke-dasharray="{dash}"' if dash else ""
-        a = ' marker-end="url(#arrow)"' if arrow else ""
-        self.add(f'<path d="{d}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}" '
-                 f'stroke-linejoin="round" stroke-linecap="round"{da}{a}/>')
-
-    def circle(self, x, y, r, fill, stroke=SURFACE, sw=2):
-        self.add(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"/>')
-
-    def box(self, x, y, w, h, lines, fill=PANEL, stroke=GRID, size=16, mono_first=False, weight=600):
-        self.rect(x, y, w, h, fill, stroke)
-        total = len(lines)
-        for k, s in enumerate(lines):
-            cy = y + h / 2 + (k - (total - 1) / 2) * (size * 1.35) + size * 0.35
-            fam = MONO if (mono_first and k == 0) else None
-            self.text(x + w / 2, cy, s, size=size if k == 0 else size - 2,
-                      fill=INK if k == 0 else INK2, anchor="middle",
-                      weight=weight if k == 0 else 400, family=fam)
-
-    def save(self, name):
-        self.add("</svg>")
-        (OUT / name).write_text("\n".join(self.parts) + "\n", encoding="utf-8")
-        print("wrote", name)
-
-
-def polyline(points):
-    return "M" + " L".join(f"{x:.1f},{y:.1f}" for x, y in points)
+sys.path.insert(0, str(Path(__file__).resolve().parents[4] / "tools"))
+from figlib import *  # noqa: E402,F401,F403  (tokens, Svg, polyline, axes, legend)
 
 
 # ---------------------------------------------------------------- pipeline
@@ -129,7 +53,7 @@ def compile_pipeline():
 
     s.text(40, 408, "Грешка от компилатора (синтаксис, типове) идва от един .cpp; "
            "„undefined reference“ идва от линкера — липсва дефиниция.", size=15, fill=INK2)
-    s.save("compile-pipeline.svg")
+    s.save(OUT / "compile-pipeline.svg")
 
 
 def cmake_workflow():
@@ -154,7 +78,7 @@ def cmake_workflow():
     s.path("M 900,260 C 900,320 560,320 560,262", INK2, sw=1.5, dash="5 5", arrow=True)
     s.text(730, 330, "промених .cpp → само 2 и 3", size=15, fill=INK2, anchor="middle", italic=True)
     s.text(40, 330, "1 се пуска веднъж (или при нов файл).", size=15, fill=INK2, italic=True)
-    s.save("cmake-workflow.svg")
+    s.save(OUT / "cmake-workflow.svg")
 
 
 def red_green_refactor():
@@ -185,31 +109,7 @@ def red_green_refactor():
         s.text(x, y - 8, name, size=18, weight=700, anchor="middle")
         s.text(x, y + 13, desc, size=14, fill=INK2, anchor="middle")
         s.text(x, y + 30, extra[name], size=14, fill=INK2, anchor="middle")
-    s.save("red-green-refactor.svg")
-
-
-# ---------------------------------------------------------------- charts
-
-def axes(s, x0, y0, w, h, xticks, yticks, xlabel, ylabel, fx, fy, xfmt=str, yfmt=str):
-    for t in yticks:
-        y = fy(t)
-        s.line(x0, y, x0 + w, y, stroke=GRID, sw=1)
-        s.text(x0 - 10, y + 5, yfmt(t), size=13, fill=INK2, anchor="end")
-    for t in xticks:
-        x = fx(t)
-        s.line(x, y0 + h, x, y0 + h + 6, stroke=MUTED, sw=1)
-        s.text(x, y0 + h + 24, xfmt(t), size=13, fill=INK2, anchor="middle")
-    s.line(x0, y0 + h, x0 + w, y0 + h, stroke=MUTED, sw=1)
-    s.text(x0 + w / 2, y0 + h + 52, xlabel, size=15, fill=INK2, anchor="middle")
-    s.add(f'<text transform="translate({x0 - 58},{y0 + h / 2}) rotate(-90)" font-size="15" '
-          f'fill="{INK2}" text-anchor="middle">{esc(ylabel)}</text>')
-
-
-def legend(s, x, y, items):
-    for k, (col, lab) in enumerate(items):
-        yy = y + k * 24
-        s.line(x, yy, x + 22, yy, stroke=col, sw=3)
-        s.text(x + 30, yy + 5, lab, size=14, fill=INK)
+    s.save(OUT / "red-green-refactor.svg")
 
 
 def growth_rates():
@@ -251,7 +151,7 @@ def growth_rates():
     for k, (a, b) in enumerate(rows):
         s.text(830, 318 + k * 22, a, size=14, family=MONO)
         s.text(910, 318 + k * 22, b, size=14, fill=INK2)
-    s.save("growth-rates.svg")
+    s.save(OUT / "growth-rates.svg")
 
 
 def asymptotic_bounds():
@@ -297,7 +197,7 @@ def asymptotic_bounds():
         s.text(fx(peak), fy(f(peak)) - 12, "f(n)", size=14, weight=600, anchor="middle")
     s.text(600, 410, "Вдясно от n₀ (оцветената зона) неравенството е в сила за всяко n. "
            "Какво става преди n₀, няма значение.", size=15, fill=INK2, anchor="middle")
-    s.save("asymptotic-bounds.svg")
+    s.save(OUT / "asymptotic-bounds.svg")
 
 
 def doubling_experiment():
@@ -332,7 +232,7 @@ def doubling_experiment():
     s.text(830, 294, "по-стръмно от другите две.", size=14, fill=INK2)
     s.text(830, 330, "×2 на n ⇒ ×4 на времето", size=14, weight=600)
     s.text(830, 350, "за naive, ≈×2 за другите.", size=14, weight=600)
-    s.save("doubling-experiment.svg")
+    s.save(OUT / "doubling-experiment.svg")
 
 
 # ---------------------------------------------------------------- loop pictures
@@ -361,7 +261,7 @@ def loop_triangle():
     s.text(tx, 326, "пак Θ(n²).", size=17, weight=700)
     s.text(tx, 372, "Константата ½ изчезва", size=15, fill=INK2, italic=True)
     s.text(tx, 394, "в асимптотичния запис.", size=15, fill=INK2, italic=True)
-    s.save("loop-triangle.svg")
+    s.save(OUT / "loop-triangle.svg")
 
 
 def doubling_loop_frames():
@@ -390,7 +290,7 @@ def doubling_loop_frames():
         else:
             s.text(40, 260, "i = 16 ≥ n → край.  4 итерации = log₂ 16", size=18, weight=600)
             s.text(860, 260, "удвои n → само +1 итерация", size=16, fill=INK2, anchor="end", italic=True)
-        s.save(f"doubling-loop-{frame + 1}.svg")
+        s.save(OUT / f"doubling-loop-{frame + 1}.svg")
 
 
 # ---------------------------------------------------------------- doubles
@@ -429,7 +329,7 @@ def ieee754_layout():
            size=17, family=MONO, weight=600)
     s.text(40, 314, "Двоичният запис на 1/10 е безкраен (0.0001100110011…₂) — както 1/3 = 0.333… в десетична.",
            size=15, fill=INK2)
-    s.save("ieee754-layout.svg")
+    s.save(OUT / "ieee754-layout.svg")
 
 
 def float_number_line():
@@ -470,7 +370,7 @@ def float_number_line():
     s.text(660, legend_y + 20, "не е <, >, нито == на нищо, дори на себе си.", size=14, fill=INK2)
     s.text(40, 312, "Отрицателните числа са огледален образ; −0 и +0 са различни битове, но −0 == +0.",
            size=15, fill=INK2)
-    s.save("float-number-line.svg")
+    s.save(OUT / "float-number-line.svg")
 
 
 if __name__ == "__main__":
