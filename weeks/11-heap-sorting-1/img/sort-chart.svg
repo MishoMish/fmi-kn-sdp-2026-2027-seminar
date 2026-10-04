@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Време за сортиране, случаен вход</title>
+<rect width="1100" height="520" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Време за сортиране на n случайни int (ms)</text>
+<text x="40.0" y="70.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Release, примерна машина; квадратичните — само до 20 000</text>
+<line x1="100.0" y1="440.0" x2="660.0" y2="440.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="445.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">0.001</text>
+<line x1="100.0" y1="391.4" x2="660.0" y2="391.4" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="396.4" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">0.01</text>
+<line x1="100.0" y1="342.9" x2="660.0" y2="342.9" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="347.9" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">0.1</text>
+<line x1="100.0" y1="294.3" x2="660.0" y2="294.3" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="299.3" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">1</text>
+<line x1="100.0" y1="245.7" x2="660.0" y2="245.7" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="250.7" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">10</text>
+<line x1="100.0" y1="197.1" x2="660.0" y2="197.1" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="202.1" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">100</text>
+<line x1="100.0" y1="148.6" x2="660.0" y2="148.6" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="153.6" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">1000</text>
+<line x1="100.0" y1="100.0" x2="660.0" y2="100.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="105.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">10000</text>
+<line x1="100.0" y1="440.0" x2="100.0" y2="446.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="464.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^3</text>
+<line x1="286.7" y1="440.0" x2="286.7" y2="446.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="286.7" y="464.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^4</text>
+<line x1="473.3" y1="440.0" x2="473.3" y2="446.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="473.3" y="464.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^5</text>
+<line x1="660.0" y1="440.0" x2="660.0" y2="446.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="660.0" y="464.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^6</text>
+<line x1="100.0" y1="440.0" x2="660.0" y2="440.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="380.0" y="492.0" font-size="15" fill="#52514e" text-anchor="middle" font-weight="400">n (лог. ос)</text>
+<text transform="translate(42,270.0) rotate(-90)" font-size="15" fill="#52514e" text-anchor="middle">ms (лог. ос)</text>
+<path d="M100.0,326.5 L230.5,260.4 L342.9,201.8" fill="none" stroke="#e87ba4" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="326.5" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="230.5" cy="260.4" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<circle cx="342.9" cy="201.8" r="4" fill="#e87ba4" stroke="#ffffff" stroke-width="2"/>
+<path d="M100.0,288.1 L230.5,218.6 L342.9,160.6" fill="none" stroke="#e34948" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="288.1" r="4" fill="#e34948" stroke="#ffffff" stroke-width="2"/>
+<circle cx="230.5" cy="218.6" r="4" fill="#e34948" stroke="#ffffff" stroke-width="2"/>
+<circle cx="342.9" cy="160.6" r="4" fill="#e34948" stroke="#ffffff" stroke-width="2"/>
+<path d="M100.0,287.3 L230.5,218.7 L342.9,160.7" fill="none" stroke="#b13b3b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="287.3" r="4" fill="#b13b3b" stroke="#ffffff" stroke-width="2"/>
+<circle cx="230.5" cy="218.7" r="4" fill="#b13b3b" stroke="#ffffff" stroke-width="2"/>
+<circle cx="342.9" cy="160.7" r="4" fill="#b13b3b" stroke="#ffffff" stroke-width="2"/>
+<path d="M100.0,355.5 L230.5,287.8 L342.9,228.3" fill="none" stroke="#eda100" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="355.5" r="4" fill="#eda100" stroke="#ffffff" stroke-width="2"/>
+<circle cx="230.5" cy="287.8" r="4" fill="#eda100" stroke="#ffffff" stroke-width="2"/>
+<circle cx="342.9" cy="228.3" r="4" fill="#eda100" stroke="#ffffff" stroke-width="2"/>
+<path d="M100.0,385.9 L230.5,328.3 L342.9,294.4 L473.3,256.6 L660.0,203.3" fill="none" stroke="#1baf7a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="385.9" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="230.5" cy="328.3" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="342.9" cy="294.4" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="473.3" cy="256.6" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<circle cx="660.0" cy="203.3" r="4" fill="#1baf7a" stroke="#ffffff" stroke-width="2"/>
+<path d="M100.0,380.2 L230.5,331.3 L342.9,296.8 L473.3,259.6 L660.0,204.7" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="380.2" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="230.5" cy="331.3" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="342.9" cy="296.8" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="473.3" cy="259.6" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="660.0" cy="204.7" r="4" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<path d="M100.0,399.0 L230.5,341.6 L342.9,305.6 L473.3,268.3 L660.0,216.4" fill="none" stroke="#0b0b0b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="399.0" r="4" fill="#0b0b0b" stroke="#ffffff" stroke-width="2"/>
+<circle cx="230.5" cy="341.6" r="4" fill="#0b0b0b" stroke="#ffffff" stroke-width="2"/>
+<circle cx="342.9" cy="305.6" r="4" fill="#0b0b0b" stroke="#ffffff" stroke-width="2"/>
+<circle cx="473.3" cy="268.3" r="4" fill="#0b0b0b" stroke="#ffffff" stroke-width="2"/>
+<circle cx="660.0" cy="216.4" r="4" fill="#0b0b0b" stroke="#ffffff" stroke-width="2"/>
+<path d="M100.0,391.4 L230.5,339.9 L342.9,303.8 L473.3,265.7 L660.0,213.3" fill="none" stroke="#8a8984" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="391.4" r="4" fill="#8a8984" stroke="#ffffff" stroke-width="2"/>
+<circle cx="230.5" cy="339.9" r="4" fill="#8a8984" stroke="#ffffff" stroke-width="2"/>
+<circle cx="342.9" cy="303.8" r="4" fill="#8a8984" stroke="#ffffff" stroke-width="2"/>
+<circle cx="473.3" cy="265.7" r="4" fill="#8a8984" stroke="#ffffff" stroke-width="2"/>
+<circle cx="660.0" cy="213.3" r="4" fill="#8a8984" stroke="#ffffff" stroke-width="2"/>
+<line x1="700.0" y1="120.0" x2="722.0" y2="120.0" stroke="#e87ba4" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="125.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">selection</text>
+<line x1="700.0" y1="144.0" x2="722.0" y2="144.0" stroke="#e34948" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="149.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">bubble</text>
+<line x1="700.0" y1="168.0" x2="722.0" y2="168.0" stroke="#b13b3b" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="173.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">shaker</text>
+<line x1="700.0" y1="192.0" x2="722.0" y2="192.0" stroke="#eda100" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="197.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">insertion</text>
+<line x1="700.0" y1="216.0" x2="722.0" y2="216.0" stroke="#1baf7a" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="221.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">Shell</text>
+<line x1="700.0" y1="240.0" x2="722.0" y2="240.0" stroke="#2a78d6" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="245.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">heapsort</text>
+<line x1="700.0" y1="264.0" x2="722.0" y2="264.0" stroke="#0b0b0b" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="269.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">std::sort</text>
+<line x1="700.0" y1="288.0" x2="722.0" y2="288.0" stroke="#8a8984" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="293.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">std::stable_sort</text>
+<text x="700.0" y="330.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">n = 20 000: bubble 566 ms,</text>
+<text x="700.0" y="352.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">insertion 23 ms, std::sort 0.6 ms</text>
+<text x="700.0" y="440.0" font-size="13" fill="#8a8984" text-anchor="start" font-weight="400">(bubble и shaker почти съвпадат)</text>
+<text x="700.0" y="388.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Наклон 2 (×10 по n → ×100 по време):</text>
+<text x="700.0" y="410.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">квадратичните. Наклон ≈ 1: n log n.</text>
+</svg>

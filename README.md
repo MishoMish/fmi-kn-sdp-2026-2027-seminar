@@ -20,7 +20,7 @@
 | 8 | 26 ное | Shunting-yard, хеширане, хеш таблици | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=08-shunting-yard-hashing) · [записки](weeks/08-shunting-yard-hashing/notes.md) · [задачи](weeks/08-shunting-yard-hashing/exercises.md) |
 | 9 | 3 дек | Дървета I: двоични и двоични наредени дървета | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=09-trees-1) · [записки](weeks/09-trees-1/notes.md) · [задачи](weeks/09-trees-1/exercises.md) |
 | 10 | 10 дек | Дървета II: балансирани дървета | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=10-trees-2) · [записки](weeks/10-trees-2/notes.md) · [задачи](weeks/10-trees-2/exercises.md) |
-| 11 | 17 дек | Двоична пирамида, сортировки I | предстои |
+| 11 | 17 дек | Двоична пирамида, сортировки I | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=11-heap-sorting-1) · [записки](weeks/11-heap-sorting-1/notes.md) · [задачи](weeks/11-heap-sorting-1/exercises.md) |
 | — | 24, 31 дек | *коледна ваканция* | |
 | 12 | 7 яну | Сортировки II | предстои |
 | 13 | 14 яну | Графи I: представяне и обхождане | предстои |

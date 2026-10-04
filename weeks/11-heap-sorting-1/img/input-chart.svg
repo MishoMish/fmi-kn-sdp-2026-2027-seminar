@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" width="1100" height="500" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Влияние на входа, n = 20 000</title>
+<rect width="1100" height="500" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">Един и същи алгоритъм, различен вход (n = 20 000, ms, лог. скала)</text>
+<line x1="100.0" y1="400.0" x2="1000.0" y2="400.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="405.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">0.001</text>
+<line x1="100.0" y1="350.0" x2="1000.0" y2="350.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="355.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">0.01</text>
+<line x1="100.0" y1="300.0" x2="1000.0" y2="300.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="305.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">0.1</text>
+<line x1="100.0" y1="250.0" x2="1000.0" y2="250.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="255.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">1</text>
+<line x1="100.0" y1="200.0" x2="1000.0" y2="200.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="205.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">10</text>
+<line x1="100.0" y1="150.0" x2="1000.0" y2="150.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="155.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">100</text>
+<line x1="100.0" y1="100.0" x2="1000.0" y2="100.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="105.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">1000</text>
+<rect x="114.0" y="154.8" width="26.5" height="245.2" rx="3" fill="#2a78d6"/>
+<rect x="144.5" y="154.8" width="26.5" height="245.2" rx="3" fill="#1baf7a"/>
+<rect x="175.0" y="154.8" width="26.5" height="245.2" rx="3" fill="#e34948"/>
+<rect x="205.5" y="154.8" width="26.5" height="245.2" rx="3" fill="#eda100"/>
+<text x="175.0" y="424.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="600">selection</text>
+<rect x="264.0" y="112.4" width="26.5" height="287.6" rx="3" fill="#2a78d6"/>
+<rect x="294.5" y="347.9" width="26.5" height="52.1" rx="3" fill="#1baf7a"/>
+<rect x="325.0" y="98.3" width="26.5" height="301.7" rx="3" fill="#e34948"/>
+<rect x="355.5" y="329.3" width="26.5" height="70.7" rx="3" fill="#eda100"/>
+<text x="325.0" y="424.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="600">bubble</text>
+<rect x="414.0" y="182.1" width="26.5" height="217.9" rx="3" fill="#2a78d6"/>
+<rect x="444.5" y="346.0" width="26.5" height="54.0" rx="3" fill="#1baf7a"/>
+<rect x="475.0" y="166.1" width="26.5" height="233.9" rx="3" fill="#e34948"/>
+<rect x="505.5" y="342.7" width="26.5" height="57.3" rx="3" fill="#eda100"/>
+<text x="475.0" y="424.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="600">insertion</text>
+<rect x="564.0" y="250.2" width="26.5" height="149.8" rx="3" fill="#2a78d6"/>
+<rect x="594.5" y="295.3" width="26.5" height="104.7" rx="3" fill="#1baf7a"/>
+<rect x="625.0" y="291.2" width="26.5" height="108.8" rx="3" fill="#e34948"/>
+<rect x="655.5" y="295.0" width="26.5" height="105.0" rx="3" fill="#eda100"/>
+<text x="625.0" y="424.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="600">Shell</text>
+<rect x="714.0" y="252.6" width="26.5" height="147.4" rx="3" fill="#2a78d6"/>
+<rect x="744.5" y="260.9" width="26.5" height="139.1" rx="3" fill="#1baf7a"/>
+<rect x="775.0" y="259.8" width="26.5" height="140.2" rx="3" fill="#e34948"/>
+<rect x="805.5" y="260.7" width="26.5" height="139.3" rx="3" fill="#eda100"/>
+<text x="775.0" y="424.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="600">heapsort</text>
+<rect x="864.0" y="261.7" width="26.5" height="138.3" rx="3" fill="#2a78d6"/>
+<rect x="894.5" y="301.3" width="26.5" height="98.7" rx="3" fill="#1baf7a"/>
+<rect x="925.0" y="310.0" width="26.5" height="90.0" rx="3" fill="#e34948"/>
+<rect x="955.5" y="301.1" width="26.5" height="98.9" rx="3" fill="#eda100"/>
+<text x="925.0" y="424.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="600">std::sort</text>
+<line x1="100.0" y1="400.0" x2="1000.0" y2="400.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<rect x="120.0" y="450.0" width="16.0" height="16.0" rx="3" fill="#2a78d6" stroke="none" stroke-width="1.5"/>
+<text x="144.0" y="463.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">случаен</text>
+<rect x="320.0" y="450.0" width="16.0" height="16.0" rx="3" fill="#1baf7a" stroke="none" stroke-width="1.5"/>
+<text x="344.0" y="463.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">сортиран</text>
+<rect x="520.0" y="450.0" width="16.0" height="16.0" rx="3" fill="#e34948" stroke="none" stroke-width="1.5"/>
+<text x="544.0" y="463.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">обратен</text>
+<rect x="720.0" y="450.0" width="16.0" height="16.0" rx="3" fill="#eda100" stroke="none" stroke-width="1.5"/>
+<text x="744.0" y="463.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">почти сортиран</text>
+<text x="40.0" y="490.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Selection не забелязва входа. Bubble и insertion са адаптивни: сортиран вход → Θ(n).</text>
+</svg>
