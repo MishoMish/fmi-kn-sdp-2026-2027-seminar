@@ -54,6 +54,11 @@ function(sdp_add_week week_dir)
     get_filename_component(week_name "${week_dir}" NAME)
     string(SUBSTRING "${week_name}" 0 2 num)
 
+    file(GLOB any_tests CONFIGURE_DEPENDS "${week_dir}/tests/*.cpp")
+    if(NOT any_tests)
+        return()  # a week that has no tests (yet)
+    endif()
+
     _sdp_add_variant(${num} starter "${week_dir}/starter" "${week_dir}")
 
     file(GLOB public_solutions "${week_dir}/solutions/*.h" "${week_dir}/solutions/*.cpp")

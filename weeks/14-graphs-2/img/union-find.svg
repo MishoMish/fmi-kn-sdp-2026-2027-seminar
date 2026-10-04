@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" width="1100" height="470" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Обединение на множества: дървета, размер, свиване на пътя</title>
+<rect width="1100" height="470" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Union-find: всяко множество е дърво; коренът е представителят</text>
+<text x="40.0" y="92.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">① unite(4, 7): по-малкото дърво под по-голямото</text>
+<circle cx="150.0" cy="140.0" r="18" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="150.0" y="145.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="100.0" cy="220.0" r="18" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="100.0" y="225.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="200.0" cy="220.0" r="18" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="200.0" y="225.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<circle cx="200.0" cy="300.0" r="18" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="200.0" y="305.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<line x1="109.5" y1="204.7" x2="138.3" y2="158.7" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="190.5" y1="204.7" x2="161.7" y2="158.7" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="200.0" y1="282.0" x2="200.0" y2="242.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="340.0" cy="140.0" r="18" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="340.0" y="145.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<circle cx="340.0" cy="220.0" r="18" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="340.0" y="225.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">7</text>
+<line x1="340.0" y1="202.0" x2="340.0" y2="162.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 322,132 C 260,90 200,100 170,124" fill="none" stroke="#eb6834" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<text x="40.0" y="360.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">размер 4 срещу 2: коренът 6 сочи 1.</text>
+<text x="40.0" y="380.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">Височината расте само когато се слеят</text>
+<text x="40.0" y="400.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">две еднакво големи → ≤ log₂ n.</text>
+<text x="470.0" y="92.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">② find(5) със свиване на пътя</text>
+<circle cx="560.0" cy="140.0" r="18" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="560.0" y="145.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="560.0" cy="210.0" r="18" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="560.0" y="215.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="560.0" cy="280.0" r="18" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="560.0" y="285.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<circle cx="560.0" cy="350.0" r="18" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="560.0" y="355.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<line x1="560.0" y1="192.0" x2="560.0" y2="162.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="560.0" y1="262.0" x2="560.0" y2="232.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="560.0" y1="332.0" x2="560.0" y2="302.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="560.0" y="400.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400">преди</text>
+<line x1="620.0" y1="245.0" x2="690.0" y2="245.0" stroke="#52514e" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="820.0" cy="140.0" r="18" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="820.0" y="145.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="740.0" cy="260.0" r="18" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="740.0" y="265.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<line x1="750.0" y1="245.0" x2="807.8" y2="158.3" stroke="#1baf7a" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="820.0" cy="260.0" r="18" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="820.0" y="265.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<line x1="820.0" y1="242.0" x2="820.0" y2="162.0" stroke="#1baf7a" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="900.0" cy="260.0" r="18" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="900.0" y="265.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<line x1="890.0" y1="245.0" x2="832.2" y2="158.3" stroke="#1baf7a" stroke-width="1.6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="820.0" y="400.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400">след: всички сочат корена</text>
+<text x="470.0" y="440.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="600">И двете заедно: m операции за O(m · α(n)); α(n) ≤ 4 за всяко n във Вселената.</text>
+</svg>

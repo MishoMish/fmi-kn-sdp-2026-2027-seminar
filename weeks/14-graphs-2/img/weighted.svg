@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Тегла: BFS вече не дава най-къс път</title>
+<rect width="1100" height="360" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">С тегла BFS греши: най-малко ребра ≠ най-къс път</text>
+<line x1="140.0" y1="200.0" x2="730.0" y2="200.0" stroke="#e34948" stroke-width="3" stroke-linecap="round"/>
+<circle cx="435.0" cy="200.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="435.0" y="205.0" font-size="13" fill="#e34948" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">10</text>
+<line x1="138.4" y1="192.1" x2="311.6" y2="117.9" stroke="#1baf7a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="225.0" cy="155.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="225.0" y="160.0" font-size="13" fill="#1baf7a" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<line x1="350.0" y1="110.0" x2="520.0" y2="110.0" stroke="#1baf7a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="435.0" cy="110.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="435.0" y="115.0" font-size="13" fill="#1baf7a" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<line x1="558.4" y1="117.9" x2="731.6" y2="192.1" stroke="#1baf7a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="645.0" cy="155.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="645.0" y="160.0" font-size="13" fill="#1baf7a" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="120.0" cy="200.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.8"/>
+<text x="120.0" y="205.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">A</text>
+<circle cx="330.0" cy="110.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.8"/>
+<text x="330.0" y="115.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">B</text>
+<circle cx="540.0" cy="110.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.8"/>
+<text x="540.0" y="115.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">C</text>
+<circle cx="750.0" cy="200.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.8"/>
+<text x="750.0" y="205.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">D</text>
+<text x="430.0" y="250.0" font-size="15" fill="#e34948" text-anchor="middle" font-weight="600">BFS: A → D (1 ребро) = 10 km</text>
+<text x="430.0" y="82.0" font-size="15" fill="#1baf7a" text-anchor="middle" font-weight="600">A → B → C → D (3 ребра) = 3 km</text>
+<text x="40.0" y="320.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Дейкстра (1959): BFS, в който опашката е min-пирамида по разстояние — винаги вадим НАЙ-БЛИЗКИЯ непосетен връх.</text>
+</svg>

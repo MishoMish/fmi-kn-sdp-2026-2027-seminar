@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" width="1100" height="470" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>N цариците с битови маски</title>
+<rect width="1100" height="470" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">8 царици: ред по ред, атакуваните колони — в три маски</text>
+<rect x="40.0" y="80.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="84.0" y="80.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="128.0" y="80.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="172.0" y="80.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="216.0" y="80.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="260.0" y="80.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="304.0" y="80.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="348.0" y="80.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<text x="370.0" y="112.0" font-size="28" fill="#eb6834" text-anchor="middle" font-weight="400">♛</text>
+<rect x="40.0" y="124.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="84.0" y="124.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="128.0" y="124.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="172.0" y="124.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="216.0" y="124.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="260.0" y="124.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="304.0" y="124.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="348.0" y="124.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<text x="194.0" y="156.0" font-size="28" fill="#eb6834" text-anchor="middle" font-weight="400">♛</text>
+<rect x="40.0" y="168.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="84.0" y="168.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="128.0" y="168.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="172.0" y="168.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="216.0" y="168.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="260.0" y="168.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="304.0" y="168.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="348.0" y="168.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<text x="62.0" y="200.0" font-size="28" fill="#eb6834" text-anchor="middle" font-weight="400">♛</text>
+<rect x="40.0" y="212.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="84.0" y="212.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="128.0" y="212.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="172.0" y="212.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="216.0" y="212.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="260.0" y="212.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="304.0" y="212.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="348.0" y="212.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<text x="150.0" y="244.0" font-size="28" fill="#eb6834" text-anchor="middle" font-weight="400">♛</text>
+<rect x="40.0" y="256.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="84.0" y="256.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="128.0" y="256.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="172.0" y="256.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="216.0" y="256.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="260.0" y="256.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="304.0" y="256.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="348.0" y="256.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<text x="282.0" y="288.0" font-size="28" fill="#eb6834" text-anchor="middle" font-weight="400">♛</text>
+<rect x="40.0" y="300.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="84.0" y="300.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="128.0" y="300.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="172.0" y="300.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="216.0" y="300.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="260.0" y="300.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="304.0" y="300.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="348.0" y="300.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<text x="106.0" y="332.0" font-size="28" fill="#eb6834" text-anchor="middle" font-weight="400">♛</text>
+<rect x="40.0" y="344.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="84.0" y="344.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="128.0" y="344.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="172.0" y="344.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="216.0" y="344.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="260.0" y="344.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="304.0" y="344.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="348.0" y="344.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<text x="326.0" y="376.0" font-size="28" fill="#eb6834" text-anchor="middle" font-weight="400">♛</text>
+<rect x="40.0" y="388.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="84.0" y="388.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="128.0" y="388.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="172.0" y="388.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="216.0" y="388.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="260.0" y="388.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="304.0" y="388.0" width="44.0" height="44.0" rx="0" fill="#e8e4da" stroke="#e4e3df" stroke-width="0.5"/>
+<rect x="348.0" y="388.0" width="44.0" height="44.0" rx="0" fill="#ffffff" stroke="#e4e3df" stroke-width="0.5"/>
+<text x="238.0" y="420.0" font-size="28" fill="#eb6834" text-anchor="middle" font-weight="400">♛</text>
+<text x="450.0" y="100.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="700">за всеки ред — три маски от n бита:</text>
+<text x="450.0" y="128.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">cols — заети колони</text>
+<text x="450.0" y="150.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">d1   — „/“ диагонали (местят се наляво с &lt;&lt;)</text>
+<text x="450.0" y="172.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">d2   — „\“ диагонали (местят се надясно с &gt;&gt;)</text>
+<text x="450.0" y="214.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">free = ~(cols | d1 | d2) &amp; ((1 &lt;&lt; n) − 1);</text>
+<text x="450.0" y="236.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">while (free) {</text>
+<text x="484.0" y="258.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">bit = free &amp; −free;  free ^= bit;</text>
+<text x="484.0" y="280.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">place(cols | bit, (d1 | bit) &lt;&lt; 1, (d2 | bit) &gt;&gt; 1);</text>
+<text x="450.0" y="302.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">}</text>
+<text x="450.0" y="346.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Никакви масиви, никакви проверки на диагонали —</text>
+<text x="450.0" y="368.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">всяка стъпка е няколко инструкции.</text>
+<text x="450.0" y="404.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">n = 8: 92 решения; n = 14: 365 596 за ~0.1 s.</text>
+</svg>

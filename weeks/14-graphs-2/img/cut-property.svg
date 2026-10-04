@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" width="1100" height="400" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Свойството на среза</title>
+<rect width="1100" height="400" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">Защо работи: най-лекото ребро през всеки срез е в някое МПД</text>
+<path d="M 390,80 C 360,180 420,260 390,340" fill="none" stroke="#e34948" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<text x="390.0" y="362.0" font-size="14" fill="#e34948" text-anchor="middle" font-weight="600">срез</text>
+<line x1="137.1" y1="169.7" x2="202.9" y2="130.3" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="170.0" cy="150.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="170.0" y="155.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<line x1="135.6" y1="192.5" x2="204.4" y2="247.5" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="170.0" cy="220.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="170.0" y="225.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<line x1="220.0" y1="140.0" x2="220.0" y2="240.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="220.0" cy="190.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="220.0" y="195.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<line x1="560.0" y1="140.0" x2="560.0" y2="240.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="560.0" cy="190.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="560.0" y="195.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<line x1="577.3" y1="130.1" x2="662.7" y2="179.9" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="620.0" cy="155.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="620.0" y="160.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<line x1="577.3" y1="249.9" x2="662.7" y2="200.1" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="620.0" cy="225.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="620.0" y="230.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<line x1="240.0" y1="120.0" x2="540.0" y2="120.0" stroke="#1baf7a" stroke-width="4" stroke-linecap="round"/>
+<circle cx="390.0" cy="120.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="390.0" y="125.0" font-size="13" fill="#1baf7a" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<line x1="240.0" y1="260.0" x2="540.0" y2="260.0" stroke="#52514e" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="390.0" cy="260.0" r="11" fill="#ffffff" stroke="#e4e3df" stroke-width="1"/>
+<text x="390.0" y="265.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8</text>
+<circle cx="120.0" cy="180.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.8"/>
+<text x="120.0" y="185.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">0</text>
+<circle cx="220.0" cy="120.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.8"/>
+<text x="220.0" y="125.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<circle cx="220.0" cy="260.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.8"/>
+<text x="220.0" y="265.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="560.0" cy="120.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.8"/>
+<text x="560.0" y="125.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<circle cx="560.0" cy="260.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.8"/>
+<text x="560.0" y="265.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<circle cx="680.0" cy="190.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.8"/>
+<text x="680.0" y="195.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">5</text>
+<text x="760.0" y="120.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Разделете върховете на две групи.</text>
+<text x="760.0" y="146.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">От ребрата между групите — най-лекото</text>
+<text x="760.0" y="168.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">(тук 1–3, тегло 4) е безопасно.</text>
+<text x="760.0" y="210.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Kruskal: срезът е „компонентата на u“</text>
+<text x="760.0" y="232.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">срещу „всичко друго“.</text>
+<text x="760.0" y="266.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Prim: срезът е „дървото досега“</text>
+<text x="760.0" y="288.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">срещу „останалите“.</text>
+</svg>

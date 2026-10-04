@@ -1,0 +1,16 @@
+kind,n,m,algorithm,ms
+sparse,1000,4000,heap,0.145
+sparse,1000,4000,array,0.809
+sparse,10000,40000,heap,1.973
+sparse,10000,40000,array,68.791
+sparse,100000,400000,heap,20.942
+sparse,100000,400000,array,16502.572
+sparse,1000000,4000000,heap,330.720
+dense,500,124750,heap,0.267
+dense,500,124750,array,0.340
+dense,1000,499500,heap,0.832
+dense,1000,499500,array,1.319
+dense,2000,1999000,heap,2.936
+dense,2000,1999000,array,5.199
+dense,4000,7998000,heap,13.016
+dense,4000,7998000,array,23.487

@@ -1,0 +1,16 @@
+what,method,value
+popcount,loop,18.479
+popcount,kernighan,16.706
+popcount,table,1.511
+popcount,bitset,2.193
+nqueens,8,0.008
+nqueens,9,0.031
+nqueens,10,0.134
+nqueens,11,0.671
+nqueens,12,3.589
+nqueens,13,19.526
+nqueens,14,109.898
+popcount_native,loop,21.033
+popcount_native,kernighan,0.111
+popcount_native,table,3.188
+popcount_native,bitset,0.073

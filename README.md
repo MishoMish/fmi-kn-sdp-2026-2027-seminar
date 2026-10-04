@@ -24,7 +24,7 @@
 | — | 24, 31 дек | *коледна ваканция* | |
 | 12 | 7 яну | Сортировки II | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=12-sorting-2) · [записки](weeks/12-sorting-2/notes.md) · [задачи](weeks/12-sorting-2/exercises.md) |
 | 13 | 14 яну | Графи I: представяне и обхождане | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=13-graphs-1) · [записки](weeks/13-graphs-1/notes.md) · [задачи](weeks/13-graphs-1/exercises.md) |
-| 14 | 21 яну | Графи II; побитови операции; ретроспекция | предстои |
+| 14 | 21 яну | Графи II; побитови операции; ретроспекция | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=14-graphs-2) · [записки](weeks/14-graphs-2/notes.md) · [задачи](weeks/14-graphs-2/exercises.md) · битове: [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=15-bitwise-retrospective) · [записки](weeks/15-bitwise-retrospective/notes.md) · [задачи](weeks/15-bitwise-retrospective/exercises.md) |
 
 Датите на контролните и домашните, както и схемата за оценяване, са по правилата на лектора.
 

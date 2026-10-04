@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 590" width="1100" height="590" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Курсът на една страница</title>
+<rect width="1100" height="590" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Курсът на една страница: всяка тема стъпва на предишните</text>
+<text x="40.0" y="116.0" font-size="14" fill="#2a78d6" text-anchor="start" font-weight="700">основи</text>
+<rect x="210.0" y="90.0" width="164.0" height="42.0" rx="8" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="220.0" y="116.0" font-size="14" fill="#2a78d6" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">01</text>
+<text x="246.0" y="116.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">сложност, тестове</text>
+<rect x="386.0" y="90.0" width="164.0" height="42.0" rx="8" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="396.0" y="116.0" font-size="14" fill="#2a78d6" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">02</text>
+<text x="422.0" y="116.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">компилатор, кеш</text>
+<rect x="562.0" y="90.0" width="164.0" height="42.0" rx="8" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="572.0" y="116.0" font-size="14" fill="#2a78d6" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">03</text>
+<text x="598.0" y="116.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">двоично търсене</text>
+<text x="40.0" y="188.0" font-size="14" fill="#1baf7a" text-anchor="start" font-weight="700">линейни структури</text>
+<rect x="210.0" y="162.0" width="164.0" height="42.0" rx="8" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="220.0" y="188.0" font-size="14" fill="#1baf7a" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">04</text>
+<text x="246.0" y="188.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">динамичен масив</text>
+<rect x="386.0" y="162.0" width="164.0" height="42.0" rx="8" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="396.0" y="188.0" font-size="14" fill="#1baf7a" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">05</text>
+<text x="422.0" y="188.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">списък</text>
+<rect x="562.0" y="162.0" width="164.0" height="42.0" rx="8" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="572.0" y="188.0" font-size="14" fill="#1baf7a" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">06</text>
+<text x="598.0" y="188.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">итератори</text>
+<rect x="738.0" y="162.0" width="164.0" height="42.0" rx="8" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="748.0" y="188.0" font-size="14" fill="#1baf7a" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">07</text>
+<text x="774.0" y="188.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">стек, опашка</text>
+<rect x="914.0" y="162.0" width="164.0" height="42.0" rx="8" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.5"/>
+<text x="924.0" y="188.0" font-size="14" fill="#1baf7a" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">08</text>
+<text x="950.0" y="188.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">хеширане</text>
+<text x="40.0" y="260.0" font-size="14" fill="#eb6834" text-anchor="start" font-weight="700">дървета</text>
+<rect x="210.0" y="234.0" width="164.0" height="42.0" rx="8" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="220.0" y="260.0" font-size="14" fill="#eb6834" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">09</text>
+<text x="246.0" y="260.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">BST</text>
+<rect x="386.0" y="234.0" width="164.0" height="42.0" rx="8" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="396.0" y="260.0" font-size="14" fill="#eb6834" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">10</text>
+<text x="422.0" y="260.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">AVL, ч-ч, B-дърво</text>
+<rect x="562.0" y="234.0" width="164.0" height="42.0" rx="8" fill="#fde8df" stroke="#eb6834" stroke-width="1.5"/>
+<text x="572.0" y="260.0" font-size="14" fill="#eb6834" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">11</text>
+<text x="598.0" y="260.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">пирамида, сорт. I</text>
+<text x="40.0" y="332.0" font-size="14" fill="#eda100" text-anchor="start" font-weight="700">сортиране</text>
+<rect x="210.0" y="306.0" width="164.0" height="42.0" rx="8" fill="#fff4d6" stroke="#eda100" stroke-width="1.5"/>
+<text x="220.0" y="332.0" font-size="14" fill="#eda100" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">12</text>
+<text x="246.0" y="332.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">сортиране II</text>
+<text x="40.0" y="404.0" font-size="14" fill="#e87ba4" text-anchor="start" font-weight="700">графи и битове</text>
+<rect x="210.0" y="378.0" width="164.0" height="42.0" rx="8" fill="#fbe7ef" stroke="#e87ba4" stroke-width="1.5"/>
+<text x="220.0" y="404.0" font-size="14" fill="#e87ba4" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">13</text>
+<text x="246.0" y="404.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">BFS, DFS</text>
+<rect x="386.0" y="378.0" width="164.0" height="42.0" rx="8" fill="#fbe7ef" stroke="#e87ba4" stroke-width="1.5"/>
+<text x="396.0" y="404.0" font-size="14" fill="#e87ba4" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">14</text>
+<text x="422.0" y="404.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">Дейкстра, MST</text>
+<rect x="562.0" y="378.0" width="164.0" height="42.0" rx="8" fill="#fbe7ef" stroke="#e87ba4" stroke-width="1.5"/>
+<text x="572.0" y="404.0" font-size="14" fill="#e87ba4" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">15</text>
+<text x="598.0" y="404.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="400">битове</text>
+<line x1="376.0" y1="111.0" x2="384.0" y2="111.0" stroke="#8a8984" stroke-width="1.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="552.0" y1="111.0" x2="560.0" y2="111.0" stroke="#8a8984" stroke-width="1.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="376.0" y1="183.0" x2="384.0" y2="183.0" stroke="#8a8984" stroke-width="1.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="552.0" y1="183.0" x2="560.0" y2="183.0" stroke="#8a8984" stroke-width="1.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="728.0" y1="183.0" x2="736.0" y2="183.0" stroke="#8a8984" stroke-width="1.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="904.0" y1="183.0" x2="912.0" y2="183.0" stroke="#8a8984" stroke-width="1.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="376.0" y1="255.0" x2="384.0" y2="255.0" stroke="#8a8984" stroke-width="1.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="552.0" y1="255.0" x2="560.0" y2="255.0" stroke="#8a8984" stroke-width="1.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="376.0" y1="399.0" x2="384.0" y2="399.0" stroke="#8a8984" stroke-width="1.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="552.0" y1="399.0" x2="560.0" y2="399.0" stroke="#8a8984" stroke-width="1.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="40.0" y="446.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">Мостове: 03 → 09 (двоично търсене → BST), 04 → 07 (вектор → стек), 07 → 13 (опашка → BFS),</text>
+<text x="40.0" y="464.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">09 → 10 (BST → AVL), 11 → 14 (пирамида → Дейкстра), 05 → 12 (сливане на списъци → merge sort)</text>
+<text x="40.0" y="500.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="700">Повтарящи се идеи:</text>
+<text x="40.0" y="520.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">• амортизирана сложност — 04 (растеж ×2), 07 (два стека), 09 (итератор), 14 (union-find)</text>
+<text x="40.0" y="540.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">• локалност и кеш — 02, 04 (вектор срещу списък), 10 (B-дървета), 13 (CSR)</text>
+<text x="40.0" y="560.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">• инварианти — 09 (BST), 10 (AVL), 11 (пирамида), 14 (Дейкстра: готовите са окончателни)</text>
+<text x="40.0" y="580.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">• измервай, не гадай — бенчмарк всяка седмица; константите и асимптотиката заедно</text>
+</svg>
