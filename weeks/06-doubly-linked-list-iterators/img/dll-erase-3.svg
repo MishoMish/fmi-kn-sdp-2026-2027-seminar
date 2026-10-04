@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" width="1100" height="300" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Изтриване от двусвързан списък, стъпка 3</title>
+<rect width="1100" height="300" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">erase: не ни трябва нищо освен самия възел</text>
+<rect x="80.0" y="130.0" width="120.0" height="46.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="108.0" y1="130.0" x2="108.0" y2="176.0" stroke="#2a78d6" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="172.0" y1="130.0" x2="172.0" y2="176.0" stroke="#2a78d6" stroke-width="1.1" stroke-linecap="round"/>
+<text x="140.0" y="159.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a</text>
+<rect x="440.0" y="130.0" width="120.0" height="46.0" rx="6" fill="#ffffff" stroke="#e4e3df" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="500.0" y="158.0" font-size="14" fill="#8a8984" text-anchor="middle" font-weight="400">delete</text>
+<rect x="800.0" y="130.0" width="120.0" height="46.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="828.0" y1="130.0" x2="828.0" y2="176.0" stroke="#2a78d6" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="892.0" y1="130.0" x2="892.0" y2="176.0" stroke="#2a78d6" stroke-width="1.1" stroke-linecap="round"/>
+<text x="860.0" y="159.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">c</text>
+<path d="M 186,144.72 C 300,70 680,70 804,128" fill="none" stroke="#1baf7a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 814,171.28 C 680,240 300,240 196,178" fill="none" stroke="#1baf7a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="40.0" y="284.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="600">2. delete victim; return iterator(next) — итераторите към a и c остават валидни</text>
+</svg>

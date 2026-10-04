@@ -55,7 +55,7 @@
         "06-doubly-linked-list-iterators"
       ],
       "title": "Двусвързан списък, итератори, изтичане на памет",
-      "ready": false
+      "ready": true
     },
     {
       "n": 7,

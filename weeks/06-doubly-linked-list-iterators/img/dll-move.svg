@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" width="1100" height="400" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Защо преместването трябва да пренасочи двата крайни възела</title>
+<rect width="1100" height="400" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Преместване: фиктивният възел НЕ се мести с възлите</text>
+<text x="40.0" y="72.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">sentinel_ е поле на обекта; първият и последният възел сочат адреса на стария sentinel_</text>
+<rect x="60.0" y="120.0" width="120.0" height="46.0" rx="6" fill="#f6f5f2" stroke="#8a8984" stroke-width="1.6" stroke-dasharray="5 4"/>
+<line x1="88.0" y1="120.0" x2="88.0" y2="166.0" stroke="#8a8984" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="152.0" y1="120.0" x2="152.0" y2="166.0" stroke="#8a8984" stroke-width="1.1" stroke-linecap="round"/>
+<text x="120.0" y="149.0" font-size="16" fill="#8a8984" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">•</text>
+<text x="120.0" y="186.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">other.sentinel_</text>
+<rect x="60.0" y="270.0" width="120.0" height="46.0" rx="6" fill="#f6f5f2" stroke="#8a8984" stroke-width="1.6" stroke-dasharray="5 4"/>
+<line x1="88.0" y1="270.0" x2="88.0" y2="316.0" stroke="#8a8984" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="152.0" y1="270.0" x2="152.0" y2="316.0" stroke="#8a8984" stroke-width="1.1" stroke-linecap="round"/>
+<text x="120.0" y="299.0" font-size="16" fill="#8a8984" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">•</text>
+<text x="120.0" y="336.0" font-size="13" fill="#8a8984" text-anchor="middle" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">this-&gt;sentinel_</text>
+<rect x="400.0" y="190.0" width="120.0" height="46.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="428.0" y1="190.0" x2="428.0" y2="236.0" stroke="#2a78d6" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="492.0" y1="190.0" x2="492.0" y2="236.0" stroke="#2a78d6" stroke-width="1.1" stroke-linecap="round"/>
+<text x="460.0" y="219.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">a</text>
+<rect x="760.0" y="190.0" width="120.0" height="46.0" rx="6" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="788.0" y1="190.0" x2="788.0" y2="236.0" stroke="#2a78d6" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="852.0" y1="190.0" x2="852.0" y2="236.0" stroke="#2a78d6" stroke-width="1.1" stroke-linecap="round"/>
+<text x="820.0" y="219.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">c</text>
+<line x1="506.0" y1="204.7" x2="758.0" y2="204.7" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="3 5"/>
+<text x="640.0" y="182.0" font-size="20" fill="#0b0b0b" text-anchor="middle" font-weight="400">…</text>
+<path d="M 414,221.28 C 340,230 260,170 182,150" fill="none" stroke="#e34948" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<path d="M 866,204.72 C 960,120 600,110 182,128" fill="none" stroke="#e34948" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<path d="M 414,225.28 C 340,280 260,300 182,300" fill="none" stroke="#1baf7a" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 866,224.72 C 980,330 600,320 182,284" fill="none" stroke="#1baf7a" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="74.0" y1="370.0" x2="104.0" y2="370.0" stroke="#e34948" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 4"/>
+<text x="112.0" y="375.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">преди: сочат стария sentinel → висящи указатели след преместването</text>
+<line x1="600.0" y1="370.0" x2="630.0" y2="370.0" stroke="#1baf7a" stroke-width="2.4" stroke-linecap="round"/>
+<text x="638.0" y="375.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">stealNodes: пренасочваме ги към новия</text>
+</svg>
