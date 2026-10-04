@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Дървото на израза и трите записа</title>
+<rect width="1000" height="380" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="700">Един израз — три записа = три обхождания на дървото</text>
+<line x1="300.0" y1="118.0" x2="180.0" y2="172.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="300.0" y1="118.0" x2="420.0" y2="172.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="420.0" y1="208.0" x2="340.0" y2="262.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="420.0" y1="208.0" x2="500.0" y2="262.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="500.0" y1="298.0" x2="450.0" y2="332.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="500.0" y1="298.0" x2="550.0" y2="332.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="300.0" cy="100.0" r="20" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="300.0" y="106.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+</text>
+<circle cx="180.0" cy="190.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="180.0" y="196.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<circle cx="420.0" cy="190.0" r="20" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="420.0" y="196.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">*</text>
+<circle cx="340.0" cy="280.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="340.0" y="286.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<circle cx="500.0" cy="280.0" r="20" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="500.0" y="286.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">−</text>
+<circle cx="450.0" cy="350.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="450.0" y="356.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="550.0" cy="350.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="550.0" y="356.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="640.0" y="140.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="600">инфиксен (in-order)</text>
+<text x="640.0" y="166.0" font-size="18" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 + 4 * (2 − 1)</text>
+<text x="640.0" y="188.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">нужни са скоби</text>
+<text x="640.0" y="210.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="600">постфиксен (post-order)</text>
+<text x="640.0" y="236.0" font-size="18" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 4 2 1 − * +</text>
+<text x="640.0" y="258.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">RPN — без скоби</text>
+<text x="640.0" y="280.0" font-size="14" fill="#8a8984" text-anchor="start" font-weight="600">префиксен (pre-order)</text>
+<text x="640.0" y="306.0" font-size="18" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+ 3 * 4 − 2 1</text>
+<text x="640.0" y="328.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400">полски запис — без скоби</text>
+</svg>

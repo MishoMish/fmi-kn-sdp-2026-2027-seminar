@@ -17,7 +17,7 @@
 | 5 | 5 ное | Едносвързан списък | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=05-singly-linked-list) · [записки](weeks/05-singly-linked-list/notes.md) · [задачи](weeks/05-singly-linked-list/exercises.md) |
 | 6 | 12 ное | Двусвързан списък, итератори, изтичане на памет | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=06-doubly-linked-list-iterators) · [записки](weeks/06-doubly-linked-list-iterators/notes.md) · [задачи](weeks/06-doubly-linked-list-iterators/exercises.md) |
 | 7 | 19 ное | Proxy, стек и опашка | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=07-proxy-stack-queue) · [записки](weeks/07-proxy-stack-queue/notes.md) · [задачи](weeks/07-proxy-stack-queue/exercises.md) |
-| 8 | 26 ное | Shunting-yard, хеширане, хеш таблици | предстои |
+| 8 | 26 ное | Shunting-yard, хеширане, хеш таблици | [слайдове](https://mishomish.github.io/fmi-kn-sdp-2026-2027-seminar/slides/?w=08-shunting-yard-hashing) · [записки](weeks/08-shunting-yard-hashing/notes.md) · [задачи](weeks/08-shunting-yard-hashing/exercises.md) |
 | 9 | 3 дек | Дървета I: двоични и двоични наредени дървета | предстои |
 | 10 | 10 дек | Дървета II: балансирани дървета | предстои |
 | 11 | 17 дек | Двоична пирамида, сортировки I | предстои |

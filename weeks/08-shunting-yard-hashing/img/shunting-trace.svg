@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" width="1100" height="560" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Shunting-yard за 3 + 4 * (2 - 1)</title>
+<rect width="1100" height="560" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Shunting-yard: 3 + 4 * (2 − 1)</text>
+<text x="40.0" y="86.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="600">СИМВОЛ</text>
+<text x="140.0" y="86.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="600">ДЕЙСТВИЕ</text>
+<text x="560.0" y="86.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="600">ИЗХОД</text>
+<text x="860.0" y="86.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="600">СТЕК НА ОПЕРАТОРИТЕ</text>
+<rect x="30.0" y="100.0" width="1040.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="56.0" y="125.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="140.0" y="125.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">→ изход</text>
+<text x="560.0" y="125.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="860.0" y="125.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace"></text>
+<rect x="30.0" y="144.0" width="1040.0" height="38.0" rx="4" fill="#ffffff" stroke="none" stroke-width="1.5"/>
+<text x="56.0" y="169.0" font-size="16" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+</text>
+<text x="140.0" y="169.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">стекът е празен → push</text>
+<text x="560.0" y="169.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3</text>
+<text x="860.0" y="169.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+</text>
+<rect x="30.0" y="188.0" width="1040.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="56.0" y="213.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<text x="140.0" y="213.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">→ изход</text>
+<text x="560.0" y="213.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 4</text>
+<text x="860.0" y="213.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+</text>
+<rect x="30.0" y="232.0" width="1040.0" height="38.0" rx="4" fill="#ffffff" stroke="none" stroke-width="1.5"/>
+<text x="56.0" y="257.0" font-size="16" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">*</text>
+<text x="140.0" y="257.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">* е по-силно от + → push</text>
+<text x="560.0" y="257.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 4</text>
+<text x="860.0" y="257.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+ *</text>
+<rect x="30.0" y="276.0" width="1040.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="56.0" y="301.0" font-size="16" fill="#1baf7a" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">(</text>
+<text x="140.0" y="301.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">push</text>
+<text x="560.0" y="301.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 4</text>
+<text x="860.0" y="301.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+ * (</text>
+<rect x="30.0" y="320.0" width="1040.0" height="38.0" rx="4" fill="#ffffff" stroke="none" stroke-width="1.5"/>
+<text x="56.0" y="345.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<text x="140.0" y="345.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">→ изход</text>
+<text x="560.0" y="345.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 4 2</text>
+<text x="860.0" y="345.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+ * (</text>
+<rect x="30.0" y="364.0" width="1040.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="56.0" y="389.0" font-size="16" fill="#eb6834" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">-</text>
+<text x="140.0" y="389.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">върхът е ( → push</text>
+<text x="560.0" y="389.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 4 2</text>
+<text x="860.0" y="389.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+ * ( -</text>
+<rect x="30.0" y="408.0" width="1040.0" height="38.0" rx="4" fill="#ffffff" stroke="none" stroke-width="1.5"/>
+<text x="56.0" y="433.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">1</text>
+<text x="140.0" y="433.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">→ изход</text>
+<text x="560.0" y="433.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 4 2 1</text>
+<text x="860.0" y="433.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+ * ( -</text>
+<rect x="30.0" y="452.0" width="1040.0" height="38.0" rx="4" fill="#f6f5f2" stroke="none" stroke-width="1.5"/>
+<text x="56.0" y="477.0" font-size="16" fill="#1baf7a" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">)</text>
+<text x="140.0" y="477.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">pop до ( : - → изход; махаме (</text>
+<text x="560.0" y="477.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 4 2 1 -</text>
+<text x="860.0" y="477.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">+ *</text>
+<rect x="30.0" y="496.0" width="1040.0" height="38.0" rx="4" fill="#ffffff" stroke="none" stroke-width="1.5"/>
+<text x="56.0" y="521.0" font-size="16" fill="#0b0b0b" text-anchor="start" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">край</text>
+<text x="140.0" y="521.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">pop всичко: *, после +</text>
+<text x="560.0" y="521.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">3 4 2 1 - * +</text>
+<text x="860.0" y="521.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace"></text>
+<text x="40.0" y="548.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Числата отиват направо на изхода; операторите чакат на стека, докато не дойде по-слаб оператор, ) или краят.</text>
+</svg>
