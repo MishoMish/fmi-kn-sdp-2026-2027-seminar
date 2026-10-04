@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="1100" height="480" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Височина: граници и измерено</title>
+<rect width="1100" height="480" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="44.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Височина: най-лошият случай за всеки вид дърво</text>
+<text x="40.0" y="70.0" font-size="15" fill="#52514e" text-anchor="start" font-weight="400">Логаритмична скала по n; линиите са горни граници, точките — измерени</text>
+<line x1="100.0" y1="400.0" x2="660.0" y2="400.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="405.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">0</text>
+<line x1="100.0" y1="350.0" x2="660.0" y2="350.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="355.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">10</text>
+<line x1="100.0" y1="300.0" x2="660.0" y2="300.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="305.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">20</text>
+<line x1="100.0" y1="250.0" x2="660.0" y2="250.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="255.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">30</text>
+<line x1="100.0" y1="200.0" x2="660.0" y2="200.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="205.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">40</text>
+<line x1="100.0" y1="150.0" x2="660.0" y2="150.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="155.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">50</text>
+<line x1="100.0" y1="100.0" x2="660.0" y2="100.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<text x="90.0" y="105.0" font-size="13" fill="#52514e" text-anchor="end" font-weight="400">60</text>
+<line x1="100.0" y1="400.0" x2="100.0" y2="406.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="100.0" y="424.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^3</text>
+<line x1="193.3" y1="400.0" x2="193.3" y2="406.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="193.3" y="424.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^4</text>
+<line x1="286.7" y1="400.0" x2="286.7" y2="406.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="286.7" y="424.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^5</text>
+<line x1="380.0" y1="400.0" x2="380.0" y2="406.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="380.0" y="424.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^6</text>
+<line x1="473.3" y1="400.0" x2="473.3" y2="406.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="473.3" y="424.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^7</text>
+<line x1="566.7" y1="400.0" x2="566.7" y2="406.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="566.7" y="424.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^8</text>
+<line x1="660.0" y1="400.0" x2="660.0" y2="406.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="660.0" y="424.0" font-size="13" fill="#52514e" text-anchor="middle" font-weight="400">10^9</text>
+<line x1="100.0" y1="400.0" x2="660.0" y2="400.0" stroke="#8a8984" stroke-width="1" stroke-linecap="round"/>
+<text x="380.0" y="452.0" font-size="15" fill="#52514e" text-anchor="middle" font-weight="400">n (лог. ос)</text>
+<text transform="translate(42,250.0) rotate(-90)" font-size="15" fill="#52514e" text-anchor="middle">височина</text>
+<path d="M100.0,355.0 L109.3,350.0 L118.7,350.0 L128.0,350.0 L137.3,345.0 L146.7,345.0 L156.0,345.0 L165.3,340.0 L174.7,340.0 L184.0,340.0 L193.3,335.0 L202.7,335.0 L212.0,335.0 L221.3,330.0 L230.7,330.0 L240.0,330.0 L249.3,325.0 L258.7,325.0 L268.0,325.0 L277.3,320.0 L286.7,320.0 L296.0,320.0 L305.3,315.0 L314.7,315.0 L324.0,315.0 L333.3,310.0 L342.7,310.0 L352.0,310.0 L361.3,305.0 L370.7,305.0 L380.0,305.0 L389.3,300.0 L398.7,300.0 L408.0,300.0 L417.3,295.0 L426.7,295.0 L436.0,295.0 L445.3,290.0 L454.7,290.0 L464.0,290.0 L473.3,285.0 L482.7,285.0 L492.0,285.0 L501.3,280.0 L510.7,280.0 L520.0,280.0 L529.3,275.0 L538.7,275.0 L548.0,275.0 L557.3,270.0 L566.7,270.0 L576.0,270.0 L585.3,265.0 L594.7,265.0 L604.0,265.0 L613.3,260.0 L622.7,260.0 L632.0,260.0 L641.3,255.0 L650.7,255.0 L660.0,255.0" fill="none" stroke="#1baf7a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M100.0,329.8 L109.3,327.5 L118.7,325.1 L128.0,322.7 L137.3,320.3 L146.7,317.9 L156.0,315.5 L165.3,313.1 L174.7,310.7 L184.0,308.3 L193.3,305.9 L202.7,303.5 L212.0,301.1 L221.3,298.8 L230.7,296.4 L240.0,294.0 L249.3,291.6 L258.7,289.2 L268.0,286.8 L277.3,284.4 L286.7,282.0 L296.0,279.6 L305.3,277.2 L314.7,274.8 L324.0,272.4 L333.3,270.0 L342.7,267.7 L352.0,265.3 L361.3,262.9 L370.7,260.5 L380.0,258.1 L389.3,255.7 L398.7,253.3 L408.0,250.9 L417.3,248.5 L426.7,246.1 L436.0,243.7 L445.3,241.3 L454.7,238.9 L464.0,236.5 L473.3,234.2 L482.7,231.8 L492.0,229.4 L501.3,227.0 L510.7,224.6 L520.0,222.2 L529.3,219.8 L538.7,217.4 L548.0,215.0 L557.3,212.6 L566.7,210.2 L576.0,207.8 L585.3,205.4 L594.7,203.1 L604.0,200.7 L613.3,198.3 L622.7,195.9 L632.0,193.5 L641.3,191.1 L650.7,188.7 L660.0,186.3" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M100.0,300.3 L109.3,297.0 L118.7,293.7 L128.0,290.4 L137.3,287.0 L146.7,283.7 L156.0,280.4 L165.3,277.1 L174.7,273.8 L184.0,270.4 L193.3,267.1 L202.7,263.8 L212.0,260.5 L221.3,257.2 L230.7,253.8 L240.0,250.5 L249.3,247.2 L258.7,243.9 L268.0,240.5 L277.3,237.2 L286.7,233.9 L296.0,230.6 L305.3,227.3 L314.7,223.9 L324.0,220.6 L333.3,217.3 L342.7,214.0 L352.0,210.7 L361.3,207.3 L370.7,204.0 L380.0,200.7 L389.3,197.4 L398.7,194.0 L408.0,190.7 L417.3,187.4 L426.7,184.1 L436.0,180.8 L445.3,177.4 L454.7,174.1 L464.0,170.8 L473.3,167.5 L482.7,164.1 L492.0,160.8 L501.3,157.5 L510.7,154.2 L520.0,150.9 L529.3,147.5 L538.7,144.2 L548.0,140.9 L557.3,137.6 L566.7,134.2 L576.0,130.9 L585.3,127.6 L594.7,124.3 L604.0,121.0 L613.3,117.6 L622.7,114.3 L632.0,111.0 L641.3,107.7 L650.7,104.3 L660.0,101.0" fill="none" stroke="#e34948" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100.0" cy="345.0" r="5" fill="#eda100" stroke="#ffffff" stroke-width="2"/>
+<circle cx="193.3" cy="325.0" r="5" fill="#eda100" stroke="#ffffff" stroke-width="2"/>
+<circle cx="221.4" cy="320.0" r="5" fill="#eda100" stroke="#ffffff" stroke-width="2"/>
+<circle cx="286.7" cy="305.0" r="5" fill="#eda100" stroke="#ffffff" stroke-width="2"/>
+<circle cx="380.0" cy="285.0" r="5" fill="#eda100" stroke="#ffffff" stroke-width="2"/>
+<line x1="700.0" y1="130.0" x2="722.0" y2="130.0" stroke="#1baf7a" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="135.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">перфектно: ⌊log₂ n⌋</text>
+<line x1="700.0" y1="154.0" x2="722.0" y2="154.0" stroke="#2a78d6" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="159.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">AVL, най-лошо: 1.44 log₂ n</text>
+<line x1="700.0" y1="178.0" x2="722.0" y2="178.0" stroke="#e34948" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="183.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">червено-черно, най-лошо: 2 log₂ n</text>
+<line x1="700.0" y1="202.0" x2="722.0" y2="202.0" stroke="#eda100" stroke-width="3" stroke-linecap="round"/>
+<text x="730.0" y="207.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400">вашето AVL, случаен вход</text>
+<text x="700.0" y="250.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">При n = 10^9 (милиард):</text>
+<text x="700.0" y="272.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">перфектно 29, AVL ≤ 42, ч-ч ≤ 59</text>
+<text x="700.0" y="294.0" font-size="14" fill="#e34948" text-anchor="start" font-weight="400">BST от миналата седмица: до 999 999 999</text>
+<text x="700.0" y="330.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">На практика AVL е близо до перфектното:</text>
+<text x="700.0" y="352.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">23 при милион ключа (log₂ n ≈ 20)</text>
+</svg>

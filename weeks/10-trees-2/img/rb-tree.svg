@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Червено-черно дърво и съответното 2-3-4 дърво</title>
+<rect width="1100" height="520" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Червено-черно дърво = 2-3-4 дърво, записано като двоично</text>
+<line x1="99.7" y1="211.4" x2="72.3" y2="256.6" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="118.3" y1="211.4" x2="145.7" y2="256.6" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="187.1" y1="131.5" x2="122.9" y2="184.5" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="283.7" y1="287.4" x2="256.3" y2="332.6" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="302.3" y1="287.4" x2="329.7" y2="332.6" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="371.1" y1="207.5" x2="306.9" y2="260.5" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="467.7" y1="287.4" x2="440.3" y2="332.6" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="398.9" y1="207.5" x2="463.1" y2="260.5" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="217.6" y1="126.9" x2="368.4" y2="189.1" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="63.0" cy="272.0" r="18" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1.6"/>
+<text x="63.0" y="277.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<circle cx="109.0" cy="196.0" r="18" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1.6"/>
+<text x="109.0" y="201.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<circle cx="155.0" cy="272.0" r="18" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1.6"/>
+<text x="155.0" y="277.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<circle cx="201.0" cy="120.0" r="18" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1.6"/>
+<text x="201.0" y="125.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8</text>
+<circle cx="247.0" cy="348.0" r="18" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1.6"/>
+<text x="247.0" y="353.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">10</text>
+<circle cx="293.0" cy="272.0" r="18" fill="#fbe3e3" stroke="#e34948" stroke-width="1.6"/>
+<text x="293.0" y="277.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">12</text>
+<circle cx="339.0" cy="348.0" r="18" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1.6"/>
+<text x="339.0" y="353.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">14</text>
+<circle cx="385.0" cy="196.0" r="18" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1.6"/>
+<text x="385.0" y="201.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">16</text>
+<circle cx="431.0" cy="348.0" r="18" fill="#fbe3e3" stroke="#e34948" stroke-width="1.6"/>
+<text x="431.0" y="353.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">18</text>
+<circle cx="477.0" cy="272.0" r="18" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="1.6"/>
+<text x="477.0" y="277.0" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">20</text>
+<text x="40.0" y="408.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">① червен или черен; ② коренът е черен</text>
+<text x="40.0" y="429.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">③ червеният няма червено дете</text>
+<text x="40.0" y="450.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">④ еднакъв брой черни по всеки път</text>
+<text x="40.0" y="471.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">→ най-дългият път ≤ 2 × най-късия</text>
+<text x="40.0" y="492.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">→ h ≤ 2 log₂(n + 1)</text>
+<text x="830.0" y="96.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700">2-3-4 дърво</text>
+<rect x="810.0" y="122.0" width="40.0" height="36.0" rx="6" fill="#f6f5f2" stroke="#52514e" stroke-width="1.5"/>
+<text x="830.0" y="146.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">8</text>
+<rect x="680.0" y="212.0" width="40.0" height="36.0" rx="6" fill="#f6f5f2" stroke="#52514e" stroke-width="1.5"/>
+<text x="700.0" y="236.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">4</text>
+<rect x="890.0" y="212.0" width="80.0" height="36.0" rx="6" fill="#f6f5f2" stroke="#52514e" stroke-width="1.5"/>
+<text x="910.0" y="236.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">12</text>
+<text x="950.0" y="236.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">16</text>
+<line x1="930.0" y1="212.0" x2="930.0" y2="248.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<rect x="630.0" y="302.0" width="40.0" height="36.0" rx="6" fill="#f6f5f2" stroke="#52514e" stroke-width="1.5"/>
+<text x="650.0" y="326.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">2</text>
+<rect x="730.0" y="302.0" width="40.0" height="36.0" rx="6" fill="#f6f5f2" stroke="#52514e" stroke-width="1.5"/>
+<text x="750.0" y="326.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">6</text>
+<rect x="830.0" y="302.0" width="40.0" height="36.0" rx="6" fill="#f6f5f2" stroke="#52514e" stroke-width="1.5"/>
+<text x="850.0" y="326.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">10</text>
+<rect x="910.0" y="302.0" width="40.0" height="36.0" rx="6" fill="#f6f5f2" stroke="#52514e" stroke-width="1.5"/>
+<text x="930.0" y="326.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">14</text>
+<rect x="990.0" y="302.0" width="80.0" height="36.0" rx="6" fill="#f6f5f2" stroke="#52514e" stroke-width="1.5"/>
+<text x="1010.0" y="326.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">18</text>
+<text x="1050.0" y="326.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">20</text>
+<line x1="1030.0" y1="302.0" x2="1030.0" y2="338.0" stroke="#e4e3df" stroke-width="1" stroke-linecap="round"/>
+<line x1="820.0" y1="158.0" x2="705.0" y2="212.0" stroke="#52514e" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="840.0" y1="158.0" x2="925.0" y2="212.0" stroke="#52514e" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="690.0" y1="248.0" x2="655.0" y2="302.0" stroke="#52514e" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="710.0" y1="248.0" x2="745.0" y2="302.0" stroke="#52514e" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="900.0" y1="248.0" x2="855.0" y2="302.0" stroke="#52514e" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="930.0" y1="248.0" x2="930.0" y2="302.0" stroke="#52514e" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="960.0" y1="248.0" x2="1020.0" y2="302.0" stroke="#52514e" stroke-width="1.4" stroke-linecap="round"/>
+<text x="830.0" y="408.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400">червеният възел е „в един възел“</text>
+<text x="830.0" y="429.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400">с черния си родител: 12|16, 18|20</text>
+<text x="830.0" y="460.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="600">всички листа — на една дълбочина</text>
+</svg>

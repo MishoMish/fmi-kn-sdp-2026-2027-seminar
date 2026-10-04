@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 430" width="1100" height="430" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Ротация надясно и наляво</title>
+<rect width="1100" height="430" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Ротация: два указателя, наредбата се запазва</text>
+<line x1="246.7" y1="134.9" x2="180.0" y2="210.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="168.8" y1="226.6" x2="130.0" y2="284.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="191.2" y1="226.6" x2="230.0" y2="284.0" stroke="#eb6834" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="271.9" y1="136.0" x2="330.0" y2="214.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M 130,284 L 102.0,340 L 158.0,340 Z" fill="#f6f5f2" stroke="#8a8984" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="130.0" y="324.3" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700">A</text>
+<path d="M 230,284 L 202.0,340 L 258.0,340 Z" fill="#fde8df" stroke="#eb6834" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="230.0" y="324.3" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700">B</text>
+<path d="M 330,214 L 302.0,270 L 358.0,270 Z" fill="#f6f5f2" stroke="#8a8984" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="330.0" y="254.3" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700">C</text>
+<circle cx="260.0" cy="120.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="260.0" y="126.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">y</text>
+<circle cx="180.0" cy="210.0" r="20" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="180.0" y="216.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x</text>
+<line x1="833.3" y1="134.9" x2="900.0" y2="210.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="808.1" y1="136.0" x2="750.0" y2="214.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="888.8" y1="226.6" x2="850.0" y2="284.0" stroke="#eb6834" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="911.2" y1="226.6" x2="950.0" y2="284.0" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M 750,214 L 722.0,270 L 778.0,270 Z" fill="#f6f5f2" stroke="#8a8984" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="750.0" y="254.3" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700">A</text>
+<path d="M 850,284 L 822.0,340 L 878.0,340 Z" fill="#fde8df" stroke="#eb6834" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="850.0" y="324.3" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700">B</text>
+<path d="M 950,284 L 922.0,340 L 978.0,340 Z" fill="#f6f5f2" stroke="#8a8984" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="950.0" y="324.3" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="700">C</text>
+<circle cx="820.0" cy="120.0" r="20" fill="#dcf3ea" stroke="#1baf7a" stroke-width="1.6"/>
+<text x="820.0" y="126.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">x</text>
+<circle cx="900.0" cy="210.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="900.0" y="216.0" font-size="16" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">y</text>
+<line x1="450.0" y1="190.0" x2="640.0" y2="190.0" stroke="#52514e" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="545.0" y="178.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">rotateRight(y)</text>
+<line x1="640.0" y1="236.0" x2="450.0" y2="236.0" stroke="#52514e" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="545.0" y="262.0" font-size="15" fill="#0b0b0b" text-anchor="middle" font-weight="600" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">rotateLeft(x)</text>
+<text x="550.0" y="380.0" font-size="17" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">in-order и в двете: A  x  B  y  C</text>
+<text x="550.0" y="408.0" font-size="14" fill="#52514e" text-anchor="middle" font-weight="400">мести се само B (оранжево): от дясно дете на x става ляво дете на y; Θ(1)</text>
+</svg>

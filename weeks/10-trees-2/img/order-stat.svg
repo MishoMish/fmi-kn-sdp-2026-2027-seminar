@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 440" width="1100" height="440" role="img" font-family="'IBM Plex Sans','Segoe UI','Helvetica Neue',Arial,sans-serif">
+<title>Разширено дърво: размер на поддървото</title>
+<rect width="1100" height="440" rx="12" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<text x="40.0" y="46.0" font-size="24" fill="#0b0b0b" text-anchor="start" font-weight="700">Всеки възел помни размера на поддървото си → select и rank за Θ(log n)</text>
+<line x1="128.4" y1="220.3" x2="91.6" y2="271.7" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="211.6" y1="304.3" x2="248.4" y2="355.7" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="151.6" y1="220.3" x2="188.4" y2="271.7" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="301.9" y1="128.5" x2="158.1" y2="195.5" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="428.4" y1="220.3" x2="391.6" y2="271.7" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="548.4" y1="304.3" x2="511.6" y2="355.7" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="571.6" y1="304.3" x2="608.4" y2="355.7" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="456.4" y1="215.5" x2="543.6" y2="276.5" stroke="#52514e" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="336.4" y1="131.5" x2="423.6" y2="192.5" stroke="#eb6834" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="80.0" cy="288.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="80.0" y="293.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">10</text>
+<circle cx="140.0" cy="204.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="140.0" y="209.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">20</text>
+<circle cx="200.0" cy="288.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="200.0" y="293.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">30</text>
+<circle cx="260.0" cy="372.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="260.0" y="377.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">40</text>
+<circle cx="320.0" cy="120.0" r="20" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="320.0" y="125.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">50</text>
+<circle cx="380.0" cy="288.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="380.0" y="293.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">60</text>
+<circle cx="440.0" cy="204.0" r="20" fill="#fde8df" stroke="#eb6834" stroke-width="1.6"/>
+<text x="440.0" y="209.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">70</text>
+<circle cx="500.0" cy="372.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="500.0" y="377.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">80</text>
+<circle cx="560.0" cy="288.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="560.0" y="293.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">90</text>
+<circle cx="620.0" cy="372.0" r="20" fill="#e3eefb" stroke="#2a78d6" stroke-width="1.6"/>
+<text x="620.0" y="377.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">100</text>
+<text x="56.0" y="272.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">size 1</text>
+<text x="116.0" y="188.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">size 4</text>
+<text x="224.0" y="272.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">size 2</text>
+<text x="284.0" y="356.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">size 1</text>
+<text x="344.0" y="104.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">size 10</text>
+<text x="356.0" y="272.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">size 1</text>
+<text x="464.0" y="188.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">size 5</text>
+<text x="476.0" y="356.0" font-size="12" fill="#8a8984" text-anchor="end" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">size 1</text>
+<text x="584.0" y="272.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">size 3</text>
+<text x="644.0" y="356.0" font-size="12" fill="#8a8984" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">size 1</text>
+<text x="720.0" y="120.0" font-size="16" fill="#eb6834" text-anchor="start" font-weight="700">select(6) — 7-мият най-малък:</text>
+<text x="720.0" y="150.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">при 50: k=6 &gt; 4 → надясно, k = 6 − 4 − 1 = 1</text>
+<text x="720.0" y="176.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="400" font-family="'IBM Plex Mono',Consolas,Menlo,monospace">при 70: k=1 = 1 → намерен: 70</text>
+<text x="720.0" y="300.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">rank(x) — колко са &lt; x: при всяко</text>
+<text x="720.0" y="322.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">„надясно“ добавяме size(ляво) + 1</text>
+<text x="720.0" y="358.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">Ротацията мени размерите само на</text>
+<text x="720.0" y="380.0" font-size="14" fill="#52514e" text-anchor="start" font-weight="400">двата си възела → update() ги оправя</text>
+</svg>
