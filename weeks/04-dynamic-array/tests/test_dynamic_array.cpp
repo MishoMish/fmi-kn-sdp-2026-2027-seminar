@@ -36,6 +36,7 @@ TEST_CASE("Task 1: pushBack doubles the capacity", "[task1]") {
     }
     REQUIRE(capacities == std::vector<std::size_t>{1, 2, 4, 4, 8, 8, 8, 8, 16, 16, 16, 16, 16, 16,
                                                    16, 16, 32});
+    REQUIRE(a.size() == 17);
     for (int i = 0; i < 17; ++i) {
         REQUIRE(a[static_cast<std::size_t>(i)] == i);
     }
@@ -70,6 +71,14 @@ TEST_CASE("Task 1: popBack", "[task1]") {
     a.popBack();
     REQUIRE(a.empty());
     REQUIRE_THROWS_AS(a.popBack(), std::out_of_range);
+
+    // Spare slots are real objects here (new T[capacity], notes §7.1), so we
+    // can look at the freed slot: it must be reset to T{}.
+    DynamicArray<std::string> s{"a", "b"};
+    s.popBack();
+    REQUIRE(s.size() == 1);
+    REQUIRE(s.capacity() == 2);
+    REQUIRE(s.data()[1].empty());
 }
 
 TEST_CASE("Task 1: pushBack of an element of the same array", "[task1]") {
@@ -78,7 +87,8 @@ TEST_CASE("Task 1: pushBack of an element of the same array", "[task1]") {
     DynamicArray<std::string> a;
     a.pushBack("first element, long enough to live on the heap");
     a.pushBack("second");
-    REQUIRE(a.size() == a.capacity());  // full: the next pushBack reallocates
+    REQUIRE(a.size() == 2);
+    REQUIRE(a.capacity() == 2);  // full: the next pushBack reallocates
     a.pushBack(a[0]);
     REQUIRE(a.size() == 3);
     REQUIRE(a[2] == "first element, long enough to live on the heap");
@@ -93,6 +103,7 @@ TEST_CASE("Task 1: n pushBacks cost O(n) element transfers in total", "[task1]")
         const Tracked t(i);
         a.pushBack(t);
     }
+    REQUIRE(a.size() == static_cast<std::size_t>(n));
     const long transfers = Tracked::counters.copies + Tracked::counters.moves;
     INFO("copies " << Tracked::counters.copies << ", moves " << Tracked::counters.moves);
     // n to put the new elements in + 1 + 2 + 4 + ... + 512 = 1023 for regrowth
@@ -142,6 +153,8 @@ TEST_CASE("Task 2: copy constructor and copy assignment are deep", "[task2]") {
     const DynamicArray<std::string> empty;
     DynamicArray<std::string> d(empty);
     REQUIRE(d.empty());
+    REQUIRE(d.capacity() == 0);
+    REQUIRE(d.data() == nullptr);  // the invariant: no buffer when capacity is 0
 }
 
 TEST_CASE("Task 2: move constructor steals the buffer", "[task2]") {
@@ -193,14 +206,22 @@ TEST_CASE("Task 3: pushBack(T&&) moves instead of copying", "[task3]") {
 }
 
 TEST_CASE("Task 3: resize", "[task3]") {
-    DynamicArray<int> a{1, 2, 3};
+    DynamicArray<int> a{1, 2, 3};  // capacity 3
     a.resize(5);
     REQUIRE(contents(a) == std::vector<int>{1, 2, 3, 0, 0});
+    REQUIRE(a.capacity() == 6);  // max(5, 2 * 3)
     a.resize(2);
     REQUIRE(contents(a) == std::vector<int>{1, 2});
-    REQUIRE(a.capacity() >= 5);  // shrinking the size keeps the capacity
+    REQUIRE(a.capacity() == 6);  // shrinking the size keeps the capacity
+    REQUIRE(a.data()[2] == 0);   // the dropped 3 was reset to T{} (spare slots are real objects)
     a.resize(4);
-    REQUIRE(contents(a) == std::vector<int>{1, 2, 0, 0});  // old 3 is gone
+    REQUIRE(contents(a) == std::vector<int>{1, 2, 0, 0});
+    a.data()[4] = 42;  // put garbage in a spare slot...
+    a.resize(5);
+    REQUIRE(a[4] == 0);  // ...growing must write T{}, not reuse what was there
+    a.resize(20);
+    REQUIRE(a.capacity() == 20);  // max(20, 2 * 6)
+    REQUIRE(a.size() == 20);
     a.resize(0);
     REQUIRE(a.empty());
 }
@@ -225,7 +246,9 @@ TEST_CASE("Task 3: shrinkToFit", "[task3]") {
 
 // ---------------------------------------------------------------- Task 4
 
-// Task 4 needs Task 3: the new element is a temporary, moved in exactly once.
+// Task 4 needs Task 3: the new element is a temporary, so it is moved in,
+// never copied. Moved once if you write it straight into the new buffer (as
+// in the hint), twice if it goes through a local variable first - both fine.
 TEST_CASE("Task 4: regrowth moves noexcept-movable elements", "[task4]") {
     DynamicArray<Tracked> a;
     for (int i = 0; i < 8; ++i) {
@@ -233,8 +256,14 @@ TEST_CASE("Task 4: regrowth moves noexcept-movable elements", "[task4]") {
     }
     Tracked::counters.reset();
     a.pushBack(Tracked(8));  // regrowth: 8 old elements + the new one
-    REQUIRE(Tracked::counters.copies == 0);
-    REQUIRE(Tracked::counters.moves == 9);
+    INFO("copies " << Tracked::counters.copies << ", moves " << Tracked::counters.moves);
+    REQUIRE(Tracked::counters.copies == 0);  // the 8 old elements are moved
+    REQUIRE(Tracked::counters.moves >= 9);   // 8 old + the new one
+    REQUIRE(Tracked::counters.moves <= 10);
+    REQUIRE(a.size() == 9);
+    for (int i = 0; i < 9; ++i) {
+        REQUIRE(a[static_cast<std::size_t>(i)].value == i);
+    }
 }
 
 TEST_CASE("Task 4: regrowth copies elements whose move may throw", "[task4]") {
@@ -245,9 +274,12 @@ TEST_CASE("Task 4: regrowth copies elements whose move may throw", "[task4]") {
     ThrowingMove::counters.reset();
     a.pushBack(ThrowingMove(8));
     // The 8 old elements are copied (strong exception guarantee); only the
-    // new element, a temporary, is moved in.
+    // new element, a temporary, is moved in (once, or twice via a local).
+    INFO("copies " << ThrowingMove::counters.copies << ", moves " << ThrowingMove::counters.moves);
     REQUIRE(ThrowingMove::counters.copies == 8);
-    REQUIRE(ThrowingMove::counters.moves == 1);
+    REQUIRE(ThrowingMove::counters.moves >= 1);
+    REQUIRE(ThrowingMove::counters.moves <= 2);
+    REQUIRE(a.size() == 9);
     for (int i = 0; i < 9; ++i) {
         REQUIRE(a[static_cast<std::size_t>(i)].value == i);
     }

@@ -105,6 +105,8 @@ g++ -std=c++17 -O2 -I starter bench/*.cpp starter/*.cpp -o w01_bench
 ./w01_bench
 ```
 
+Ако в `starter/` няма `.cpp` файлове (например седмица 04 — целият код е в `.h`), махнете `starter/*.cpp` от командите, иначе `g++` казва `No such file or directory`.
+
 ## Чести проблеми
 
 | Симптом | Причина | Решение |

@@ -14,14 +14,14 @@
 //              <------------------ capacity --------->
 //
 // When pushBack finds no spare slot, the array REALLOCATES: a new buffer
-// of twice the capacity, elements moved over, old buffer freed. That makes
+// of twice the capacity, elements transferred, old buffer freed. That makes
 // pushBack amortized Theta(1).
 //
 // Invariant: 0 <= size_ <= capacity_; data_ is nullptr iff capacity_ == 0,
 // otherwise it points to capacity_ elements owned by this object.
 //
 // Simplification compared to std::vector: the buffer is new T[capacity],
-// so the spare slots hold default-constructed T objects (see notes, §5.4).
+// so the spare slots hold default-constructed T objects (see notes, §7.1).
 template <typename T>
 class DynamicArray {
 public:
@@ -32,6 +32,7 @@ public:
 
     DynamicArray() noexcept = default;
 
+    // Works once reserve and pushBack (Task 1) are done.
     DynamicArray(std::initializer_list<T> values) {
         reserve(values.size());
         for (const T& v : values) {
@@ -44,6 +45,7 @@ public:
     // ---- Task 2: the rule of five ---------------------------------------
 
     // Deep copy: same size, own buffer (its capacity may be just size()).
+    // Copy of an empty array: capacity 0, data_ == nullptr (the invariant).
     DynamicArray(const DynamicArray& other) {
         // TODO
         (void)other;
@@ -108,13 +110,16 @@ public:
     // Append a copy of `value`. If there is no spare slot, the new capacity
     // is 1 for an empty array and 2 * capacity() otherwise.
     // Careful: `value` may refer to an element of THIS array (a.pushBack(a[0]))
-    // - do not read it after its buffer has been freed.
+    // - do not read it after its buffer has been freed. So when full, write
+    // `value` into the NEW buffer FIRST, then transferInto, then free the old
+    // buffer. (That is why pushBack does not call reallocate.)
     void pushBack(const T& value) {
         // TODO
         (void)value;
     }
 
-    // Task 3: the same, but move `value` in instead of copying it.
+    // Task 3: the same steps, but move `value` in instead of copying it
+    // (std::move(value) wherever the copy version writes value).
     // Until then it falls back to copying, so Task 1 works on its own.
     void pushBack(T&& value) {
         // TODO Task 3: move instead of copy
@@ -153,13 +158,21 @@ public:
     bool operator!=(const DynamicArray& other) const { return !(*this == other); }
 
 private:
-    // Task 1 (Task 4 for the move_if_noexcept part): allocate a buffer of
-    // exactly newCapacity elements (newCapacity >= size_), transfer the
-    // size_ elements into it, free the old buffer. newCapacity == 0 means
-    // "no buffer" (data_ = nullptr).
+    // Task 1: fresh[i] = data_[i] for the size_ elements (one loop).
+    // The ONLY place where old elements are transferred: both pushBack
+    // versions and reallocate call it.
     //
-    // Task 4: transfer with std::move_if_noexcept - elements are MOVED if
-    // T's move constructor is noexcept, COPIED otherwise.
+    // Task 4: change the loop to fresh[i] = std::move_if_noexcept(data_[i]);
+    // - elements are MOVED if T's move is noexcept, COPIED otherwise.
+    void transferInto(T* fresh) {
+        // TODO
+        (void)fresh;
+    }
+
+    // Task 1: allocate a buffer of exactly newCapacity elements
+    // (newCapacity >= size_; 0 means "no buffer", data_ = nullptr),
+    // transferInto it, free the old buffer. Used by reserve, resize and
+    // shrinkToFit.
     void reallocate(std::size_t newCapacity) {
         // TODO
         (void)newCapacity;

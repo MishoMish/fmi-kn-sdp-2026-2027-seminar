@@ -4,7 +4,7 @@
 
 # Динамичен масив
 
-Колко да расте, защо `pushBack` е $\Theta(1)$, и как да местим вместо да копираме
+Колко да расте, защо `pushBack` е $\Theta(1)$ амортизирано, и как да местим вместо да копираме
 
 <p class="small">Записки: <a href="notes.md">notes.md</a> · Задачи: <a href="exercises.md">exercises.md</a></p>
 
@@ -18,14 +18,14 @@
 | 15 мин | Преговор: растеж, амортизиран анализ, свиване |
 | 20 мин | На живо: `noexcept` променя какво прави `std::vector` |
 | ☕ | почивка |
-| 35 мин | Практика: `DynamicArray<T>` — растеж, правилото на петте, `move_if_noexcept` |
+| 35 мин | Практика: А1, после задача 1 (растеж на `DynamicArray<T>`) |
 | 10 мин | Разбор и какво следва |
 
 ---
 
 ## Загрявка
 
-1. `insertAt(0, x)` в масив с $n$ елемента — колко премествания? <span class="fragment answer">$n$</span>
+1. `insertAt(0, x)` в масив с $n$ елемента — колко елемента отместваме? <span class="fragment answer">$n$</span>
 2. Какво става при `FixedArray b = a;`, ако не сме написали копиращ конструктор? <span class="fragment answer">два обекта, един буфер → двойно <code>delete[]</code></span>
 3. Двоично търсене със затворен интервал и `lo = mid` — какво се случва при `hi == lo + 1`? <span class="fragment answer">безкраен цикъл</span>
 4. Миналия път: масивът е пълен, искаме още един елемент. Ако растем с **+1** — колко струват $n$ добавяния? <span class="fragment answer">$1 + 2 + \ldots + n = \Theta(n^2)$</span>
@@ -56,7 +56,7 @@
 
 ## $+c$ или $\times k$?
 
-![Премествания на pushBack](img/copies-chart.svg)
+![Прехвърляния на pushBack](img/copies-chart.svg)
 
 ---
 
@@ -64,15 +64,17 @@
 
 $$1 + 2 + 4 + \ldots + C = 2C - 1 < 2n$$
 
+<p class="small">$C$ — последният капацитет преди $n$-тия елемент ($C < n$).</p>
+
 <div class="cols">
 <div>
 
-**Агрегатно:** $n$ записа + $< 2n$ премествания $< 3n$ → **3 на операция**.
+**Агрегатно:** $n$ записа + $< 2n$ прехвърляния $< 3n$ → **3 на операция**.
 
 </div>
 <div>
 
-**Счетоводно:** всеки `pushBack` плаща 3 монети — 1 за себе си, 2 спестява за бъдещото преместване.
+**Счетоводно:** всеки `pushBack` плаща 3 монети — 1 за себе си, 2 спестява за бъдещото прехвърляне.
 
 </div>
 </div>
@@ -85,7 +87,7 @@ $$1 + 2 + 4 + \ldots + C = 2C - 1 < 2n$$
 
 ---
 
-## Рядко скъпо, средно евтино
+## Рядко скъпо, общо евтино
 
 ![Реална и амортизирана цена](img/amortized-bars.svg)
 
@@ -116,7 +118,7 @@ $$1 + 2 + 4 + \ldots + C = 2C - 1 < 2n$$
 ```cpp
 std::string a = "tree";
 std::string b = a;              // a е lvalue: копие
-std::string c = a + "s";        // временна стойност (rvalue): преместване
+b = a + "s";                    // временна стойност (rvalue): преместващо =
 std::string d = std::move(a);   // „свърших с a“: преместване
 ```
 
@@ -146,6 +148,7 @@ DynamicArray(DynamicArray&& other) noexcept
 
 ```cpp
 struct Widget {
+    explicit Widget(int);
     Widget(Widget&&) noexcept;   // ← махнете го
     Widget(const Widget&);
 };
@@ -194,13 +197,13 @@ for (int i = 0; i < 1000; ++i)
 
 # Практика <span class="timer">35 мин</span>
 
-<p class="small">По двойки. <a href="exercises.md">exercises.md</a> · <code>ctest --preset default -R "^w04/"</code> · <strong>и с ASan:</strong> <code>ctest --preset asan -R "^w04/"</code></p>
+<p class="small">По двойки. <a href="exercises.md">exercises.md</a> · <code>ctest --preset default -R "^w04/"</code> · <strong>и с ASan:</strong> <code>cmake --preset asan && cmake --build --preset asan && ctest --preset asan -R "^w04/"</code></p>
 
 ---
 
 ## Загрявка — без тестове
 
-Един `.cpp` файл, `g++ -std=c++17 a1.cpp && ./a1`. Към всяка задача има очакван изход.
+Един `.cpp` файл, `g++ -std=c++17 a1.cpp -o a1 && ./a1`. Към всяка задача има очакван изход.
 
 | Задачи | Какво |
 |---|---|
@@ -208,21 +211,23 @@ for (int i = 0; i < 1000; ++i)
 | ★ А3, А5 | броим прехвърлянията; инвалидиране |
 | ★★ А6, А7 | колко копира `std::vector`; пет или нула |
 
-<p class="small">Заседнахте на задача 1? Направете първо А1.</p>
+<p class="small">За 35-те минути: А1, после задача 1. Заседнахте на задача 1? Върнете се на А1.</p>
 
 ---
 
-## Задача 1 ★ — растеж
+## Задача 1 ★★ — растеж
 
-`starter/dynamic_array.h`: `reallocate`, `reserve`, `pushBack(const T&)`, `popBack`.
+`starter/dynamic_array.h`: `transferInto`, `reallocate`, `reserve`, `pushBack(const T&)`, `popBack`.
+
+- `transferInto` — единственото място, където се прехвърлят стари елементи.
 
 - Нов капацитет: 1 за празен, иначе $2 \times$.
 - Тестът проверява капацитетите: 1, 2, 4, 4, 8, … , 32.
-- Тестът брои копирания + премествания: $\le 3n$.
+- Тестът брои прехвърлянията (копирания + премествания): $\le 3n$.
 
 <div class="box bad">
 
-`a.pushBack(a[0])` при пълен масив: прочетете `value` **преди** да местите или освобождавате стария буфер. Без ASan бъгът често не се вижда.
+`a.pushBack(a[0])` при пълен масив: запишете `value` в новия буфер **преди** `transferInto` и `delete[]` — затова `pushBack` не вика `reallocate`. Без ASan бъгът често не се вижда.
 
 </div>
 
@@ -242,7 +247,7 @@ for (int i = 0; i < 1000; ++i)
 ## Задачи 3–4 — преместване навсякъде
 
 - **★★ Задача 3:** `pushBack(T&&)` мести; `resize(n)`; `shrinkToFit()`.
-- **★★★ Задача 4:** при преоразмеряване — `std::move_if_noexcept`.
+- **★★ Задача 4:** един ред в `transferInto` — `std::move_if_noexcept`.
 
 ```cpp
 fresh[i] = std::move_if_noexcept(data_[i]);
@@ -250,14 +255,14 @@ fresh[i] = std::move_if_noexcept(data_[i]);
 
 | Тип | Очаквано при преоразмеряване на 8 елемента |
 |---|---|
-| `Tracked` (`noexcept` преместване) | 0 копирания |
-| `ThrowingMove` | 8 копирания |
+| `Tracked` (`noexcept` преместване) | 0 копирания, 9 премествания (8 стари + новият) |
+| `ThrowingMove` | 8 копирания, 1 преместване (новият) |
 
 ---
 
 ## Задача 5 — бенчмарк
 
-<p class="small"><code>cmake --build --preset release --target w04_bench</code> → <code>./build/release/w04_bench</code></p>
+<p class="small"><code>cmake --preset release && cmake --build --preset release --target w04_bench</code> → <code>./build/release/w04_bench</code></p>
 
 ![Време за n pushBack](img/timing-chart.svg)
 
@@ -270,13 +275,13 @@ fresh[i] = std::move_if_noexcept(data_[i]);
 - Амортизирано = гаранция за всяка последователност, не вероятност.
 - Свиване при ¼, не при ½. `reserve`, когато знаете $n$.
 - Преоразмеряването инвалидира всички указатели и итератори.
-- Преместването краде ресурса за $\Theta(1)$; `noexcept` е задължителен.
+- Преместването краде ресурса за $\Theta(1)$; маркирайте го `noexcept`.
 
 ---
 
 ## До следващия път
 
-- Довършете загрявката (А1–А7) и задачи 1–3; 4 и 5 за любопитните.
+- Минимум: А1, А2, задачи 1 и 2. Ако имате време: останалото от част А и задачи 3–4. Задача 5 — за любопитните.
 - Прочетете [notes.md](notes.md) — там е и методът на потенциала.
 - **Следващия четвъртък:** едносвързан списък — вмъкване за $\Theta(1)$, но на каква цена?
 
