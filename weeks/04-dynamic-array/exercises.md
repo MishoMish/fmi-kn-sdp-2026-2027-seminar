@@ -4,6 +4,346 @@
 
 **Трудност:** ★ — всеки трябва да може · ★★ — изисква малко мислене · ★★★ — за любопитните
 
+Задачите са в две части:
+
+- **[Част А — загрявка](#част-а--загрявка-без-тестове) (А1–А7):** всяка задача е един `.cpp` файл — без CMake, без starter, без тестове. Към всяка е даден очакваният изход, така че проверявате сами.
+- **[Част Б — `DynamicArray`](#част-б--dynamicarray-с-тестове) (задачи 1–5):** starter и тестове, както досега.
+
+Не знаете откъде да започнете? Започнете от А1. А1, А2 и А4 упражняват същото като задача 1, само без шаблони и без тестове. А6 подготвя задача 4, а А7 — задача 2.
+
+---
+
+## Част А — загрявка без тестове
+
+Пишете в обикновен файл и компилирате с една команда:
+
+```bash
+g++ -std=c++17 -Wall -Wextra -g a1.cpp -o a1 && ./a1
+# по-добре — с AddressSanitizer (Linux, macOS):
+g++ -std=c++17 -Wall -Wextra -g -fsanitize=address,undefined a1.cpp -o a1 && ./a1
+```
+
+Какво значи всяка част от командата:
+
+| Част | Какво прави |
+|---|---|
+| `g++` | компилаторът за C++ (GCC). На macOS `g++` всъщност е Clang — флаговете са същите. |
+| `-std=c++17` | компилира по стандарта C++17. Без него компилаторът ползва своя версия по подразбиране, която може да е друга. |
+| `-Wall` | включва основните предупреждения (warnings): неизползвани променливи, сравнение на `int` с `size_t`, функция без `return` и т.н. Името значи „all“, но не са всички. |
+| `-Wextra` | включва още предупреждения, които `-Wall` пропуска, например неизползван параметър. |
+| `-g` | добавя информация за дебъгване: имената на функциите и номерата на редовете. Така ASan и дебъгерът казват `a1.cpp:27`, а не само адрес в паметта. |
+| `-fsanitize=address` | **AddressSanitizer (ASan)**: проверява всеки достъп до паметта, докато програмата работи. Хваща четене извън масива, използване на освободена памет (use-after-free), двойно `delete[]` и изтекла памет (leak). Програмата спира с отчет, който казва какво и на кой ред. |
+| `-fsanitize=undefined` | **UBSan**: хваща недефинирано поведение (undefined behaviour), например препълване на `int`, деление на нула, грешно отместване на битове. Двата sanitizer-а се пишат заедно: `address,undefined`. |
+| `a1.cpp` | файлът, който компилирате. |
+| `-o a1` | името на изпълнимия файл (`o` от „output“). Без него файлът се казва `a.out`. |
+| `&&` | „и после“: пуска втората команда **само ако** първата е успяла. Ако има грешка при компилация, старият `a1` няма да се пусне по погрешка. |
+| `./a1` | пуска програмата. `./` значи „в текущата папка“. |
+
+Предупрежденията не спират компилацията, но **четете ги**: почти винаги сочат истински бъг. ASan забавя програмата около 2 пъти, затова е за проверка, не за мерене на време. На Windows с MinGW `-fsanitize` не работи; ползвайте Compiler Explorer или WSL.
+
+Става и с [Compiler Explorer](https://godbolt.org) или с друг онлайн компилатор.
+
+### А1 ★ — `pushBack` за `int`
+
+Масив само за `int`, без шаблони и без класове с много методи. Допишете `reallocate` и `pushBack`:
+
+```cpp
+#include <cstddef>
+#include <iostream>
+
+struct IntVector {
+    int* data = nullptr;
+    std::size_t size = 0;
+    std::size_t capacity = 0;
+
+    IntVector() = default;
+    IntVector(const IntVector&) = delete;             // копиране не ни трябва тук
+    IntVector& operator=(const IntVector&) = delete;
+    ~IntVector() { delete[] data; }
+};
+
+// Нов буфер с точно newCapacity елемента, старите елементи в него,
+// старият буфер освободен. newCapacity == 0 -> data = nullptr.
+void reallocate(IntVector& v, std::size_t newCapacity) {
+    // TODO
+}
+
+// Ако няма място: нов капацитет 1 за празен масив, иначе 2 * capacity.
+void pushBack(IntVector& v, int x) {
+    // TODO
+}
+
+int main() {
+    IntVector v;
+    for (int i = 1; i <= 10; ++i) {
+        pushBack(v, i);
+        std::cout << v.capacity << ' ';
+    }
+    std::cout << '\n';
+    for (std::size_t i = 0; i < v.size; ++i) {
+        std::cout << v.data[i] << ' ';
+    }
+    std::cout << '\n';
+}
+```
+
+Очакван изход:
+
+```text
+1 2 4 4 8 8 8 8 16 16
+1 2 3 4 5 6 7 8 9 10
+```
+
+<details>
+<summary>Насока</summary>
+
+`reallocate`: `new int[newCapacity]` → цикъл, който копира `v.size` елемента → `delete[] v.data;` → `v.data = fresh;` → обновете `v.capacity`.
+
+`pushBack`: ако `v.size == v.capacity`, извикайте `reallocate` с новия капацитет; после `v.data[v.size] = x;` и `++v.size`.
+
+</details>
+
+**Въпрос.** В задача 1 `pushBack(a[0])` е капан. Защо тук `pushBack(v, v.data[0])` е безопасно при същия ред на стъпките?
+
+---
+
+### А2 ★ — намерете бъговете
+
+Колега е написал `pushBack` за `IntVector` от А1. В тази функция има **пет** бъга:
+
+```cpp
+void pushBack(IntVector& v, int x) {
+    if (v.size == v.capacity) {
+        int* fresh = new int[v.capacity * 2];
+        delete[] v.data;
+        for (std::size_t i = 0; i <= v.size; ++i) {
+            fresh[i] = v.data[i];
+        }
+        v.data = fresh;
+    }
+    v.data[v.size] = x;
+}
+```
+
+1. За всеки бъг напишете: на кой ред е, какво се случва (срив, грешен резултат, „работи“ случайно) и как се поправя.
+2. Кои бъгове би хванал ASan веднага? Кой се вижда **само** ако проверите резултата?
+3. Напишете вярната версия и я пуснете с `main` от А1.
+
+---
+
+### А3 ★ — броим прехвърлянията
+
+Колко елемента се прехвърлят при $n$ добавяния? За това не е нужен истински масив: важат само `size` и `capacity`. Напишете симулация:
+
+```cpp
+// strategy: 0 -> x2 (1 за празен), 1 -> x1.5 (capacity + capacity / 2 + 1), 2 -> +64
+// Връща колко елемента общо са прехвърлени при преоразмеряванията за n добавяния.
+long long countTransfers(long long n, int strategy);
+```
+
+При всяко добавяне: ако `size == capacity`, прибавете `size` към брояча и увеличете `capacity` по стратегията; после `++size`.
+
+Отпечатайте броя за $n = 1\,000$ и $n = 1\,000\,000$, както и броя, разделен на $n$. Очаквано:
+
+| $n$ | $\times 2$ | $\times 1.5$ | $+64$ |
+|---|---|---|---|
+| 1 000 | 1 023 | 2 104 | 7 680 |
+| 1 000 000 | 1 048 575 | 2 099 686 | 7 812 000 000 |
+
+1. Отговаря ли числото за $\times 2$ на формулата $2C - 1$ от записките (§2.2)? Колко е $C$ за $n = 1\,000\,000$?
+2. При $\times 2$ и $\times 1.5$ броят на елемент остава почти същият, когато $n$ стане 1000 пъти по-голямо. А при $+64$?
+3. Защо резултатът трябва да е `long long`? Какво отпечатва програмата ви с `int`?
+
+---
+
+### А4 ★ — `popBack` и свиване
+
+Добавете към `IntVector` от А1:
+
+```cpp
+// Премахва последния елемент; std::out_of_range при празен масив.
+// След това: ако масивът е празен, освобождава буфера (capacity 0, data nullptr);
+// иначе, ако size <= capacity / 4, капацитетът става capacity / 2.
+void popBack(IntVector& v);
+```
+
+**Част 1.** Добавете 8 елемента (0…7), после премахвайте, докато масивът се изпразни, и след всяко премахване отпечатвайте `size/capacity`:
+
+```text
+7/8 6/8 5/8 4/8 3/8 2/4 1/2 0/0
+```
+
+**Част 2.** Добавете глобален брояч `int reallocations = 0;`, който `reallocate` увеличава. Напълнете масив с 8 елемента (капацитет 8), нулирайте брояча и повторете 10 пъти: `pushBack`, после `popBack`. Отпечатайте брояча. После сменете правилото на `size <= capacity / 2` и повторете.
+
+```text
+при 1/4: 1
+при 1/2: 20
+```
+
+**Въпрос.** Откъде идват 20-те преоразмерявания? Кое е първото добавяне, след което правилото с $1/4$ пак ще преоразмери? (Записки, §4.1.)
+
+---
+
+### А5 ★ — инвалидиране
+
+И двата фрагмента са грешни. Обяснете защо и ги поправете.
+
+```cpp
+// (1) за всеки нечетен елемент добави x * 10 в края
+std::vector<int> v{1, 2, 3};
+for (int x : v) {
+    if (x % 2 == 1) v.push_back(x * 10);
+}
+```
+
+```cpp
+// (2) смени знака на най-големия елемент, но първо добави 0 в края
+std::vector<int> w{5, 9, 2};
+int& largest = w[1];
+w.push_back(0);
+largest = -largest;
+```
+
+Пуснете първо грешните версии с `-fsanitize=address`. Какво казва ASan? Без ASan програмата може да отпечата нещо странно или да изглежда почти вярна.
+
+Поправете (1) с цикъл по индекс. Поправете (2) по два начина: (а) пазете **индекса** на най-големия, а не референция; (б) с `w.reserve(…)` преди да вземете референцията. Защо (б) е по-крехко?
+
+Очакван изход на поправените версии:
+
+```text
+1 2 3 10 30
+5 -9 2 0
+```
+
+---
+
+### А6 ★★ — колко копира `std::vector`
+
+Напишете тип, който брои копиранията и преместванията си:
+
+```cpp
+struct Noisy {
+    static int copies;
+    static int moves;
+    int value;
+
+    Noisy(int v) : value(v) {}
+    Noisy(const Noisy& other);           // TODO: копира value, ++copies
+    Noisy(Noisy&& other) noexcept;       // TODO: копира value, ++moves
+};
+int Noisy::copies = 0;
+int Noisy::moves = 0;
+```
+
+Нулирайте броячите преди всеки опит и отпечатайте `copies` и `moves` след него. **Първо предскажете числата на хартия**, после пуснете:
+
+| Опит | Код | copies | moves |
+|---|---|---|---|
+| (а) | `std::vector<Noisy> v;` и 5 пъти `v.push_back(Noisy(i));` | 0 | 12 |
+| (б) | като (а), но с `v.reserve(5);` в началото | 0 | 5 |
+| (в) | като (а), но махнете `noexcept` от преместващия конструктор | 7 | 5 |
+| (г) | като (а), но `Noisy n(i); v.push_back(n);` (с `noexcept`) | 5 | 7 |
+
+Числата са за GCC и Clang, при които капацитетът на `std::vector` расте 1, 2, 4, 8.
+
+1. Разделете 12-те премествания в (а): колко са на новите елементи и колко са от преоразмеряванията?
+2. Защо в (в) старите елементи се **копират**? Това е `std::move_if_noexcept` от задача 4 в действие.
+3. На MSVC числата в (а) са други. Защо? (Записки, §2.2, „Любопитно“.)
+
+---
+
+### А7 ★★ — пет или нула
+
+**Част 1 — правилото на петте.** Даден е буфер с фиксиран размер (по-прост от `DynamicArray`: няма капацитет и не расте). Напишете четирите липсващи функции. Копиращият оператор — с copy-and-swap, както в седмица 03.
+
+```cpp
+#include <cstddef>
+#include <iostream>
+#include <utility>
+
+class IntBuffer {
+public:
+    explicit IntBuffer(std::size_t n) : data_(n == 0 ? nullptr : new int[n]{}), size_(n) {}
+    ~IntBuffer() { delete[] data_; }
+
+    IntBuffer(const IntBuffer& other);                 // TODO: дълбоко копие
+    IntBuffer(IntBuffer&& other) noexcept;             // TODO: краде буфера, other остава празен
+    IntBuffer& operator=(const IntBuffer& other);      // TODO: copy-and-swap
+    IntBuffer& operator=(IntBuffer&& other) noexcept;  // TODO
+
+    void swap(IntBuffer& other) noexcept {
+        std::swap(data_, other.data_);
+        std::swap(size_, other.size_);
+    }
+    std::size_t size() const { return size_; }
+    int& operator[](std::size_t i) { return data_[i]; }
+    const int* data() const { return data_; }
+
+private:
+    int* data_;
+    std::size_t size_;
+};
+```
+
+```cpp
+int main() {
+    IntBuffer a(3);
+    a[0] = 1; a[1] = 2; a[2] = 3;
+
+    IntBuffer b = a;
+    b[0] = 100;
+    std::cout << a[0] << ' ' << b[0] << '\n';
+
+    const int* p = a.data();
+    IntBuffer c = std::move(a);
+    std::cout << (c.data() == p) << ' ' << a.size() << ' ' << (a.data() == nullptr) << '\n';
+
+    b = c;
+    b = b;
+    std::cout << b[0] << ' ' << b[1] << ' ' << b[2] << '\n';
+
+    c = std::move(b);
+    std::cout << c.size() << ' ' << b.size() << '\n';
+}
+```
+
+Очакван изход (и без грешки от ASan):
+
+```text
+1 100
+1 0 1
+1 2 3
+3 0
+```
+
+**Част 2 — правилото на нулата.** Напишете клас `Student` с име и оценки, който **не дефинира нито една** от петте специални функции. Полетата са `std::string` и `std::vector<int>`.
+
+| Член | Поведение |
+|---|---|
+| `explicit Student(std::string name)` | създава студент без оценки |
+| `void addGrade(int g)` | добавя оценка |
+| `double average() const` | средната оценка; 0, ако няма оценки |
+| `const std::string& name() const` | името |
+
+```cpp
+Student s("Ana");
+s.addGrade(6);
+s.addGrade(5);
+Student t = s;          // копие: t има свои оценки
+t.addGrade(2);
+std::cout << s.name() << ' ' << s.average() << ' ' << t.average() << '\n';
+```
+
+```text
+Ana 5.5 4.33333
+```
+
+**Въпрос.** Ако оценките бяха в `IntBuffer` от част 1, трябваше ли `Student` да пише някоя от петте? А ако бяха в `int*`?
+
+---
+
+## Част Б — `DynamicArray` с тестове
+
 ```bash
 git pull
 cmake --build --preset default
@@ -18,7 +358,7 @@ cmake --preset asan && cmake --build --preset asan && ctest --preset asan -R "^w
 
 ---
 
-## Задача 1 ★ — растеж
+### Задача 1 ★ — растеж
 
 Тестове: `Task 1`
 
@@ -42,7 +382,7 @@ cmake --preset asan && cmake --build --preset asan && ctest --preset asan -R "^w
 
 ---
 
-## Задача 2 ★★ — правилото на петте
+### Задача 2 ★★ — правилото на петте
 
 Тестове: `Task 2`
 
@@ -66,7 +406,7 @@ cmake --preset asan && cmake --build --preset asan && ctest --preset asan -R "^w
 
 ---
 
-## Задача 3 ★★ — `pushBack(T&&)`, `resize`, `shrinkToFit`
+### Задача 3 ★★ — `pushBack(T&&)`, `resize`, `shrinkToFit`
 
 Тестове: `Task 3`
 
@@ -80,7 +420,7 @@ cmake --preset asan && cmake --build --preset asan && ctest --preset asan -R "^w
 
 ---
 
-## Задача 4 ★★★ — `std::move_if_noexcept`
+### Задача 4 ★★★ — `std::move_if_noexcept`
 
 Тестове: `Task 4` (изисква задача 3)
 
@@ -92,7 +432,7 @@ cmake --preset asan && cmake --build --preset asan && ctest --preset asan -R "^w
 
 ---
 
-## Задача 5 ★★ — бенчмарк на стратегиите
+### Задача 5 ★★ — бенчмарк на стратегиите
 
 ```bash
 cmake --preset release
