@@ -159,6 +159,44 @@ def two_stacks_frames():
         s.save(OUT / f"two-stacks-{k + 1}.svg")
 
 
+def deque_blocks():
+    s = Svg(1100, 400, "std::deque: масив от указатели към блокове")
+    s.text(40, 44, "std::deque: масив от указатели към блокове с фиксиран размер", size=21, weight=700)
+    # the map
+    s.text(300, 88, "map (масив от указатели)", size=14, fill=MUTED, weight=600, anchor="end")
+    used = {1: 0, 2: 1, 3: 2}
+    for k in range(6):
+        x = 320 + k * 70
+        s.rect(x, 68, 60, 36, TINT2 if k in used else PANEL, S2 if k in used else GRID, rx=5)
+        if k in used:
+            s.text(x + 30, 92, "•", size=18, anchor="middle", fill=S2, weight=700)
+    # the blocks
+    blocks = [["", "", "a", "b"], ["c", "d", "e", "f"], ["g", "h", "", ""]]
+    for b, cells in enumerate(blocks):
+        bx = 60 + b * 340
+        for i, v in enumerate(cells):
+            front = (b, i) == (0, 2)
+            back = (b, i) == (2, 1)
+            fill = S1 if front else (S3 if back else (TINT1 if v else PANEL))
+            cell(s, bx + i * 62, 200, 56, 44, v, fill=fill, stroke=S1 if v else GRID,
+                 tf=SURFACE if (front or back) else INK)
+        s.text(bx + 121, 266, f"блок {b} (B = 4)", size=13, anchor="middle", fill=MUTED, family=MONO)
+    for k, b in used.items():
+        s.path(f"M {350 + k * 70},106 C {350 + k * 70},150 {88 + b * 340},150 {88 + b * 340},196", S2, sw=1.6,
+               arrow=True)
+    s.text(60 + 62 + 28, 186, "push_front", size=13, anchor="middle", fill=S3, weight=600, family=MONO)
+    s.text(680 + 2 * 62 + 28, 186, "push_back", size=13, anchor="middle", fill=S3, weight=600, family=MONO)
+    s.text(60 + 2 * 62 + 28, 290, "front", size=13, anchor="middle", fill=S1, family=MONO, weight=600)
+    s.text(680 + 62 + 28, 290, "back", size=13, anchor="middle", fill=S1, family=MONO, weight=600)
+    s.text(40, 330, "Пълен краен блок → нов блок (една алокация за B елемента). Пълен map → нов map: копират се "
+                    "само указателите.", size=15, fill=INK2)
+    s.text(40, 356, "Елементите никога не се местят → push в краищата пази референциите (но не и итераторите).",
+           size=15, fill=INK2)
+    s.text(40, 382, "d[i]: блок (start + i) / B, позиция (start + i) % B — Θ(1). В libstdc++ блокът е 512 байта.",
+           size=15, fill=INK2)
+    s.save(OUT / "deque.svg")
+
+
 def call_stack():
     s = Svg(1000, 360, "Стекът на извикванията при рекурсия")
     s.text(40, 46, "Стекът на извикванията — стекът, който ползвате всеки ден", size=22, weight=700)
@@ -239,7 +277,7 @@ def bitref():
     s.rect(560, 200, 330, 90, TINT2, S2, rx=10, sw=2)
     s.text(580, 230, "BitRef", size=16, weight=700, family=MONO)
     s.text(580, 254, "word_ = &words_[70 / 64]", size=14, family=MONO)
-    s.text(580, 276, "mask_ = 1 << (70 % 64)", size=14, family=MONO)
+    s.text(580, 276, "mask_ = uint64_t{1} << (70 % 64)", size=14, family=MONO)
     s.path("M 600,200 C 600,170 610,150 752,142", S2, sw=2, arrow=True)
     s.text(40, 230, "operator bool()   → (*word_ & mask_) != 0", size=15, family=MONO)
     s.text(40, 256, "operator=(bool)   → *word_ |= mask_  /  &= ~mask_", size=15, family=MONO)
@@ -288,6 +326,7 @@ if __name__ == "__main__":
     ring_frames()
     ring_grow()
     two_stacks_frames()
+    deque_blocks()
     call_stack()
     brackets_trace()
     proxy_pattern()

@@ -76,14 +76,14 @@ cmake --preset asan && cmake --build --preset asan && ctest --preset asan -R "^w
 | `BitRef::operator=(bool)` | вдигане (`|=`) или сваляне (`&= ~`) на бита |
 | `BitRef::operator=(const BitRef&)` | копира **стойността** на другия бит — не полетата на проксито |
 | `BitRef::flip()` | `^=` |
-| `operator[](i)` | `BitRef(&words_[i / 64], 1 << (i % 64))`; `std::out_of_range` при `i >= size()` |
+| `operator[](i)` | `BitRef(&words_[i / 64], std::uint64_t{1} << (i % 64))`; `std::out_of_range` при `i >= size()` |
 | `operator[](i) const` | връща просто `bool` |
 | `count()` | броят единици — само в първите `size()` бита |
 
 <details>
 <summary>Насоки</summary>
 
-- `1 << (i % 64)` е `int` — препълва при `i % 64 >= 31`. Пишете `std::uint64_t{1} << (i % 64)`.
+- Защо не просто `1 << (i % 64)`? `1` е `int` — препълва при `i % 64 >= 31`. Затова `std::uint64_t{1} << (i % 64)`.
 - `count()`: конструкторът с `value = true` вдига **всички** битове на последната дума, включително неизползваните. Маскирайте последната дума до `size() % 64` бита.
 - Бързо броене на единиците в дума: `for (; w != 0; w &= w - 1) ++count;` — всяка итерация маха най-ниската единица (трикът на Kernighan; седмица 15).
 
